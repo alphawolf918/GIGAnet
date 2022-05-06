@@ -1,0 +1,2589 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>
+	
+
+
+ 
+
+
+	  
+      				
+
+				
+					
+						
+							
+								
+												
+						
+					
+				
+	
+
+
+		  
+			  
+		  	 
+	
+ How to backup, export, move, and install Personal Certificates that have been picked up or previously installed.  | Symantec  
+  
+     
+
+</title>
+<link rel="stylesheet" type="text/css" href="Moving%20Certificates%20%28Symantec%29_files/infocenter.css" media="screen">
+<link rel="stylesheet" type="text/css" href="Moving%20Certificates%20%28Symantec%29_files/forums_ltr.css">
+<link rel="stylesheet" type="text/css" href="Moving%20Certificates%20%28Symantec%29_files/print_ltr.css" media="print">
+<link rel="stylesheet" type="text/css" href="Moving%20Certificates%20%28Symantec%29_files/font_3_ltr.css" media="screen" id="largefont">
+	<link rel="stylesheet" type="text/css" href="Moving%20Certificates%20%28Symantec%29_files/font_2_ltr.css" media="screen" id="mediumfont">
+		<link rel="stylesheet" type="text/css" href="Moving%20Certificates%20%28Symantec%29_files/font_1_ltr.css" media="screen" id="smallfont">
+			
+			<script type="text/javascript" async="" src="Moving%20Certificates%20%28Symantec%29_files/ga.js"></script><script type="text/javascript" async="" src="Moving%20Certificates%20%28Symantec%29_files/analytics.js"></script><script async="" src="Moving%20Certificates%20%28Symantec%29_files/gtm.js"></script><script type="text/javascript" src="Moving%20Certificates%20%28Symantec%29_files/vrsn-scripts.js"></script>
+			
+
+
+	
+
+
+
+
+
+
+
+
+ 
+
+
+	  		
+	
+	
+	
+	
+			
+	
+			
+				
+							
+			
+						
+				
+					<meta name="description" content="A personal certificate is the end of a certificate chain. It will be issued to (named) [your name] or " persona="" not="" validated"="" and="" can="" be="" found="" in="" the="" personal="" folders="" your="" certificate="" stores.=""  ="" there="" are="" two="" types="" of"="">									
+				
+				
+		
+	
+		
+	
+	
+			
+			<script type="text/javascript" src="Moving%20Certificates%20%28Symantec%29_files/jquery_002.js"></script>
+			<script type="text/javascript" src="Moving%20Certificates%20%28Symantec%29_files/smart-btn.js"></script>
+			<script src="Moving%20Certificates%20%28Symantec%29_files/common.js" language="javascript" type="text/javascript"></script>
+			<script src="Moving%20Certificates%20%28Symantec%29_files/cookies.js" language="javascript" type="text/javascript"></script>
+			<script language="javascript" type="text/javascript">
+			<!--
+				function changeVal(objevent) {
+					if (objevent.which == 13) {
+						document.question_form.submit();
+					}
+				}
+
+				function Sendemail(strName, strDomain) {
+					document.location.href = "mailto:" + strName + "@"
+							+ strDomain;
+				}
+
+				function WriteMail(strName, strDomain) {
+					document.write("<a href=\"javascript:Sendemail('" + strName
+							+ "', '" + strDomain + "');\">" + strName + '@'
+							+ strDomain + "</a>");
+				}
+
+				function changeStyles() {
+					defaultSheet = document.getElementById('largefont');
+					defaultSheet.disabled = true;
+					defaultSheet = document.getElementById('mediumfont');
+					defaultSheet.disabled = true;
+					newSheet = document.getElementById('smallfont');
+					newSheet.disabled = false;
+				}
+
+				function changeStyles2() {
+					defaultSheet = document.getElementById('smallfont');
+					defaultSheet.disabled = true;
+					defaultSheet = document.getElementById('largefont');
+					defaultSheet.disabled = true;
+					newSheet = document.getElementById('mediumfont');
+					newSheet.disabled = false;
+				}
+
+				function changeStyles3() {
+					defaultSheet = document.getElementById('smallfont');
+					defaultSheet.disabled = true;
+					defaultSheet = document.getElementById('mediumfont');
+					defaultSheet.disabled = true;
+					newSheet = document.getElementById('largefont');
+					newSheet.disabled = false;
+				}
+
+				function smtxt() {
+					if (document.images)
+						document.Text.src = '/images/font_01.gif'
+				}
+				function medtxt() {
+					if (document.images)
+						document.Text.src = '/images/font_02.gif'
+				}
+				function lgtxt() {
+					if (document.images)
+						document.Text.src = '/images/font_03.gif'
+				}
+
+				var expiration = new Date();
+				expiration.setTime(expiration.getTime() + 60000000);
+
+				function alter(a) {
+					for (i = 0; i != a.length; i++) {
+						a[i].innerHTML = "<a href=\"\">" + a[i].innerHTML
+								+ "</a>";
+					}
+				}
+			// -->
+			</script>
+			
+		
+<script src="Moving%20Certificates%20%28Symantec%29_files/II3_Servers.js" type="text/javascript" defer="defer" id="II3_Servers.js"></script><script src="Moving%20Certificates%20%28Symantec%29_files/geoipAPI.js" type="text/javascript" defer="defer" id="geoipAPI.js"></script><script src="Moving%20Certificates%20%28Symantec%29_files/II3_Rules.js" type="text/javascript" defer="defer" id="II3_Rules.js"></script></head>
+
+
+<body>
+	
+			<!-- Google Tag Manager -->
+				<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PD7RP5"
+				height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+				<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','dataLayer','GTM-PD7RP5');</script>
+			<!-- End Google Tag Manager -->
+		
+	
+
+	<script language="javascript" type="text/javascript">
+	<!-- Initialize font text size
+		if (GetCookie('fontsize_stylesheet') == "3") {
+			changeStyles3();
+		} else if (GetCookie('fontsize_stylesheet') == "2") {
+			changeStyles2();
+		} else {
+			changeStyles();
+		}
+	// -->
+	</script>
+	
+
+<script language="JavaScript">
+var isSecureRequest = false;
+/* Cenzic : Added for Click jacking remediation */
+if (top.frames.length!=0)
+	top.location=self.document.location;
+</script>
+
+
+<div class="center">
+
+
+	  	
+		
+
+				
+			
+					
+						
+							
+								<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-store">
+<link rel="stylesheet" type="text/css" href="Moving%20Certificates%20%28Symantec%29_files/verisign.css" media="screen">
+<link rel="stylesheet" type="text/css" href="Moving%20Certificates%20%28Symantec%29_files/verisign-new.css" media="screen">
+<link rel="stylesheet" type="text/css" href="Moving%20Certificates%20%28Symantec%29_files/shared.css" media="screen">
+<script src="Moving%20Certificates%20%28Symantec%29_files/gm.js" language="javascript" type="text/javascript"></script><style type="text/css">.menuFrame{visibility:hidden;}</style>
+
+<script src="Moving%20Certificates%20%28Symantec%29_files/oo-engine.js" language="javascript" type="text/javascript"></script>
+<style type="text/css">.nav_arrow_active, #global-header ul#main li a span.nav-arrow {background-image: none;}</style>
+<!--[if IE 6]>
+			<style type="text/css">
+				div.prevNext {margin-left: 38px;}
+				#hpBanner {margin-bottom: 0px;}
+				div#AC3 {margin-top: -2px;}  
+				div.acceleratorColL div {padding-bottom: 9px;}
+				#wws-box #closeBox{top:8px;}
+			</style>
+		<![endif]-->
+<!--Begin Header-->
+<div id="global-header">
+	<p id="site_logo"><a title="Now from Symantec - Symantec Authentication Services" href="http://www.symantec.com/ssl-certificates/?tid=header-logo"><img src="Moving%20Certificates%20%28Symantec%29_files/en_us_symc-auth_logo.png"></a></p>
+	<div id="quick_links">
+		<ul class="quick_links_list">
+			<li class="country_selector"><strong>United States</strong> [<a href="#" class="change_country">change</a>]
+				<div class="country_box" style="display: none;">
+					<ul class="first">
+						<a class="closeBox" href="#">Close</a>
+						<li><a href="https://www.symantec.com/es/mx/ssl-certificates/">Argentina</a></li>
+						<li><a href="https://www.symantec.com/en/au/ssl-certificates/">Australia</a></li>
+						<li><a href="https://www.symantec.com/en/uk/ssl-certificates-emea/">Belgium</a></li>
+						<li><a href="https://www.symantec.com/pt/br/ssl-certificates/">Brazil</a></li>
+						<li><a href="https://www.symantec.com/en/ca/ssl-certificates/">Canada</a></li>
+						<li><a href="https://www.symantec.com/es/mx/ssl-certificates/">Chile</a></li>
+						<li><a href="https://www.symantec.com/zh/cn/ssl-certificates/">China</a></li>
+					</ul>
+					<ul>
+						<li><a href="https://www.symantec.com/da/dk/ssl-certificates/">Denmark</a></li>
+						<li><a href="https://www.symantec.com/fr/fr/ssl-certificates/">France</a></li>
+						<li><a href="https://www.symantec.com/de/de/ssl-certificates/">Germany</a></li>
+						<li><a href="https://www.symantec.com/en/hk/ssl-certificates/">Hong Kong</a></li>
+						<li><a href="https://www.symantec.com/en/in/ssl-certificates/">India</a></li>
+						<li><a href="https://www.symantec.com/it/it/ssl-certificates/">Italy</a></li>
+						<li><a href="https://www.jp.websecurity.symantec.com/">Japan</a></li>
+					</ul>
+					<ul>
+						<li><a href="https://www.symantec.com/es/mx/ssl-certificates/">Latin America</a></li>
+						<li><a href="https://www.symantec.com/es/mx/ssl-certificates/">Mexico</a></li>
+						<li><a href="https://www.symantec.com/en/uk/ssl-certificates-emea/">Netherlands</a></li>
+						<li><a href="https://www.symantec.com/en/au/ssl-certificates/">New Zealand</a></li>
+						<li><a href="https://www.symantec.com/en/sg/ssl-certificates">Singapore</a></li>
+						<li><a href="https://www.symantec.com/es/es/ssl-certificates/">Spain</a></li>
+						<li><a href="https://www.symantec.com/sv/se/ssl-certificates/">Sweden</a></li>
+					</ul>
+					<ul class="last">
+						<li><a href="https://www.symantec.com/de/de/ssl-certificates/">Switzerland</a></li>
+						<li><a href="https://www.symantec.com/zh/tw/ssl-certificates/">Taiwan</a></li>
+						<li><a href="https://www.symantec.com/en/uk/ssl-certificates/">United Kingdom</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="http://www.symantec.com/page.jsp?id=contact-authentication-services">Contact Symantec</a></li>
+		</ul>
+		<div id="header_seal">
+			<script type="text/javascript" src="Moving%20Certificates%20%28Symantec%29_files/getseal"></script><img name="seal" src="Moving%20Certificates%20%28Symantec%29_files/getseal.gif" oncontextmenu="return false;" usemap="#sealmap_small" alt="" border="0"> <map name="sealmap_small" id="sealmap_small"><area alt="Click to Verify - This site has chosen an SSL Certificate to improve Web site security" title="" href="javascript:vrsn_splash()" shape="rect" coords="0,0,100,50" tabindex="-1" style="outline:none;"><area alt="Click to Verify - This site has chosen an SSL Certificate to improve Web site security" title="" href="javascript:vrsn_splash()" shape="rect" coords="0,50,53,72" tabindex="-1" style="outline:none;"><area alt="" title="" href="javascript:symcBuySSL()" shape="rect" coords="53,50,100,72" style="outline:none;"></map>	
+		</div>
+	</div>
+	<div id="header_nav">
+		<ul id="main">
+			<li class="left" id="psNav"><a href="http://www.symantec.com/ssl-certificates/?tid=gnps">Products &amp; Services<span class="nav-arrow" id="psNav a span.nav-arrow"></span></a></li>
+			<li id="partnersNav"><a href="http://www.symantec.com/partners/theme.jsp?themeid=wspp">Partners<span class="nav-arrow" id="partnersNav a span.nav-arrow"></span></a></li>
+			<li id="supportNav"><a href="http://www.symantec.com/contactsupport/">Support<span class="nav-arrow" id="supportNav a span.nav-arrow"></span></a></li>
+			<li class="right" id="myaccountNav"><a href="https://www.symantec.com/theme.jsp?themeid=verisign-my-account&amp;inid=vrsn_symc_ssl_MyAccount">My Account<span class="nav-arrow" id="myaccountNav a span.nav-arrow"></span></a></li>
+		</ul>
+	</div>
+<div class="flyout" id="psNavflyout">
+		<ul class="fly_mainnav">
+			<li><a href="http://www.symantec.com/ssl-certificates/?tid=gnps">SSL Certificates</a></li>
+			<li><a href="http://www.symantec.com/trust-seal/?tid=gnps">Symantec™ Safe Site</a></li>
+			<li><a href="http://www.symantec.com/products-solutions/families/?fid=code-signing">Code Signing</a></li>
+			<li><a href="http://www.symantec.com/user-authentication/">Two-Factor Authentication</a></li>
+			<li><a href="http://www.symantec.com/user-authentication/">Risk-Based Authentication</a></li>
+			<li><a href="http://www.symantec.com/managed-pki-service/">Public Key Infrastructure (PKI) Services</a></li>
+			<li><a href="http://www.symantec.com/products-solutions/"><strong>All Products and Services</strong></a></li>
+		</ul>
+		<div class="fly_greybox">
+			<div class="grey-tl">
+				<div class="grey-tr">
+					<div class="grey-bl">
+						<div class="grey-br">
+							<div class="greybox-left">
+								<h4>I NEED TO</h4>
+								<ul>
+									<li><a style="font-size: 12px;" href="http://www.symantec.com/page.jsp?id=ssl-information-center">Secure My Website</a></li>
+									<li><a style="font-size: 12px;" href="http://www.symantec.com/ssl-certificates/certificate-intelligence-center/?tid=gn-i_need_to">Manage My Security Infrastructure</a></li>
+									<li><a style="font-size: 12px;" href="http://www.symantec.com/page.jsp?id=ssl-information-center">Increase Consumer Confidence</a></li>
+									<li><a style="font-size: 12px;" href="http://www.symantec.com/theme.jsp?themeid=user-authentication">Detect Fraud Online</a></li>
+									<li><a style="font-size: 12px;" href="http://www.symantec.com/products-solutions/families/?fid=code-signing">Digitally Sign My Code</a></li>
+								</ul>
+							</div>
+							<div class="greybox-right">
+								<h4>INFORMATION FOR</h4>
+								<ul>
+									<li><a style="font-size: 12px;" href="http://www.symantec.com/page.jsp?id=ssl-information-center">Enterprise</a></li>
+									<li><a style="font-size: 12px;" href="http://www.symantec.com/page.jsp?id=ssl-information-center">Small Business</a></li>
+								</ul>
+							</div>
+							<div class="clearfloats">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="flyout" id="partnersNavflyout" style="display: none;">
+		<ul class="fly_mainnav">
+			<li><a href="http://partnernet.symantec.com/?tid=gnpartners">SSL Partner Programs</a></li>
+			<li><a href="http://partnernet.symantec.com/?tid=gnps">Symantec™ Safe Site Partner Program</a></li>
+			<li><a href="http://partnernet.symantec.com/">Authentication Partner Programs</a></li>
+			<li><a href="http://partnernet.symantec.com/?tid=gnpartners"><strong>All Partner Programs</strong></a></li>
+		</ul>
+		<div class="fly_greybox">
+			<div class="grey-tl">
+				<div class="grey-tr">
+					<div class="grey-bl">
+						<div class="grey-br">
+							<div class="greybox-left">
+								<h4>PARTNER CENTRE</h4>
+								<p>SSL and Symantec™ Safe Site partner resources.</p>
+								<div class="partner_form">
+									<form target="_blank" action="https://products.websecurity.symantec.com/geocenter/reseller/logon.do" method="post" id="partner_login" name="logonForm">
+									<div>
+										<label for="userName">User name:</label>
+										<input maxlength="100" size="16" name="userName" id="partner_username" type="text">
+									</div>
+									<div>
+										<label for="password">Password:</label>
+										<input maxlength="20" size="16" name="password" id="partner_password" autocomplete="off" type="password">
+									</div>
+									<p><input value="Sign In" name="submit" class="partner_form_submit" type="submit"></p>
+									</form>
+								</div>
+								<p class="small"><a href="https://http//partnernet.symantec.com/" rel="external">Email support for login help.</a></p>
+							</div>
+							<div class="greybox-right">
+								<h4>BECOME A PARTNER</h4>
+								<ul>
+									<li><a href="http://partnernet.symantec.com/?tid=gnpartners">Become an SSL Partner</a></li>
+									<li><a href="http://partnernet.symantec.com/?tid=gnpartners">Become a Symantec™ Safe Site Partner</a></li>
+									<li><a href="http://partnernet.symantec.com/">Become a Technical Alliance Partner</a></li>
+									<li><a href="http://partnernet.symantec.com/">Become an Authentication Services Reseller</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="promo-link" href="http://partnernet.symantec.com/?tid=gnpartners-promo"><img alt="Featured SSL Partners" src="Moving%20Certificates%20%28Symantec%29_files/en_uk_partners-featured-ssl-promo.jpg" width="170" height="231"></a>
+	</div>
+	<script type="text/javascript">
+		supportUrlStart = 'https://knowledge.symantec.com/support/';
+		supportUrlLocale = 'en_US';
+	</script>
+	<div class="flyout" id="supportNavflyout" style="display: none;">
+		<ul class="fly_mainnav">
+			<li><a href="https://knowledge.symantec.com/support/ssl-certificates-support/index.html?tid=gnps">SSL Certificates Support</a></li>
+			<li><a href="https://knowledge.symantec.com/support/trust-seal-support/index.html?tid=gnps">Symantec™ Safe Site Support</a></li>
+			<li><a href="https://knowledge.symantec.com/support/code-signing-support/index.html?tid=gnpartners">Code Signing Support</a></li>
+			<li><a href="https://knowledge.symantec.com/support/digital-id-support/index.html?tid=gnpartners">Digital IDs for Secure Email Support</a></li>
+			<li><a href="https://knowledge.symantec.com/support/mpki-support/index.html?tid=gnpartners">Managed PKI Support</a></li>
+			<li><a href="http://www.symantec.com/page.jsp?id=authentication-services-support"><strong>All Support</strong></a></li>
+		</ul>
+		<div class="fly_greybox">
+			<div class="grey-tl">
+				<div class="grey-tr">
+					<div class="grey-bl">
+						<div class="grey-br">
+							<h4>KNOWLEDGE CENTRE</h4>
+							<p id="support-form-info">Get answers to your questions.</p>
+							<form method="get" id="supportfrmsearch" action="">
+							<fieldset id="support_fieldset">
+								<div>
+									<select id="support_dd">
+										<option value="" selected="selected">Step 1: Select a product</option>
+										<option value="ssl-certificates-support">SSL Certificates Support</option>
+										<option value="trust-seal-support">Symantec™ Safe Site Support</option>
+										<option value="code-signing-support">Code Signing Support</option>
+										<option value="digital-id-support">Digital IDs for Secure Email Support</option>
+										<option value="mpki-support">Managed PKI Support</option>
+										<option value="mpki-for-ssl-support">Managed PKI for SSL Support</option>
+										<option value="ua-support">VIP Authentication Service Support</option>
+										<option value="identity-protection-support">VIP Access for Mobile</option>
+										<option value="identity-protection-support">Identity Protection Centre Support</option>
+										<option value="fraud-detection-support">VIP Fraud Detection Service Support</option>
+									</select></div>
+								<div class="inputLimiter"><input value="Step 2: Ask a question" id="support_input"></div>
+								<a href="#" id="support_search_btn"></a>
+							</fieldset>
+							<p class="small">Example: What is Seal-in-Search?</p>
+							<div class="flyout-error" id="support-error">Error: Please complete both steps.</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="promo-link" href="https://knowledge.symantec.com/support/ssl-certificates-support/index.html?tid=gnpartnersupport-promo"><img alt="Knowledge Centre. 24/7 help with your SSL Certificates and additional Trust services. Get help &gt;" src="Moving%20Certificates%20%28Symantec%29_files/en_uk_support-promo.jpg" width="170" height="183"></a>
+	</div>
+	<div class="flyout" id="myaccountNavflyout">
+		<div class="fly_nav">
+			<h4>SSL Certificates</h4>
+			<ul class="fly_mainnav bottommargin8">
+				<li><a href="https://trustcenter.websecurity.symantec.com/process/retail/console_login?application_locale=VRSN_US">Symantec™ Trust Centre Sign In</a></li>
+			</ul>
+			<h4>Symantec™ Safe Site</h4>
+			<ul class="fly_mainnav bottommargin8">
+				<li><a href="https://trustcenter.websecurity.symantec.com/process/retail/console_login?application_locale=VRSN_US">Symantec™ Trust Centre Sign In</a></li>
+			</ul>
+		</div>
+		<div class="fly_nav norightborder-ie6">
+			<h4>Code Signing</h4>
+			<ul class="fly_mainnav bottommargin45">
+				<li><a href="javascript:linkPopUp('https://cc-admin.geotrust.com/geocenter/reseller/logon.do');">Code Signing Portal for Microsoft Windows Mobile Sign In</a><br><span class="small">(Requires a valid Administrator ID.)</span></li>
+			</ul>
+			<h4>Partners</h4>
+			<ul class="fly_mainnav">
+				<li><a href="javascript:linkPopUp('https://products.websecurity.symantec.com/geocenter/reseller/logon.do');">Symantec™ Partner Centre Sign In</a></li>
+			</ul>
+		</div>
+		<div class="fly_greybox">
+			<div class="grey-tl">
+				<div class="grey-tr">
+					<div class="grey-bl">
+						<div class="grey-br">
+							<h4>CHECK ORDER STATUS</h4>
+							<form target="_top" id="myacc_search" action="https://products.websecurity.symantec.com/orders/orderinformation/authentication.do" method="post">
+							<fieldset id="myacc_fieldset">
+								<div class="inputLimiter"><input id="myacc_input" size="42" name="order_number" type="text"></div>
+								<input name="application_locale" value="VRSN_US" type="hidden">
+								<a href="#" id="myacc_search_btn"></a>
+							</fieldset>
+							<p class="small">Enter the order number from your confirmation email.</p>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--End Header-->
+							
+							
+								
+									
+							
+						
+
+					
+
+				
+
+
+
+
+	
+
+
+
+
+	<div id="overall">
+		<div class="contentbody">
+			<a name="content"></a>
+			<!--SC_COMMENT_REPLACE-->
+			<table width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody><tr>
+					<td valign="top">
+						
+						<div class="leftcentercolumn" id="content">
+							
+
+
+
+
+
+
+<div class="node">
+	
+ 
+
+ 
+
+
+
+
+
+<script language="javascript">
+	function OpenEmailArticleWindow(querystring)
+	{
+		LeftPosition = (screen.width) ? (screen.width)/10 : 0;
+		TopPosition = (screen.height) ? (screen.height)/10 : 0;
+		settings = 'menubar=no,height=424,width=600,resizable=no,scrollbars=yes'
+		hWin = window.open(querystring, "SaveArticle", settings, true);
+		hWin.focus();
+		if (hWin.opener == null) hWin.opener = self;
+	}
+	</script>
+
+ 
+
+
+
+					
+			
+				
+					
+						
+					
+				
+			
+		
+
+
+
+
+
+
+
+
+		
+		<div class="node SOLUTION">
+		
+
+
+
+
+
+		
+		
+			
+				
+			
+			
+				
+					<div id="breadCrumb">
+					
+						
+							
+								
+									
+								
+								
+									
+								
+								
+							
+						
+							
+								
+									
+								
+								
+									
+								
+								
+							
+						
+							
+								
+									
+								
+								
+									
+								
+								
+							
+						
+					
+					<span class="bc"><a class="bc" href="http://www.symantec.com/user-authentication/">US Home</a></span>&nbsp;&gt;&nbsp;<span class="bc"><a class="bc" href="http://www.symantec.com/contactsupport/">Support</a></span>&nbsp;&gt;&nbsp;<span class="bc"><a class="bc" href="https://knowledge.symantec.com/support/eca-support/index?page=home">ECA Certificates Support</a></span>
+					
+								
+									
+										
+									
+								
+								&gt;
+									<span class="bcCurrent">
+										Solution Details
+									</span>
+					</div>
+				
+			
+		
+	
+	
+
+
+			
+			
+		
+			
+				
+				<div class="im-page-subtitle">How to backup, export, move, and install Personal Certificates that have been picked up or previously installed.</div><div class="im-buttons">
+			<table cellspacing="0" cellpadding="3" border="0">
+			<tbody>
+			  <tr><td class="im-icon"><a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;id=SO6063&amp;pmv=print&amp;actp=PRINT">
+			<img src="Moving%20Certificates%20%28Symantec%29_files/printer3_16x16.gif" alt="Printer Friendly Version" width="16" height="16" border="0"></a> </td>
+			<td class="im-icon-label"><a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;id=SO6063&amp;pmv=print&amp;actp=PRINT">
+			Printer Friendly</a> </td>
+			
+			
+			
+			</tr>
+			</tbody>
+			</table>
+			</div><br>
+		
+		<div id="ratingsBox">
+		
+		<table class="floatLeft" cellspacing="0" cellpadding="2" border="0">
+		  <tbody><tr>
+		    <td width="60%" valign="top" align="right">
+				<table class="floatLeft" cellspacing="0" cellpadding="2" border="0">
+				  <tbody><tr>
+					<td align="right">				
+					<strong>Solution ID:</strong></td>
+					<td>&nbsp;&nbsp;</td>
+					<td>SO6063</td>
+					
+				  
+					<td width="150">&nbsp;&nbsp;</td>
+					<td align="right"><strong>Updated:</strong></td>
+					<td>&nbsp;&nbsp;</td>
+					<td>03/07/2016</td>
+					
+				  					
+					
+				  </tr>
+				  
+				  
+				  <!--
+				   <tr>
+					<td align="right"><strong>Status:</strong></td>
+					<td>&nbsp;&nbsp;</td>
+					<td>Published</td>
+				  </tr> -->
+				  <!-- ERQ 6132 - Hide published date
+				   <tr>
+					<td align="right"><strong>Published:</strong></td>
+					<td>&nbsp;&nbsp;</td>
+					<td>12/13/2007</td>
+				  </tr>
+				  -->
+				  
+
+				  
+				</tbody></table>
+			</td>	
+			<td width="40%">
+			
+			</td>
+			
+		</tr>
+		</tbody></table>		
+		</div>		
+		
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+<div class="attr PROBLEM">
+	<h3>
+		Problem
+	</h3>
+	<div class="content">
+	
+		
+	
+	<div><span style="font-family: times new roman,serif"><span style="font-size: 12pt">You need to:</span></span></div>
+
+<ul>
+	<li><span style="font-family: times new roman,serif"><span style="font-size: 12pt">Backup a personal certificate</span></span></li>
+	<li><span style="font-family: times new roman,serif"><span style="font-size: 12pt">Setup a different computer to use the USB token or Smart Cards</span></span></li>
+	<li><span style="font-family: times new roman,serif"><span style="font-size: 12pt">Export a personal certificate</span></span></li>
+	<li><span style="font-family: times new roman,serif"><span style="font-size: 12pt">Import a personal certificate</span></span></li>
+	<li><span style="font-family: times new roman,serif"><span style="font-size: 12pt">Move a personal certificate to another browser, mail client, or computer</span></span></li>
+	<li><span style="font-family: times new roman,serif"><span style="font-size: 12pt">Install a personal certificate on more than one browser or mail client on the same computer</span></span></li>
+</ul>
+</div>
+</div>
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+<div class="attr SOLUTION1">
+	<h3>
+		Solution
+	</h3>
+	<div class="content">
+	
+		
+	
+	<p><span style="font-family: times new roman,serif"><span style="font-size: 12pt"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">A
+ personal certificate is the end of a certificate chain. It will be 
+issued to (named) [your name] or "Persona Not Validated" and can be 
+found in the personal folders in your certificate stores.</span></span><br>
+&nbsp;<br>
+<span style="font-family: times new roman,serif"><span style="font-size: 12pt">There are two types of personal certificates: <strong>Identity</strong> and <strong>Encryption</strong>.&nbsp; Our Digital ID for Secure Email product is an encryption certificate only (which is why it is issued to </span></span><span style="font-size: 16px; font-family: 'times new roman', serif; line-height: 25px">"Persona Not Validated"</span><span style="font-family: times new roman,serif"><span style="font-size: 12pt">).&nbsp; Our ECA Certificates come with both an Identity certificate and an Encryption certificate.</span></span><br>
+&nbsp;<br>
+<span style="font-family: times new roman,serif"><span style="font-size: 12pt">Choose
+ your activity on the left and follow the steps in the right hand 
+column. &nbsp;Example: If you need to move your identity certificate to a
+ new computer for authenticating with an entity (such as the Department 
+of Defense), you would follow steps 1-3 next to Move Certificates in the
+ table below. &nbsp;If this example were done through Internet Explorer,
+ you would use articles SO7079, SO10186, and&nbsp;SO7085.</span></span></span></span></p>
+
+<table style="border-top: medium none; border-right: medium none; border-collapse: collapse; border-bottom: medium none; margin-left: 5.4pt; border-left: medium none" width="641" height="133" cellspacing="0" cellpadding="0" border="1">
+	<tbody>
+		<tr style="height: 23px">
+			<td style="border-top: windowtext 1pt solid; height: 23px; border-right: windowtext 1pt solid; width: 192px; background: #ffc000; border-bottom: windowtext 1pt solid; padding-bottom: 0in; padding-top: 0in; padding-left: 5.4pt; border-left: windowtext 1pt solid; padding-right: 5.4pt"><strong><span style="font-family: times new roman,serif"><span style="font-size: 12pt">Activity</span></span></strong></td>
+			<td style="border-top: windowtext 1pt solid; height: 23px; border-right: windowtext 1pt solid; width: 444px; background: #ffc000; border-bottom: windowtext 1pt solid; padding-bottom: 0in; padding-top: 0in; padding-left: 5.4pt; border-left: medium none; padding-right: 5.4pt"><strong><span style="font-family: times new roman,serif"><span style="font-size: 12pt">Steps</span></span></strong> <em>(complete each step in order)</em></td>
+		</tr>
+		<tr style="height: 22px">
+			<td style="border-top: medium none; height: 22px; border-right: windowtext 1pt solid; width: 192px; border-bottom: windowtext 1pt solid; padding-bottom: 0in; padding-top: 0in; padding-left: 5.4pt; border-left: windowtext 1pt solid; padding-right: 5.4pt"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">Backup Certificates</span></span></td>
+			<td style="border-top: medium none; height: 22px; border-right: windowtext 1pt solid; width: 444px; border-bottom: windowtext 1pt solid; padding-bottom: 0in; padding-top: 0in; padding-left: 5.4pt; border-left: medium none; padding-right: 5.4pt"><strong><span style="font-family: times new roman,serif"><span style="font-size: 12pt">1.</span></span></strong><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> Export certificate(s)</span></span></td>
+		</tr>
+		<tr style="height: 21px">
+			<td style="border-top: medium none; height: 21px; border-right: windowtext 1pt solid; width: 192px; border-bottom: windowtext 1pt solid; padding-bottom: 0in; padding-top: 0in; padding-left: 5.4pt; border-left: windowtext 1pt solid; padding-right: 5.4pt"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">Move Certificates</span></span></td>
+			<td style="border-top: medium none; height: 21px; border-right: windowtext 1pt solid; width: 444px; border-bottom: windowtext 1pt solid; padding-bottom: 0in; padding-top: 0in; padding-left: 5.4pt; border-left: medium none; padding-right: 5.4pt"><strong><span style="font-family: times new roman,serif"><span style="font-size: 12pt">1.</span></span></strong><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> Export certificate(s)&nbsp;<strong>2.</strong> Install intermediate/root certificates&nbsp;</span></span><strong style="font-size: 16px; font-family: 'times new roman', serif; line-height: 25px">3.</strong><span style="font-size: 16px; font-family: 'times new roman', serif; line-height: 25px">&nbsp;Import certificate(s)</span></td>
+		</tr>
+		<tr style="height: 20px">
+			<td style="border-top: medium none; height: 20px; border-right: windowtext 1pt solid; width: 192px; border-bottom: windowtext 1pt solid; padding-bottom: 0in; padding-top: 0in; padding-left: 5.4pt; border-left: windowtext 1pt solid; padding-right: 5.4pt"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">Certificate on Mail Client</span></span></td>
+			<td style="border-top: medium none; height: 20px; border-right: windowtext 1pt solid; width: 444px; border-bottom: windowtext 1pt solid; padding-bottom: 0in; padding-top: 0in; padding-left: 5.4pt; border-left: medium none; padding-right: 5.4pt"><strong><span style="font-family: times new roman,serif"><span style="font-size: 12pt">1.</span></span></strong><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> Move certificate (steps as above)&nbsp; <strong>2.</strong> Associate with mail client</span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><u><span style="font-family: times new roman,serif"><span style="font-size: 12pt">How to <strong>export </strong>Symantec personal certificates:&nbsp;</span></span></u></p>
+
+<p><u><a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;actp=CROSSLINK&amp;id=SO7079" target="_blank"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">SO7079</span></span></a></u><span style="font-family: times new roman,serif"><span style="font-size: 12pt">&nbsp;Chrome and Microsoft Internet Explorer (On PC)</span></span><br>
+<u><a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;actp=CROSSLINK&amp;id=SO4291" target="_blank"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">SO4291</span></span></a></u><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> Mozilla Firefox (On PC and Mac)</span></span><br>
+<u><a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;actp=CROSSLINK&amp;id=SO2139" target="_blank"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">SO2139</span></span></a></u><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> Netscape&nbsp;</span></span><br>
+<u><a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;id=SO28421"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">SO28421</span></span></a></u><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> Mac Keychain</span></span><br>
+<u><a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;id=SO10780"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">SO10780</span></span></a></u><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> Export from Outlook</span></span><br>
+&nbsp;<br>
+<br>
+<u><span style="font-family: times new roman,serif"><span style="font-size: 12pt">How to <strong>import </strong>Symantec personal certificates:&nbsp;</span></span></u><br>
+<u><a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;actp=CROSSLINK&amp;id=SO7085" target="_blank"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">SO7085</span></span></a></u><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> Chrome and Microsoft Internet Explorer (On PC)</span></span><br>
+<u><a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;actp=CROSSLINK&amp;id=SO5437" target="_blank"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">SO5437</span></span></a></u><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> Mozilla Firefox (On PC and Mac)</span></span><br>
+<u><a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;actp=CROSSLINK&amp;id=SO2800" target="_blank"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">SO2800</span></span></a></u><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> Netscape</span></span><br>
+<u><a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;id=SO5181" target="_blank"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">SO5181</span></span></a></u><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> Mac Keychain</span></span><br>
+&nbsp;<br>
+<br>
+<u><span style="font-family: times new roman,serif"><span style="font-size: 12pt">How to <strong>associate</strong> certificates for use within <strong>mail clients</strong>:</span></span></u><br>
+<u><a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;actp=CROSSLINK&amp;id=SO10781" target="_blank"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">SO10781</span></span></a></u><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> Outlook/Outlook Express (all versions for PC) </span></span><br>
+<u><a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;actp=CROSSLINK&amp;id=SO6722" target="_blank"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">SO6722</span></span></a></u><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> Outlook/Entourage (all versions for Mac)</span></span><br>
+<u><a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;actp=CROSSLINK&amp;id=SO4292" target="_blank"><span style="font-family: times new roman,serif"><span style="font-size: 12pt"><u>SO4292</u></span></span></a></u><a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;actp=CROSSLINK&amp;id=SO4292" target="_blank"><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> </span></span></a><span style="font-family: times new roman,serif"><span style="font-size: 12pt">Mozilla Thunderbird </span></span><br>
+<a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;actp=CROSSLINK&amp;id=SO10732" target="_blank"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">SO10732</span></span></a><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> Windows Mail</span></span><br>
+<a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;id=SO28425"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">SO28425</span></span></a><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> Apple Mail</span></span><br>
+<a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;id=INFO646"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">INFO646</span></span></a><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> Lotus Notes</span></span><br>
+<strong><span style="font-family: times new roman,serif"><span style="font-size: 12pt">**Not finding your Mail client?</span></span></strong><span style="font-family: times new roman,serif"><span style="font-size: 12pt">&nbsp; Request a walk through from </span></span><a href="mailto:eca_support@symantec.com?subject=eca_support@symantec.com"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">eca_support@symantec.com</span></span></a><span style="font-family: times new roman,serif"><span style="font-size: 12pt">.</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><u><span style="font-family: times new roman,serif"><span style="font-size: 12pt">How to<strong> use</strong> Token or Smart Card on another computer:</span></span></u><br>
+<a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;id=SO28695"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">SO28695</span></span></a><span style="font-family: times new roman,serif"><span style="font-size: 12pt"> Mac and PC</span></span></p>
+
+<p><br>
+<u><span style="font-family: times new roman,serif"><span style="font-size: 12pt">Install <strong>Intermediate</strong> and <strong>Root</strong> Certificates:</span></span><br>
+<a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;id=SO10186"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">SO10186 - ECA Intermediate and Root Certificates</span></span></a><br>
+<a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;id=SO6395"><span style="font-family: times new roman,serif"><span style="font-size: 12pt">SO6395 - Digital ID Intermediate and Root Certificates</span></span></a></u></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</div>
+</div>
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+<div class="ATTACHMENTS">
+			  
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+			
+		
+	
+
+			</div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+<div class="REFERENCE">
+			  
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+			
+		
+	
+
+			</div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+<div class="attr LEGACY_ID">
+	<h3>
+		Legacy ID
+	</h3>
+	<div class="content">
+	
+		
+	
+	vs42063</div>
+</div>
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+
+
+<div class="INTERNAL_NOTES">
+			  
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+			
+		
+	
+
+			</div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+				
+					
+				
+		
+				<div id="ratingsBox">
+				<table class="floatLeft" cellspacing="0" cellpadding="2" border="0">
+				  <tbody><tr>			
+					<td width="70%">
+						
+
+	
+<table width="100%">
+	<tbody><tr><td>
+	<form action="index" id="ratingForm" method="post" enctype="multipart/form-data" onsubmit="return checkRatingForm()" novalidate="novalidate">
+<div><input name="action" value="TakeSurveyAction" type="hidden"></div>
+<div><input name="success" value="XaKSeeArSfyMFfo77pv!nKIexC0F3FpI1o5bIiTWE1PeCNvI7eHlEBAnG2ZJFXFdwKBZogRs12YPuWjbLWLsLw01uInuQ!Eyvgm9j63nL0I=" type="hidden"></div>
+<div><input name="error" value="XzvkVbxZefLVRh7ScAk1BsUwtcPyEucvzfK!J7ya6jcKBcwPqowM9LjEDH5en6MYGcaGOlLMgXBJbCTVt-!4XA==" type="hidden"></div>
+<div><input name="surveyid" value="e52aeaa988694b58907ad3ba933827a6" type="hidden"></div>
+<div><input name="contentid" value="a676a4f760b8431f97b282db59b2a10c" type="hidden"></div>
+
+		
+			
+				
+					
+					
+						<div class="ratingContainer floatLeft">
+						  <table width="100%">
+							<tbody><tr>
+								<td class="im-feedback-radio-question">
+									Did this article resolve your issue?
+								</td>
+							
+								
+									<td class="im-feedback-radio-answer">
+										<input name="RADIO_BUTTON:fdb0c9b5b2eb4021ba81062b66a05c15" value="1:d51cdda9041f4685b9cffeb6fa397b2d" type="radio"> Yes
+									</td>
+								
+							
+								
+									<td class="im-feedback-radio-answer">
+										<input name="RADIO_BUTTON:fdb0c9b5b2eb4021ba81062b66a05c15" value="2:d4fb18d1f1224beda197736e3e8802f2" type="radio"> No
+									</td>
+								
+							
+							</tr>
+						  </tbody></table>
+						</div>
+						
+						
+								
+				
+			
+		
+			
+				
+					
+					
+						<div class="ratingContainer floatLeft">
+						  <table width="100%">
+							<tbody><tr>
+								<td class="im-feedback-radio-question">
+									Did this article save you the trouble of contacting technical support?
+								</td>
+							
+								
+									<td class="im-feedback-radio-answer">
+										<input name="RADIO_BUTTON:91ef3528ddfc4e17a6d5ac84f62c2b76" value="1:f8281bc5ec08427383a42f1924d13764" type="radio"> Yes
+									</td>
+								
+							
+								
+									<td class="im-feedback-radio-answer">
+										<input name="RADIO_BUTTON:91ef3528ddfc4e17a6d5ac84f62c2b76" value="2:113da50419184a9a8e8e0d459e890a99" type="radio"> No
+									</td>
+								
+							
+							</tr>
+						  </tbody></table>
+						</div>
+						
+						
+								
+				
+			
+		
+			
+				
+					<div class="floatLeft" id="optRatingTextbox">
+		               <table width="100%">
+		               	<tbody><tr>	
+							<td class="im-feedback-textarea-question"> How can we make this article more helpful?</td>						
+							
+																
+									<td class="im-feedback-textarea-answer"><label><textarea rows="8" cols="40" name="TEXT_AREA:e4c84804e0784ecea2876d6be8b1c89f:46ac53dad33241f6872f0e3459ed0670" class="xmleditfield"></textarea></label> </td>
+								
+							
+						</tr>
+								
+				
+			
+		
+			
+				
+						
+						<tr>								
+							<td class="im-feedback-textbox-question"> Email Address (Optional):</td>
+								
+									
+										<td><label><input name="TEXT_FIELD:c352199cc9c640a6b3c4645ce49545e2:1599dcb7625c4495a026cf6eb206330f" size="25" class="xmledittextfield" type="text"></label> </td>
+									
+								
+							
+						</tr>
+						
+					</tbody></table>
+				</div>
+					
+								
+				
+			
+		
+		
+
+		<div class="floatLeft">
+			<table width="100%">
+				<tbody><tr>
+					<td class="im-feedback-rate-firstcol">&nbsp;</td>
+					<td align="right">
+							
+								<button type="submit">Rate</button> 
+							
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+
+	</form>
+
+</td>
+</tr>
+</tbody></table>
+
+
+
+<script language="javascript">
+function checkRatingForm(){
+	var ratingForm = document.getElementById('ratingForm');
+	var ratingsTextArea = document.getElementById('optRatingTextbox').getElementsByTagName('textarea');
+			
+	if(ratingForm){
+		var checkedFlag = 0;
+		var formElements = ratingForm.elements;
+		for(i=0;i<formElements.length;i++){
+			if(formElements[i].type == 'radio' && formElements[i].checked){
+				checkedFlag = 1;
+				break;
+			}
+		}
+
+		if(checkedFlag == 0){
+			alert('Please answer the question by selecting Yes or No.');
+			return false;
+		}
+		else{
+			var re = /<[\s\n\f\r\t\v\S]*>/;
+			if(ratingsTextArea[0].value.length > 300 || re.test(ratingsTextArea[0].value)){
+				if(ratingsTextArea[0].value.length > 300)
+					alert('Your feedback cannot exceed 300 characters.  Please limit it to 300 characters.');
+				else if(re.test(ratingsTextArea[0].value))
+					alert('Your feedback cannot contain markup.  Please remove any markup characters (<>).');
+				return false;
+			}
+			else{
+				return true;
+			}
+		}
+	
+	}
+	else{
+		return true;
+	}
+}
+</script>
+					</td>
+				  </tr>
+				</tbody></table>
+				</div>
+			</div>
+		</div>
+		
+	
+
+	</div>
+						
+						
+					</td>
+					<td width="225" valign="top">
+						
+						<div class="rightcolumn">
+							<div class="rightcolumncontent">
+								 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+	
+			
+			
+				
+					
+						
+						
+							
+								
+							
+							
+								
+							
+							
+								
+							
+							
+								
+							
+							
+								
+							
+							
+							
+							
+								<script language="JavaScript">
+								<!-- 
+								function launchChatConsole(){
+									window.open("index?page=chatConsole","Chat","resizable=yes,scrollbars=yes,height=350,width=550");
+								}
+								
+								function launchChatWindow(){
+									window.open("","Chat","resizable=yes,scrollbars=yes,height=350,width=550");
+								}
+								-->
+								</script>
+								<div id="rightColumnChat">
+								
+									<a href="javascript:launchChatConsole();">
+								
+								
+								<img style="margin-bottom: 10px;" src="Moving%20Certificates%20%28Symantec%29_files/btn_chat_available.gif">
+									</a>
+								</div>
+								
+							
+							
+						
+					
+				
+
+			
+
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+		
+	
+	
+
+
+
+
+<div class="node">
+	<div class="sbmodule">
+		<h1>Contact Support</h1>
+		<div class="sbmodulebody">
+			<p><a href="javascript:location.href='mailto:'+String.fromCharCode(101,99,97,45,115,117,112,112,111,114,116,64,115,121,109,97,110,116,101,99,46,99,111,109)+'?subject=ECA%20Support%20Request'">Email Support</a> or search our <a href="https://knowledge.symantec.com/support/eca-support/index.html">Knowledge Center</a></p>
+
+		</div>
+	</div>
+</div>
+
+ 
+
+
+ 
+
+ 
+        
+
+
+
+
+
+		
+			
+				
+					
+					
+						
+					
+					
+					
+						
+					
+					
+					
+						
+					
+					
+			
+			
+		
+
+
+
+<script type="text/javascript">
+<!--
+function toggleLocaleSelect(){
+    var localeSelDiv = document.getElementById('locale_selection_div');
+
+    if (localeSelDiv.style.display == 'none') {
+        localeSelDiv.style.display = 'block';
+    } else {
+        localeSelDiv.style.display = 'none';
+    }
+}
+//-->
+</script>
+<div class="node">
+
+<div class="sbmodule">
+	<h1>Knowledge Center</h1>
+	<div class="sbmodulebody">
+	<form name="question_form" action="index">
+	  <input name="page" value="answers" type="hidden">
+	  
+	  
+	  
+		
+	  
+	  
+
+
+
+	  
+			<input value="en-US" name="ichbox[]" type="hidden">
+		
+	  
+   	  <input class="editfields" name="question_box" maxlength="100" style="width:155px" onkeyup="return handleKeyPress_QuestionBox(event);" type="text">
+	  
+	  <br><table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr>
+	  	<td>
+	  		
+			 	<a href="http://www.symantec.com/contactsupport/">Change Product</a>
+			
+	  	</td>
+	  	<td><button type="submit" name="Ask" class="button-feature">Search</button></td>
+	  </tr>
+	  
+	  </tbody></table>
+	</form>
+	
+	</div>
+</div>
+</div>
+
+	
+		
+			
+				
+			
+		
+			
+				
+			
+		
+		
+	
+		  
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+	
+	
+		
+			
+				
+					
+						
+					
+					
+					
+				
+			
+		
+	
+
+
+
+		
+		
+			
+
+	
+		
+			 
+		
+	
+		
+			 
+		
+	
+		
+			 
+		
+	
+		
+			 
+		
+	
+
+
+				
+				
+		
+
+
+
+
+
+	<div class="node">
+	<div class="sbmodule">
+	<h1>Related Resources</h1>
+	<div class="sbmodulebody">
+	<ul class="stdListing">
+		
+				
+					
+							
+						
+					
+						
+						<li><a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;id=INFO750&amp;actp=RELATED_RESOURCE" target="_blank">ECA Flash Tutorials</a></li>
+						
+					
+				
+			
+				
+					
+							
+						
+					
+						
+						<li><a href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;id=INFO1062&amp;actp=RELATED_RESOURCE" target="_self">Payment Information</a></li>
+						
+					
+				
+			
+				
+					
+							
+						
+					
+						
+						<li><a href="http://iase.disa.mil/pki/index.html" target="_self">DOD Information Assurance</a></li>
+						
+					
+				
+			
+				
+					
+							
+						
+					
+						
+						<li><a href="http://iase.disa.mil/pki/eca/" target="_self">ECA Program</a></li>
+						
+					
+				
+			
+	</ul>
+	</div>
+	</div>
+	</div>
+
+
+
+
+
+	 
+
+ 
+
+    
+	
+	<div class="node">
+		  <div class="sbmodule">
+			<h1>Languages:</h1>
+			<div class="sbmodulebody">
+			  <p>This article is available in the following languages:</p>
+			  <br>
+			  <ul>
+			  	
+				
+							<li><a class="documents" href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;id=SO6063&amp;actp=&amp;viewlocale=de_DE&amp;showDraft=false">Deutsch Deutschland (German)</a></li>
+							
+				
+				
+				
+							<li><a class="documents" href="https://knowledge.symantec.com/support/eca-support/index?page=content&amp;id=SO6063&amp;actp=&amp;viewlocale=en_US&amp;showDraft=false">English United States</a></li>
+							
+				
+				
+			  </ul>
+			</div>
+		  </div>
+		</div>
+	
+	
+	
+	
+	
+
+
+							</div>
+						</div>
+						
+					</td>
+					
+				</tr>
+				<tr>
+					<td colspan="2"><div class="footer">
+							
+
+
+
+
+      	
+			
+
+				
+			
+					
+						
+							
+								
+<div class="clear">
+</div>
+<div id="global-footer">
+	<ul>
+		<li><a href="http://www.symantec.com/page.jsp?id=contact-authentication-services">Contact Symantec</a></li>
+		<li><a href="http://www.symantec.com/ssl-certificates/">About Symantec</a></li>
+		<li><a href="http://www.symantec.com/about/news/release/index.jsp?tid=footer">News</a></li>
+		<li><a href="http://www.symantec.com/connect/security/blogs/">Blogs</a></li>
+		<li><a href="http://www.symantec.com/about/profile/policies/legal.jsp">Legal Notices</a></li>
+		<li><a href="http://www.symantec.com/about/profile/privacypolicy/">Privacy</a></li>
+		<li><a href="https://www.symantec.com/about/profile/policies/repository.jsp?tid=footer">Repository</a></li>
+		<li><a href="http://www.symantec.com/globalsites/?tid=footer">Worldwide Sites</a></li>
+		<li><a href="http://www.symantec.com/sitemap/?tid=footer">Site Map</a></li>
+		<li class="last"><a href="javascript:O_LC();"><img style="margin-right: 5px;" alt="Feedback" src="Moving%20Certificates%20%28Symantec%29_files/feedback.gif">Feedback</a></li>
+	</ul>
+	<div id="footertxt">
+		<p class="copy">
+			Copyright © 2016 Symantec Corporation. All rights reserved. Symantec, the 
+			Symantec Logo, the Checkmark Logo, Norton Secured, and the Norton Secured Logo, are trademarks or 
+			registered trademarks of Symantec Corporation or its affiliates in the U.S. and other countries. Other names may be 
+			trademarks of their respective owners.
+		</p>
+		<p>
+			</p><ul class="footerLinks">
+				<li id="symantecFoot" class="seoTitle clicker">Symantec [<span>+</span>]</li>      
+				<li id="nortonFoot" class="seoTitle clicker">Norton [<span>+</span>]</li>
+				<li id="verisignFoot" class="seoTitle clicker">Symantec Authentication Services [<span>+</span>]</li>
+				<li id="pcToolsFoot" class="seoTitle clicker">PC Tools [<span>+</span>]</li>
+			</ul>
+		<p></p>
+		<ul id="symantecFootLinks" class="hidden footLinks">
+			<li><a href="http://www.symantec.com/business/endpoint-protection" title="AntiVirus">AntiVirus</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/business/products/family.jsp?familyid=netbackup" title="Backup Software">Backup Software</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/business/endpoint-encryption" title="Encryption">Encryption</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/business/theme.jsp?themeid=virtualization" title="Virtualization">Virtualization</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/business/solutions/topics/detail.jsp?top_id=cloud&amp;chtr_id=cloud-security" title="Cloud Security">Cloud Security</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/business/products/family.jsp?familyid=altiris" title="Configuration Management">Configuration Management</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/business/solutions/solutiondetail.jsp?solid=sol_business_cont&amp;solfid=sol_disaster_recovery" title="Disaster Recovery">Disaster Recovery</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/business/products/newfeatures.jsp?pcid=pcat_business_cont&amp;pvid=2_1" title="File Recovery">File Recovery</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/business/pcanywhere" title="Remote Access Software">Remote Access Software</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/business/solutions/projects/projectdetail.jsp?solid=sol_business_cont&amp;solfid=sol_disaster_recovery&amp;projectid=business_continuity_planning" title="Business Continuity">Business Continuity</a></li>
+		</ul>
+		<ul id="nortonFootLinks" class="hidden footLinks">
+			<li><a href="http://us.norton.com/antivirus/" title="AntiVirus">AntiVirus</a><span>|</span></li>
+			<li><a href="http://us.norton.com/ghost/" title="Backup Software">Backup Software</a><span>|</span></li>
+			<li><a href="http://us.norton.com/internet-security/" title="Internet Security">Internet Security</a><span>|</span></li>
+			<li><a href="http://us.norton.com/security_response/malware.jsp" title="Malware">Malware</a><span>|</span></li>
+			<li><a href="http://www.backup.com/" title="Online Backup">Online Backup</a><span>|</span></li>
+			<li><a href="http://us.norton.com/security_response/phishing.jsp" title="Phishing">Phishing</a><span>|</span></li>
+			<li><a href="http://us.norton.com/security_response/spyware.jsp" title="Spyware">Spyware</a><span>|</span></li>
+			<li><a href="http://us.norton.com/" title="Virus Protection">Virus Protection</a><span>|</span></li>
+			<li><a href="http://us.norton.com/nortonlive/spyware-virus-removal.jsp" title="Virus Removal">Virus Removal</a><span>|</span></li>
+			<li><a href="http://us.norton.com/nortonlive/free-pc-checkup.jsp" title="Virus Scan">Virus Scan</a></li>
+		</ul>
+		<ul id="verisignFootLinks" class="hidden footLinks">
+			<li><a href="http://www.symantec.com/theme.jsp?themeid=ssl-information-center" title="SSL">SSL</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/ssl-certificates/" title="SSL Certificates">SSL Certificates</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/theme.jsp?themeid=how-ssl-works&amp;tabID=2" title="Extended Validation">Extended Validation</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/trust-seal" title="Safe Site">Safe Site</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/vip-authentication-service" title="Two-Factor Authentication">Two-Factor Authentication</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/vip-authentication-service" title="Identity Protection">Identity Protection</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/theme.jsp?themeid=ssl-resources&amp;tabID=2" title="Website Malware Scan">Website Malware Scan</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/code-signing" title="Code Signing">Code Signing</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/managed-pki-service" title="Public Key Infrastructure">Public Key Infrastructure</a><span>|</span></li>
+			<li><a href="http://www.symantec.com/theme.jsp?themeid=ssl-resources" title="Website Vulnerability Assessment">Website Vulnerability Assessment</a></li>
+		</ul>
+		<ul id="pcToolsFootLinks" class="hidden footLinks">
+			<li><a href="http://www.pctools.com/internet-security" title="Internet Security">Internet Security</a><span>|</span></li>
+			<li><a href="http://www.pctools.com/spyware-doctor-antivirus/" title="Spyware Doctor with Antivirus">Spyware Doctor with Antivirus</a><span>|</span></li>
+			<li><a href="http://www.pctools.com/performance-toolkit/" title="Performance Toolkit">Performance Toolkit</a><span>|</span></li>
+			<li><a href="http://www.mobilesecurity.com/" title="Mobile Security">Mobile Security</a><span>|</span></li>
+			<li><a href="http://www.pctools.com/file-recover/" title="File Recovery">File Recovery</a><span>|</span></li>
+			<li><a href="http://www.pctools.com/spyware-doctor/" title="Spyware Doctor">Spyware Doctor</a><span>|</span></li>
+			<li><a href="http://www.pctools.com/privacy-guardian/" title="Privacy Guardian">Privacy Guardian</a><span>|</span></li>
+			<li><a href="http://free.pctools.com/free-antivirus/" title="Free Antivirus">Free Antivirus</a><span>|</span></li>
+			<li><a href="http://www.pctools.com/password-manager/" title="Password Manager">Password Manager</a><span>|</span></li>
+			<li><a href="http://www.pctools.com/registry-mechanic/" title="Registry Mechanic">Registry Mechanic</a></li>
+		</ul>
+		<br><br><br><br><br>
+	</div>
+</div>
+<script type="text/javascript">
+	var myHost = "symantec.com";
+</script>
+<script src="Moving%20Certificates%20%28Symantec%29_files/global-preload.js" type="text/javascript"></script><style>.mboxDefault { visibility:hidden; }</style>
+<script src="Moving%20Certificates%20%28Symantec%29_files/jquery.js" type="text/javascript"></script>
+<script src="Moving%20Certificates%20%28Symantec%29_files/shared.js" type="text/javascript"></script>
+<script language="javascript" src="Moving%20Certificates%20%28Symantec%29_files/InstantInvite3.js"></script><div id="invitelayer" style="position:absolute;left:10px;top:10px;visibility:hidden;z-index:1000;"><div id="invitelayercontent" style="position:relative;left:0px;top:0px;z-index:100">&nbsp;</div><!--[if lte IE 6]><iframe id="divshim" src="javascript:'&lt;html&gt;&lt;/html&gt;'" scrolling="no" frameborder="0" style="position:absolute;top:0px;left:0px;display:none;"></iframe><![endif]--></div>
+<script src="Moving%20Certificates%20%28Symantec%29_files/knowledge_zig.js"></script><img src="Moving%20Certificates%20%28Symantec%29_files/zag_002.gif"><img src="Moving%20Certificates%20%28Symantec%29_files/zag.gif">
+<noscript><img src="http://vs.symantec.com/images/zag.gif?Log=1&v_jd=1" border="0" width="1" height="1" /></noscript>
+							
+						
+
+					
+
+				
+		
+
+
+
+
+						</div></td>
+				</tr>
+				<tr>
+					<td colspan="2"><div id="bottomNav">
+							 
+
+ 
+
+						</div></td>
+				</tr>
+				
+			</tbody></table>
+		</div>
+	</div>
+	
+				<!-- ClickTale Bottom part -->
+			<script type="text/javascript">
+			(function(win,doc){
+
+			var scriptElement, scrSrc;
+
+			if (typeof (win.ClickTaleCreateDOMElement) != "function")
+			{
+				win.ClickTaleCreateDOMElement = function(tagName)
+				{
+					if (doc.createElementNS)
+					{
+						return doc.createElementNS('http://www.w3.org/1999/xhtml', tagName);
+					}
+					return doc.createElement(tagName);
+				}
+			}
+
+			win.WRInitTime=(new Date()).getTime();
+
+			scriptElement = ClickTaleCreateDOMElement('script');
+			scriptElement.type = "text/javascript";
+
+			scrSrc = doc.location.protocol=='https:'? 'https://cdnssl.clicktale.net/':	'http://cdn.clicktale.net/';
+
+			scrSrc += 'www25/ptc/d9bd8a7d-5f4c-4b85-a355-07e81558f3e6.js';
+
+			scriptElement.src = scrSrc;
+
+			doc.getElementsByTagName('body')[0].appendChild(scriptElement);
+			})(window,document);
+			</script>
+			<!-- ClickTale end of Bottom part -->
+	
+	
+
+
+
+
+</div><script type="text/javascript" src="Moving%20Certificates%20%28Symantec%29_files/d9bd8a7d-5f4c-4b85-a355-07e81558f3e6.js"></script><script type="text/javascript">// Copyright 2006-2016 ClickTale Ltd., US Patent Pending
+// PID: 6
+// WR destination: www25
+// WR version: latest
+// Recording ratio: 1
+// Generated on: 11/6/2016 7:58:20 AM (UTC 11/6/2016 1:58:20 PM)
+(function (){
+	var dependencyCallback;
+        var scriptSyncTokens = ["wr"];
+        var dependencies = scriptSyncTokens.slice(0);
+	var ct2Callback, isRecorderReady;
+    var clickTaleOnReadyList = window.ClickTaleOnReadyList || (window.ClickTaleOnReadyList = []);
+    function isValidToken(token) {
+        if (scriptSyncTokens.indexOf(token) > -1) {
+			var index = dependencies.indexOf(token);
+
+			if (index > -1) {
+				dependencies.splice(index, 1);
+				return true;
+			}
+        }
+
+        return false;
+    }
+
+    clickTaleOnReadyList.push(function () {
+        if (ct2Callback) {
+            ct2Callback();
+        }
+
+        isRecorderReady = true;
+    });
+
+    window.ClickTaleGlobal = window.ClickTaleGlobal || {};
+    ClickTaleGlobal.scripts = ClickTaleGlobal.scripts || {};
+    ClickTaleGlobal.scripts.dependencies = {
+        setDependencies: function (deps) {
+            scriptSyncTokens = deps;
+        },
+        onDependencyResolved: function (callback) {
+            dependencyCallback = callback;
+        },
+        notifyScriptLoaded: function (token) {
+            if (isValidToken(token)) {
+                if (dependencies.length === 0 && typeof dependencyCallback === "function") {
+                    dependencyCallback();
+                }
+            }
+        }
+    };
+
+	ClickTaleGlobal.scripts.integration = {
+		onReady: function (callback) {
+			if (isRecorderReady) {
+				callback();
+			}
+			else {
+				ct2Callback = callback;
+			}
+		}
+    };
+})();
+
+
+
+function ClickTaleCDNHTTPSRewrite(u)
+{
+	try
+	{
+		var scripts = document.getElementsByTagName('script');
+		if(scripts.length)
+		{
+			var script = scripts[ scripts.length - 1 ], s='https://clicktalecdn.sslcs.cdngc.net/';
+			if(script.src && script.src.substr(0,s.length)==s )
+				return u.replace('https://cdnssl.clicktale.net/',s);
+		}
+	}
+	catch(e)
+	{
+	}
+	return u;
+} 
+
+var ClickTaleIsXHTMLCompliant = true;
+if (typeof (ClickTaleCreateDOMElement) != "function")
+{
+	ClickTaleCreateDOMElement = function(tagName)
+	{
+		if (document.createElementNS)
+		{
+			return document.createElementNS('http://www.w3.org/1999/xhtml', tagName);
+		}
+		return document.createElement(tagName);
+	}
+}
+
+if (typeof (ClickTaleAppendInHead) != "function")
+{
+	ClickTaleAppendInHead = function(element)
+	{
+		var parent = document.getElementsByTagName('head').item(0) || document.documentElement;
+		parent.appendChild(element);
+	}
+}
+
+if (typeof (ClickTaleXHTMLCompliantScriptTagCreate) != "function")
+{
+	ClickTaleXHTMLCompliantScriptTagCreate = function(code)
+	{
+		var script = ClickTaleCreateDOMElement('script');
+		script.setAttribute("type", "text/javascript");
+		script.text = code;
+		return script;
+	}
+}	
+
+var pccScriptElement = ClickTaleCreateDOMElement('script');
+pccScriptElement.type = "text/javascript";
+pccScriptElement.src = (document.location.protocol=='https:'?
+ClickTaleCDNHTTPSRewrite('https://cdnssl.clicktale.net/www25/pcc/d9bd8a7d-5f4c-4b85-a355-07e81558f3e6.js?DeploymentConfigName=Release_08112016&Version=1'):
+'http://cdn.clicktale.net/www25/pcc/d9bd8a7d-5f4c-4b85-a355-07e81558f3e6.js?DeploymentConfigName=Release_08112016&Version=1');
+document.body.appendChild(pccScriptElement);
+	
+var ClickTalePrevOnReady;
+if(typeof ClickTaleOnReady == 'function')
+{
+	ClickTalePrevOnReady=ClickTaleOnReady;
+	ClickTaleOnReady=undefined;
+}
+
+if (typeof window.ClickTaleScriptSource == 'undefined')
+{
+	window.ClickTaleScriptSource=(document.location.protocol=='https:'
+		?ClickTaleCDNHTTPSRewrite('https://cdnssl.clicktale.net/www/')
+		:'http://cdn.clicktale.net/www/');
+}
+
+
+// Start of user-defined pre WR code (PreLoad)b
+//PTC Code Version 7
+
+window.ClickTaleSettings = window.ClickTaleSettings || {};
+window.ClickTaleSettings.PTC = window.ClickTaleSettings.PTC || {};
+window.ClickTaleIncludedOnDOMReady = true;
+window.ClickTaleIncludedOnWindowLoad = true;
+window.ClickTaleSettings.PTC.EnableChangeMonitor = false;
+window.ClickTaleSettings.PTC.UseTransport = true;
+
+window.ClickTaleSettings.CheckAgentSupport = function (f, v) {
+    if (v.t == v.IE && v.v <= 8) {
+        return false;
+    }
+    else {
+        if (!(v.m || v.t == v.IE && v.v <= 10)) {
+            window.ClickTaleSettings.PTC.EnableChangeMonitor = true;
+            window.ClickTaleSettings.PTC.ConfigChangeMonitor();
+        }
+        return f(v);
+    }
+};
+
+window.ClickTaleSettings.PTC.RulesObj = [{
+    selector: "input[type=\"text\"], input[type=\"tel\"], input[type=\"email\"]",
+    changeMon: {
+        Attributes: ['value'],
+        Text: false
+    },
+    rewriteApi: {
+        Attributes: ['value'],
+        Text: false
+    }
+},
+    {
+        selector: "#preApprovedDomainId option, .prepopulatedName, .prepopulatedName span, #authContactId option, .userName_main",
+        changeMon: {
+            Attributes: false,
+            Text: true
+        },
+        rewriteApi: {
+            Attributes: false,
+            Text: true
+        }
+    }
+];
+
+window.ClickTaleSettings.PTC.RulesObjRemoveEls = [];
+
+;(function () {
+    if (typeof window.ClickTalePIISelector === 'string' && window.ClickTalePIISelector != '') {
+        try {
+            var domNodes = document.querySelectorAll(window.ClickTalePIISelector);
+            if (domNodes) {
+                window.ClickTaleSettings.PTC.RulesObj.push({
+                    selector: window.ClickTalePIISelector,
+                    changeMon: {
+                        Attributes: ['value'],
+                        Text: true
+                    },
+                    rewriteApi: {
+                        Attributes: ['value'],
+                        Text: true
+                    }
+                });
+            }
+        }
+        catch (err) {
+        }
+    }
+})();
+
+window.ClickTaleSettings.PTC.cloneNodeIE9 = function (node) {
+    var clone = node.nodeType === 3 ? document.createTextNode(node.nodeValue) : node.cloneNode(false);
+
+    var child = node.firstChild;
+    while (child) {
+        if (child.nodeName !== 'SCRIPT') {
+            clone.appendChild(window.ClickTaleSettings.PTC.cloneNodeIE9(child));
+        }
+        else {
+            var script = document.createElement('script');
+            clone.appendChild(script);
+        }
+        child = child.nextSibling;
+    }
+
+    return clone;
+};
+
+
+window.ClickTaleSettings.PTC.ConfigChangeMonitor = function () {
+
+    if (window.ClickTaleSettings.PTC.EnableChangeMonitor) {
+        window.ClickTaleSettings.XHRWrapper = {
+            Enable: false
+        };
+
+        var script = document.createElement("SCRIPT");
+        script.src = (document.location.protocol === "https:" ? "https://cdnssl." : "http://cdn.") + "clicktale.net/www/ChangeMonitor-latest.js";
+        document.body.appendChild(script);
+
+        window.ClickTaleSettings.ChangeMonitor = {
+            Enable: true,
+            LiveExclude: true,
+            AddressingMode: "id",
+            OnReadyHandler: function (changeMonitor) {
+                changeMonitor.observe();
+                changeMonitor.exclude(".container,.text-content, .carouselwrapper");
+
+                var CMRemrule = window.ClickTaleSettings.PTC.RulesObjRemoveEls;
+                if (CMRemrule) {
+                    for (var i = 0; i < CMRemrule.length; i++) {
+                        var rule = CMRemrule[i];
+                        var CMlocation = rule['location'];
+                        if ((!CMlocation || (CMlocation && document.location[CMlocation['prop']].toLowerCase().search(CMlocation.search) === -1))) {
+                            if (rule.changeMon) {
+                                changeMonitor.exclude(rule.changeMon);
+                            }
+                            if (rule.changeMonLive) {
+                                changeMonitor.exclude({selector: rule.changeMonLive, multiple: true});
+                            }
+                        }
+                    }
+                }
+            },
+            OnBeforeReadyHandler: function (settings) {
+                settings.Enable = window.ClickTaleGetUID ? !!ClickTaleGetUID() : false;
+                return settings;
+            },
+            Filters: {
+                MaxBufferSize: 300000,
+                MaxElementCount: 6000,
+                Before: [function (mutations) {
+                    if (typeof ClickTaleSettings.PTC.CMBeforeFilter === 'function') {
+                        return ClickTaleSettings.PTC.CMBeforeFilter(mutations);
+                    }
+                    return true;
+                }]
+            },
+            PII: {
+                Text: [{
+                    selector: "#orgFirstName, #orgLastName, #techFirstName, #techLastName, #billLastName, #billFirstName, #techOrgName",
+                    transform: function (el) {
+                        return "-------";
+                    }
+                }
+                ],
+                Attributes: []
+            }
+        };
+        var RulesObj = window.ClickTaleSettings.PTC.RulesObj;
+        if (RulesObj) {
+            window.ClickTaleSettings.ChangeMonitor.PII.Text = window.ClickTaleSettings.ChangeMonitor.PII.Text || [];
+            window.ClickTaleSettings.ChangeMonitor.PII.Attributes = window.ClickTaleSettings.ChangeMonitor.PII.Attributes || [];
+            for (var i = 0; i < RulesObj.length; i++) {
+                var CMrule = RulesObj[i]['changeMon'];
+                var CMlocation = RulesObj[i]['location'];
+                if (!CMrule || (CMlocation && document.location[CMlocation['prop']].toLowerCase().search(CMlocation.search) === -1)) {
+                    continue;
+                }
+                var selector = RulesObj[i]['selector'];
+                var attributesArr = CMrule.Attributes;
+                if (attributesArr instanceof Array) {
+                    for (var u = 0; u < attributesArr.length; u++) {
+                        var attr = attributesArr[u];
+                        window.ClickTaleSettings.ChangeMonitor.PII.Attributes.push({
+                            selector: selector,
+                            transform: (function (attr) {
+                                return function (el) {
+                                    var attrs = el.attributes;
+                                    var attrsToReturn = {}
+                                    for (var i = 0; i < attrs.length; i++) {
+                                        var name = attrs[i].nodeName;
+                                        attrsToReturn[name] = attrs[i].nodeValue;
+                                    }
+                                    var attrib = el.getAttribute(attr);;
+                                    if (typeof attrib === 'string') {
+                                        attrsToReturn[attr] = attrib.replace(/\w/g, '-');
+                                    }
+                                    return attrsToReturn;
+                                }
+                            })(attr)
+                        });
+                    }
+                }
+                if (CMrule.Text) {
+                    window.ClickTaleSettings.ChangeMonitor.PII.Text.push({
+                        selector: selector,
+                        transform: function (el) {
+                            return el.textContent.replace(/\w/g, '-');
+                        }
+                    });
+                }
+            }
+        }
+    }
+};
+
+
+window.ClickTaleSettings.Compression = {
+    Method: function () {
+        return "deflate";
+    }
+};
+
+window.ClickTaleSettings.Transport = {
+    Legacy: false,
+    MaxConcurrentRequests: 5
+};
+
+window.ClickTaleSettings.RewriteRules = {
+    OnBeforeRewrite: function (rewriteApi) {
+        var bodyClone = ((document.documentMode && document.documentMode <= 9) ? ClickTaleSettings.PTC.cloneNodeIE9(document.body) : document.body.cloneNode(true));
+
+        if (window.ClickTaleSettings.PTC.RulesObj) {
+            rewriteApi.add(function (buffer) {
+
+
+                var RulesObj = window.ClickTaleSettings.PTC.RulesObj;
+                for (var i = 0; i < RulesObj.length; i++) {
+                    var rewriteApirule = RulesObj[i]['rewriteApi'];
+                    var rewriteApilocation = RulesObj[i]['location'];
+                    if (!rewriteApirule || (rewriteApilocation && document.location[rewriteApilocation['prop']].toLowerCase().search(rewriteApilocation.search) === -1)) {
+                        continue;
+                    }
+                    var selector = RulesObj[i]['selector'];
+                    var elements = bodyClone.querySelectorAll(selector);
+
+                    Array.prototype.forEach.call(elements, function (el, ind) {
+                        var attributesArr = rewriteApirule.Attributes;
+                        if (attributesArr instanceof Array) {
+
+                            for (var u = 0; u < attributesArr.length; u++) {
+                                var attr = attributesArr[u];
+                                var attrib = el.getAttribute(attr);
+                                if (typeof attrib === 'string') {
+                                    el.setAttribute(attr, attrib.replace(/\w/g, '-'));
+                                }
+                            }
+
+                        }
+                        if (rewriteApirule.Text) {
+                            var children = el.childNodes;
+                            Array.prototype.forEach.call(children, function (child) {
+                                if (child && child.nodeType === 3) {
+                                    child.textContent = child.textContent.replace(/\w/g, '-');
+                                }
+                            });
+                        }
+                    });
+                }
+
+                //work on body
+                var RulesObjRemoveEls = window.ClickTaleSettings.PTC.RulesObjRemoveEls;
+                if (RulesObjRemoveEls) {
+                    for (var i = 0; i < RulesObjRemoveEls.length; i++) {
+                        if (RulesObjRemoveEls[i].rewriteApi) {
+                            var elementsToRemove = bodyClone.querySelectorAll(RulesObjRemoveEls[i].rewriteApi);
+                            Array.prototype.forEach.call(elementsToRemove, function (el, ind) {
+                                if (el.parentNode) {
+                                    el.parentNode.removeChild(el);
+                                }
+                            });
+                        }
+                        if (RulesObjRemoveEls[i].rewriteApiReplace) {
+                            var elementsToReplace = bodyClone.querySelectorAll(RulesObjRemoveEls[i].rewriteApiReplace);
+                            Array.prototype.forEach.call(elementsToReplace, function (el, ind) {
+                                if (el.parentNode) {
+                                    var comment = document.createComment(el.outerHTML);
+                                    el.parentNode.replaceChild(comment, el);
+                                }
+                            });
+                        }
+                    }
+                }
+
+                buffer = buffer.replace(/(<body[^>]*>)[\s\S]*?<\/body>/gi, function (m, g1) {
+                    if (g1) {
+                        return g1 + bodyClone.innerHTML.replace(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi, '<script><\/script>').replace(/(<div id="?ClickTaleDiv"?[^>]+>)\s*<script[^>]+><\/script>\s*(<\/div>)/i, '$1$2') + '<\/body>';
+                    }
+                    return m;
+                });
+
+                return buffer;
+            });
+        }
+        rewriteApi.add({
+            pattern: /(<head[^>]*>)/i,
+            replace: '$1<script type="text\/javascript" class="cm-ignore" src="http:\/\/dummytest.clicktale-samples.com\/GlobalResources\/jquery.js"><\/script>'
+        });
+
+        rewriteApi.add({
+            pattern: new RegExp('(<input[^>]*value=")([^"]+)("[^>]*type="text">)', 'gim'),
+            replace: "$1-----$3"
+        });
+        rewriteApi.add({
+            pattern: new RegExp('(<input[^>]*type="text"[^>]*value=")([^"]+)("[^>]*>)', 'gim'),
+            replace: "$1-----$3"
+        });
+        rewriteApi.add({
+            pattern: new RegExp('(<head[^>]*>)', 'i'),
+            replace: "$1<script type='text\/javascript' class='cm-ignore' src='http://code.jquery.com/jquery-1.9.1.min.js'><\/script>"
+        });
+        rewriteApi.add({
+            pattern: /\b[\w._%+-]+@[\w.-]+\.[a-zA-Z]{2,4}\b/gim,
+            replace: "**********@*****.***"
+        });
+        rewriteApi.add({
+            pattern: /(<[^>]*?title=\")([^"]*?)(\"[^>]*?>)/gim,
+            replace: "$1-----------$3"
+        });
+
+        if (document.location.href.toLowerCase().indexOf("trustcenter.websecurity.symantec.com") > -1) {
+            rewriteApi.add({
+                pattern: /(<a[^>]*?id=\"nav_username\"[^>]*?>)([^>]*?)(<\/a>)/gim,
+                replace: "$1------ ------$3"
+            });
+            rewriteApi.add({
+                pattern: new RegExp('(<span id="fname"[^>]* class="[^"]*" style="[^"]*"[^>]*>)([^<]*)(</span>)', 'gi'),
+                replace: "$1----------$3"
+            });
+
+            rewriteApi.add({
+                pattern: new RegExp('(<a class="userName_main[^"]*"[^>]*href="[^"]*"[^>]*id="nav_username"[^>]*>)([^<]*)(</a>)', 'gi'),
+                replace: "$1----------$3"
+            });
+
+            rewriteApi.add({
+                pattern: new RegExp('(<span class="[^"]*"[^>]*id="(?:orgFirstName|orgLastName|techFirstName|techLastName|billLastName|billFirstName)"[^>]*>)([^<]*)(</span>)', 'gi'),
+                replace: "$1----------$3"
+            });
+
+            rewriteApi.add({
+                pattern: new RegExp('(<label class="[^"]*" for="rdbillSameAs[^"]*">[^<]*<span class="[^"]*prepopulatedName">)([^<]*)(</span>[^<]*<span class="[^"]*prepopulatedName">)([^<]*)(</span>[^<]*<span class="[^"]*prepopulatedName">)', 'gi'),
+                replace: "$1-----$3-----5"
+            });
+        }
+        if (document.location.href.toLowerCase().indexOf('summary') > -1) {
+            rewriteApi.add({
+                pattern: /(<div[^>]*?addressValue[^>]*?>)([^>]*?)(<\/div>)/gim,
+                replace: "$1-----------$3"
+            });
+            rewriteApi.add({
+                pattern: /(<span[^>]*?_contact_[^>]*?>)([^>]*?)(<\/span>)/gim,
+                replace: "$1------$3"
+            });
+            rewriteApi.add({
+                pattern: /(<div[^>]*?payContactNames[^>]*?>)([^>]*?)(<\/div>)/gim,
+                replace: "$1------ ------$3"
+            });
+        }
+        if (document.location.href.toLowerCase().indexOf('approval')) {
+            rewriteApi.add({
+                pattern: /(<div class=\"instructions\">[^>]*?<strong[^>]*?>)([^<]*?)(<\/strong>[^<]*?<\/div>)/gim,
+                replace: "$1---------------$3"
+            });
+            rewriteApi.add({
+                pattern: /(<div[^>]*?id=\"techContactName\"[^>]*?>)([^<]*?)(<\/div>)/gim,
+                replace: "$1---------------$3"
+            });
+            rewriteApi.add({
+                pattern: /(<div[^>]*?id=\"corpContactName\"[^>]*?>)([^<]*?)(<\/div>)/gim,
+                replace: "$1---------------$3"
+            });
+            rewriteApi.add({
+                pattern: /(<base href=")(.*?)("[^>]*>)/i,
+                replace: '$1https:\/\/www.freessl.com\/freessl\/$3'
+            });
+        }
+    }
+};
+
+
+// End of user-defined pre WR code
+
+
+var ClickTaleOnReady = function()
+{
+	var PID=6, 
+		Ratio=1, 
+		PartitionPrefix="www25";
+	
+	if (window.navigator && window.navigator.loadPurpose === "preview") {
+       return; //in preview
+	};
+		
+	
+	// Start of user-defined header code (PreInitialize)
+	if (typeof ClickTaleSetAllSensitive === "function") {
+    ClickTaleSetAllSensitive();
+}
+
+function doOnlyWhen(toDoHandler, toCheckHandler, interval, times, failHandler) {
+    if ((!toDoHandler) || (!toCheckHandler)) return;
+    if (typeof interval == "undefined") interval = 1000;
+    if (typeof times == "undefined") times = 20;
+
+    if (--times < 0) {
+        if (typeof failHandler === 'function') {
+            failHandler();
+        }
+        return;
+    }
+    if (toCheckHandler()) {
+        toDoHandler();
+        return;
+    }
+
+    setTimeout(function () { doOnlyWhen(toDoHandler, toCheckHandler, interval, times, failHandler); }, interval);
+};
+
+function doUpload() {
+    ClickTaleUploadPage();
+    window.ClickTaleSSL = 1;
+    ClickTale(PID, Ratio, PartitionPrefix);
+    if ((typeof ClickTalePrevOnReady == 'function') && (ClickTaleOnReady.toString() != ClickTalePrevOnReady.toString())) {
+        ClickTalePrevOnReady();
+    }
+}
+
+function isReadyToRecord() {
+    if (document.location.host.toLowerCase() === "www.geotrust.com" && document.location.pathname.toLowerCase() === "/") {
+        return (document.querySelectorAll('.desc img').length > 0)
+    }
+    else {
+        return true;
+    }
+}
+
+if (typeof testversion != 'undefined' && typeof ClickTaleEvent === 'function') {
+    var tParams = testversion.split(',');
+    for (var i = 0; i < tParams.length; i++) {
+        ClickTaleEvent(tParams[i]);
+    }
+}
+
+
+
+if (typeof ClickTaleUploadPage === 'function' && window.ClickTaleSettings.PTC.UseTransport) {
+	if(window.ClickTaleSettings.PTC.EnableChangeMonitor){
+		if (typeof ClickTaleEvent === "function") {
+					ClickTaleEvent("CM");
+		}
+    }
+
+	doOnlyWhen(doUpload, isReadyToRecord, 400, 20, doUpload);
+	return;
+
+} 
+	// End of user-defined header code (PreInitialize)
+    
+	
+	window.ClickTaleIncludedOnDOMReady=true;
+	
+	ClickTale(PID, Ratio, PartitionPrefix);
+	
+	if((typeof ClickTalePrevOnReady == 'function') && (ClickTaleOnReady.toString() != ClickTalePrevOnReady.toString()))
+	{
+    	ClickTalePrevOnReady();
+	}
+	
+	
+	// Start of user-defined footer code
+	
+	// End of user-defined footer code
+	
+};
+
+ 
+(function() {
+	var div = ClickTaleCreateDOMElement("div");
+	div.id = "ClickTaleDiv";
+	div.style.display = "none";
+	document.body.appendChild(div);
+
+	
+	
+	var externalWrScript = ClickTaleCreateDOMElement("script");
+	var wrSrc = (document.location.protocol=='https:'?'https://cdnssl.clicktale.net/www/' : 'http://cdn.clicktale.net/www/') + 'tc/WR-latest.js';
+	externalWrScript.src = (window.ClickTaleCDNHTTPSRewrite?ClickTaleCDNHTTPSRewrite(wrSrc):wrSrc);
+	externalWrScript.type = 'text/javascript';
+		document.body.appendChild(externalWrScript);
+})();
+
+
+
+
+
+!function(){function t(){window.addEventListener&&addEventListener("message",e,!1)}function e(t){var e,n=new RegExp("(clicktale.com|ct.test)($|:)"),i=new RegExp("ct.test"),c=!1,l=t.origin;try{e=JSON.parse(t.data)}catch(d){return}n.test(t.origin)!==!1&&(window.ct_ve_parent_window=t.source,i.test(t.origin)===!0&&(c=!0),"CTload_ve"===e["function"]&&"function"==typeof ClickTaleGetPID&&null!==ClickTaleGetPID()&&o(l,c))}function n(t){return document.createElementNS?document.createElementNS("http://www.w3.org/1999/xhtml",t):document.createElement(t)}function o(t,e){var o=n("script");o.setAttribute("type","text/javascript"),o.setAttribute("id","ctVisualEditorClientModule");var i;i=e?document.location.protocol+"//ct.test/VisualEditor/Client/dist/veClientModule.js":document.location.protocol+"//"+t.match(/subs\d*/)[0]+".app.clicktale.com/VisualEditor/Client/dist/veClientModule.js",o.src=i,document.getElementById("ctVisualEditorClientModule")||document.body.appendChild(o)}try{var i=window.chrome,c=window.navigator&&window.navigator.vendor;null!==i&&void 0!==i&&"Google Inc."===c&&t()}catch(l){}}();</script><script type="text/javascript" src="Moving%20Certificates%20%28Symantec%29_files/d9bd8a7d-5f4c-4b85-a355-07e81558f3e6_002.js"></script><div id="ClickTaleDiv" style="display: none;"><script src="Moving%20Certificates%20%28Symantec%29_files/WRf7b.js"></script></div><script src="Moving%20Certificates%20%28Symantec%29_files/WR-latest.js" type="text/javascript"></script><script src="Moving%20Certificates%20%28Symantec%29_files/ChangeMonitor-latest.js"></script></body></html>

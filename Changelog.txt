@@ -1,0 +1,53 @@
+November 16th, 2016
+--
+* Made a scrollable image announcement for the home page.
+
+September 26th, 2016
+--
+* Finished up improving the style code of the web site.
+
+September 23rd, 2016
+--
+* Gave the design of the site an improvement.
+* Behind-the-scenes technical upgrades that make improving the site much easier now.
+* Redesigned/repositioned a few elements.
+* Increased font size and form control size in some areas.
+* Made the site look more uniform.
+* The "blue box" for Absences and Events will no longer increase in size due to additional entries. Instead, it will stay the same size, but feature a scroller.
+* Bolded user's name in the box at the top that says "Welcome, NAME."
+
+September 22nd, 2016
+--
+* Redesigned and colored the administrator cPanel a little bit.
+* Moved the "View Changelog" link into the admin table.
+* Added a "Backup SQL" feature that only admins can use.
+	* One click of the link backs up all of GIGAnet's database entries, including tables, fields, rows and values, into a singular file with the current date in its name.
+		* The filename can be previewed before clicking the link.
+
+September 19th, 2016
+--
+* Finalized the "Add User" feature.
+* Users can now be fully added, modified, viewed and deleted by admins.
+	* Accessible through the Administraor cPanel page.
+
+September 16th, 2016
+--
+* Changed refresh to every 15 minutes (many people complained due to the lag of it refreshing every minute; weather sites update about every 15 minutes anyway).
+* Added a way for admin users to add new users to the database from the site itself.
+	* Link for this has been added to cPanel page.
+
+
+April 8th, 2016
+--
+* Added the "Absence Report" feature.
+	- Allows Sue Potts (and administrators) to check the absence frequency of an employee through a given time period.
+	% NOTE: May glitch somewhat if used on an employee who shares a first or last name with another employee (e.g., David Miller and David Watson, or Sandi Mueller and Blake Mueller).
+
+April 6th, 2016
+--
+* Moved calendars to respective "blue boxes."
+	- Allows for room in the nav for more buttons.
+
+April 1st, 2016
+--
+* Added Changelog.

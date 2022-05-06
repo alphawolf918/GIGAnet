@@ -1,0 +1,795 @@
+$posRelative: relative;
+$posAbsolute: absolute;
+$Override: !important;
+$fontFamily: "Verdana","Helvetica","Arial";
+$fontMain: "Lucida Sans","Helvetica","sans-serif";
+$lineBlock: inline-block;
+$borderRadius: 5px;
+$lineHeight: 1.02857143;
+$margins: 1% 1% 1% 1%;
+$formPadding: 6px 12px;
+$width75: 75%;
+$redTitle: linear-gradient(#e00, #b00);
+$black: #000;
+$white: #fff;
+$gray: #eee;
+$darkGray: #444;
+$usrSel: user-select;
+
+@mixin setPos($y: 0%, $x : 0%){
+	top: $y;
+	left: $x;
+}
+ 
+@mixin setHeightWidth($height, $width){
+	height: $height;
+	width: $width;
+}
+
+@mixin setHeightWidth2($heightWidth){
+	@include setHeightWidth($heightWidth, $heightWidth);
+}
+
+@mixin header() {
+	@include setPos();
+	@include darkBorder();
+	border: {
+		@include setBorder(2px, solid, #999, $borderRadius);
+	}
+	background: {
+		color: rgba(0, 75, 236, 0.8);
+		image: gradient(linear, 0% 0%, 0% 90%, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, .9)));
+	}
+	text-shadow: rgba(10,10,10,0.5) 1px 2px 2px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px; 
+}
+
+@mixin formControl(){
+	display: $lineBlock;
+	font: {
+		family: $fontFamily $Override;
+		size: 14px;
+		weight: 400;
+	}
+	padding: $formPadding;
+	margin-bottom: 0%;
+	line-height: $lineHeight;
+	white-space: nowrap;
+	vertical-align: middle;
+	#{$usrSel}: none;
+	border: none;
+	height: 36px;
+	text-align: left;
+}
+
+@mixin setBorder($width, $style, $color, $radius){
+	width: $width;
+	style: $style;
+	color: $color;
+	radius: $radius;
+}
+
+@mixin setBorderColor($top, $left, $right, $bottom){
+	border: {
+		top-color: $top;
+		left-color: $left;
+		right-color: $right;
+		bottom-color: $bottom;
+	}
+}
+
+@mixin overflowY(){
+	overflow-y: auto;
+}
+
+@mixin darkBorder(){
+	@include setBorderColor($black, $darkGray, $darkGray, $darkGray);
+}
+
+body {
+	@include setPos();
+	font-family: $fontMain;
+	line-height: $lineHeight;
+	position: $posRelative;
+	margin: $margins;
+}
+
+table.adminTable {
+	background: linear-gradient($gray, $white);
+	border: {
+		@include setBorder(2px, solid, $black, $borderRadius);
+	}
+	tr {
+		th.adminHeaderRow {
+			background: $redTitle;
+			color: $white;
+			font: {
+				size: 16px $Override;
+				weight: bold;
+			}
+			height: 26px;
+			border-top: {
+				left-radius: $borderRadius;
+				right-radius: $borderRadius;
+			}
+		}
+
+		th.adminSubHeaderRow {
+			border-radius: 0px $Override;
+			text-align: center $Override;
+		}
+	
+		td.adminCell {
+			border: 1px solid $black;
+			vertical-align: top;
+			padding: 2px;
+		}
+	}
+}
+
+
+.filler {
+	@include setHeightWidth(26px, 100%);
+	background: $redTitle;
+	color: $white;
+	font-weight: bold;
+	vertical-align: middle;
+	border-radius: $borderRadius;
+	line-height: $lineHeight;
+	padding-top: 4px;
+	text-align: center;
+}
+
+.dateSection {
+	margin: {
+		@include setPos(-1%, 85%);
+	}
+	color: #eee;
+	font-weight: bold;
+}
+
+.weatherSection {
+	margin: {
+		@include setPos(-5.4%, 14%);
+	}
+	width: 8%;
+	border-radius: 5px !important;
+}
+
+.welcomeSection {
+	color: $gray;
+	min-width: 17%;
+	max-width: 17%;
+	margin-left: 2%;
+	font-size: 85%;
+}
+
+.view-event-section {
+	font: {
+		weight: bold;
+		size: 16px;
+	}
+	padding: 4px 16px;
+}
+
+.absences-events {
+	background: $darkGray $Override;
+	border-radius: 5px;
+}
+
+.anni-birthday {
+	vertical-align: top;
+	height: 20px;
+	width: 20px;
+}
+
+.margin-left-1-5 {
+	margin-left: 1.5%;
+}
+
+.margin-left-2 {
+	margin-left: 2%;
+}
+
+.margin-left-4 {
+	margin-left: 4%;
+}
+
+.margin-left-5 {
+	margin-left: 5%;
+}
+
+.margin-left-20 {
+	margin-left: 20%;
+}
+
+.width-20 {
+	width: 20%;
+}
+
+.width-41 {
+	width: 41%;
+}
+
+.font-size-13px {
+	font-size: 13px;
+}
+
+.font-weight-normal {
+	font-weight: normal;
+}
+
+.admin-options-section {
+	font: {
+		size: 12px;
+		weight: bold;
+	}
+}
+
+.view-event-about {
+	background: #fff;
+	color: $darkGray;
+	border: {
+		@include setBorder(1px, solid, $black, 5px);
+	}
+	padding: 4px 10px;
+	width: 65%;
+	min-height: 35%;
+	position: absolute;
+}
+
+.view-absence-section {
+	font: {
+		size: 16px;
+		weight: bold;
+	}
+	padding: 4px 16px;
+}
+
+.position-absolute {
+	position: absolute;
+}
+
+.height-4px {
+	height: 4px;
+}
+
+.img-25 {
+	@include setHeightWidth2(25px);
+}
+
+.customBreak {
+	min-width: 1.5%;
+	max-width: 2%;
+	display: $lineBlock;
+	position: $posRelative;
+}
+
+.redTitle {
+	border: {
+		bottom: none $Override;
+		radius: $borderRadius;
+	}
+	padding: 4px 16px $Override;
+	text-align: justify;
+}
+
+.giganetLogo {
+	min: {
+		@include setHeightWidth(88%, 55%);
+	}
+	max: {
+		@include setHeightWidth(90%, 105%);
+	}
+	margin-left: 23%;
+	z-index: 100;
+	position: $posAbsolute;
+	border-radius: $borderRadius;
+	cursor: pointer;
+}
+
+.afterLogo {
+	margin: {
+		@include setPos($y: 1%);
+	}
+	padding: 1% 2%;
+	cursor: pointer;
+}
+
+.customBreak2 {
+	width: 2%; 
+	display: $lineBlock;
+}
+
+.homeLink {
+	font-size: 16px $Override;
+	color: #fefefe;
+}
+
+* {
+	position: $posRelative;
+}
+
+div#container {
+	margin: {
+		@include setPos($x: 3%);
+	}
+	min-width: 98%;
+	max-width: 103%;
+	position: $posRelative;
+}
+
+.nicEdit-main {
+	background: $white;
+	border-radius: $borderRadius;
+}
+
+td {
+	font-size: 75%;
+}
+
+a.nLink {
+	font-size: 115%;
+}
+
+a.hrLink {
+	font-size: 85%;
+}
+
+.topHeader {
+	@include header();
+	min: {
+		@include setHeightWidth(155px, 60%);
+	}
+	max: {
+		@include setHeightWidth(220px, 95%);
+	}
+	height: 35%;
+	background: #04f;
+	position: $posRelative;
+}
+
+.fc-state-highlight {
+	color: $black $Override;
+}
+
+.fc-bg {
+	background: $darkGray;
+	opacity: .9;
+}
+
+.fc-day-header, .fc-widget-header {
+	background: $black;
+	padding: 4px;
+}
+
+.title {
+	background: $redTitle;
+	color: $white;
+	font: {
+		size: 16px $Override;
+		weight: bold;
+	}
+	padding: 2%;
+	min-width: 90%;
+	max-width: 100%;
+	white-space: nowrap;
+}
+
+.titleMain {
+	background: $redTitle $Override;
+	color: $gray;
+	font: {
+		family: $fontFamily;
+		size: 106%;
+		weight: bold;
+	}
+	padding: 2%;
+	border: {
+		@include setBorder(4px, inset, $darkGray, $borderRadius);
+	}
+	text-align: center;
+}
+
+label.formLabel {
+	font: {
+		family: $fontFamily;
+		weight: bold;
+		size: 14px;
+	}
+}
+
+.whiteLink {
+	font: {
+		size: 94%;
+		weight: bold;
+	}
+	color: $white;
+}
+
+.wLink {
+	color: $white;
+}
+
+.form-control {
+	@include formControl();
+	color: #777;
+	background: {
+		color: $white;
+		image: none;
+	}
+	border: {
+		@include setBorder(1px, solid, #ccc, $borderRadius);
+	}
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	&:focus {
+		border-color: #66afe9;
+		outline: 0;
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	}
+}
+
+button.formButton {
+	@extend .form-control;
+	background: {
+		color: #09f;
+		image: linear-gradient(left, #09f, #0af);
+	}
+	padding: $formPadding;
+	font: {
+		weight: bold;
+		size: 14px $Override;
+	}
+	color: $white;
+}
+
+textarea.form-control {
+	height: auto;
+}
+
+input[type="search"] {
+	-webkit-appearance: none;
+}
+
+.navTitle {
+	font-size: 16px $Override;
+	border-top: {
+		left-radius: $borderRadius;
+		right-radius: $borderRadius;
+	}
+	margin-left: 0.1%;
+	padding: 2%;
+	text-indent: 1em;
+	min-width: 94%;
+	max-width: 96%;
+	background: $redTitle $Override;
+}
+
+.top {
+	border-top: {
+		left-radius: $borderRadius;
+		right-radius: $borderRadius;
+	}
+}
+
+.bottom {
+	border-bottom: {
+		left-radius: $borderRadius;
+		right-radius: $borderRadius;
+	}
+}
+
+nav#navLeft, nav#navRight {
+	min: {
+		@include setHeightWidth(272%, 15%);
+	}
+	max: {
+		@include setHeightWidth(340%, 20%);
+	}
+	width: 15%;
+	display: $lineBlock;
+	background: #ddd;
+	position: $posAbsolute;
+	border: {
+		@include setBorder(1px, solid, #777, $borderRadius);
+	}
+}
+
+div.navContent {
+	background: $white;
+	min: {
+		@include setHeightWidth(90%, 95.5%);
+	}
+	max: {
+		@include setHeightWidth(160%, 95.6%);
+	}
+	color: $darkGray;
+	position: $posAbsolute;
+	margin-left: 2%;
+	text-align: center;
+	border: {
+		@include setBorder(1px, solid, #999, $borderRadius);
+	}
+}
+
+footer {
+	position: $posAbsolute;
+	margin: {
+		@include setPos(42%, 31%);
+	}
+	min: {
+		@include setHeightWidth(61%, 50%);
+	}
+	max: {
+		@include setHeightWidth(72%, 50%);
+	}
+}
+
+.glare {
+	@include setPos(0%, 0%);
+	@include setHeightWidth(1px, 102%);
+	position: $posAbsolute;
+	border-radius: 8px;
+	padding: 6% 0;
+	background: {
+		color: rgba(255, 255, 255, 0.25);
+		image: gradient(linear, 0% 0% 0% 95%, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)));
+	}
+}
+
+a {
+	color: #00f;
+	text-decoration: none;
+	font: {
+		family: "Century Gothic";
+		size: 81%;
+	}
+}
+
+a.navLink {
+	color: $black;
+}
+
+div#contentMain {
+	@include overflowY();
+	@include setHeightWidth(260%, 62%);
+	background: #ddd;
+	display: $lineBlock;
+	min-height: 100%;
+	position: $posAbsolute;
+	margin-left: 14%;
+	padding: 1%;
+	border: 1px solid #777;
+}
+
+div.greenButton {
+	background: $darkGray;
+	padding: 4px 16px;
+	width: 6%;
+	text-align: center;
+	border: {
+		@include setBorder(2px, outset, $black, $borderRadius);
+	}
+}
+
+div.greenButton a {
+	color: $gray;
+	font: {
+		weight: bold;
+		size: 64%;
+	}
+	text-decoration: none;
+}
+
+.icon {
+	@include setHeightWidth(16px, 16px);
+}
+
+.Licon {
+	@include setHeightWidth(14px, 14px);
+}
+
+div.blueBlock {
+	@include overflowY();
+	@include darkBorder();
+	display: $lineBlock;
+	background: {
+		color: #26e;
+		image: gradient(linear, 0% 0%, 0% 90%, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, .9)));
+	}
+	color: $gray;
+	font: {
+		weight: bold;
+		size: 94%;
+	}
+	min-height: 154px;
+	max-height: 200px;
+	width: 36%;
+	margin-left: 8%;
+	border-radius: $borderRadius;
+	padding: 1%;
+	vertical-align: top;
+	text-shadow: rgba(10,10,10,0.5) 1px 2px 2px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+}
+
+div.blueBlock {
+	a {
+		font-size: 94% $Override;
+	}
+}
+
+.aquaButton {
+	font: {
+		size: 92% $Override;
+		family: $fontMain;
+		weight: 800;
+	}
+	border: {
+		@include setBorder(4px, solid, #06f, $borderRadius);
+	}
+	text: {
+		shadow: rgba(10,10,10,0.5) 1px 2px 2px;
+		align: center;
+		overflow: ellipsis $Override;
+	}
+	padding: 5% 6% 3%;
+	position: $posRelative;
+	color: $white;
+	min-width: $width75;
+	width: $width75;
+	max-width: $width75;
+	white-space: nowrap;
+	overflow: hidden $Override;
+	background: {
+		color: rgba(0, 105, 236, 0.8);
+		image: gradient(linear, 0% 0%, 0% 90%, from(rgba(0, 50, 50, 0.8)), to(rgba(0, 20, 35, .9)));
+	}
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+	display: $lineBlock;
+	cursor: pointer $Override;
+}
+
+.aquaButton {
+	a {
+		font: {
+			family: $fontMain;
+			size: 90% $Override;
+		}
+	}
+}
+
+.blackButton {
+	@include darkBorder();
+	font: {
+		size: 92% $Override;
+		family: $fontMain;
+		weight: 800;
+	}
+	background: {
+		color: $darkGray;
+		image: gradient(linear, 0% 0%, 0% 90%, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, .9)));
+	}
+	border: {
+		@include setBorder(5px, solid, $darkGray, $borderRadius);
+	}
+	padding: $formPadding;
+	width: 6%;
+	position: $posAbsolute;
+	text: {
+		shadow: rgba(10,10,10,0.5) 1px 2px 2px;
+		align: center;
+		overflow: ellipsis $Override;
+	}
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+	display: $lineBlock;
+	cursor: pointer;
+}
+
+.blackButton {
+	a	{
+		font: {
+			family: $fontMain;
+			size: 90% $Override;
+		}
+	}
+}
+
+a.sideLink {
+	&:visited {
+		color: $darkGray;
+		font-size: 80%;
+	}
+}
+
+div.announcementBox {
+	@include darkBorder();
+	background: {
+		color: $darkGray;
+		image: gradient(linear, 0% 0%, 0% 90%, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, .9)));
+	}
+	border: {
+		@include setBorder(1px, solid, #777, $borderRadius);
+	}
+	color: $gray;
+	padding: 0.5%;
+	min-height: 220px;
+	width: 94%;
+	margin: 0% auto;
+	font-family: $fontMain;
+	text-shadow: rgba(10,10,10,0.5) 1px 2px 2px;
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+}
+
+.announcement {
+	font-size: 18px;
+}
+
+.announcement {
+	a {
+		font-size: inherit;
+		color: $gray;
+	}
+}
+
+nav#navRight {
+	margin-left: $width75;
+}
+
+.titleAnnounce {
+	border: {
+		bottom: none $Override;
+		radius: $borderRadius;
+	}
+	padding: $formPadding;
+	text-align: justify;
+}
+
+.arrow {
+	display: inline-block $Override;
+	vertical-align: 600%;
+	font-size: 22pt;
+	background: #ddd;
+	opacity: .9;
+	padding: 2%;
+	font-weight: bold;
+	color: #999;
+	border: {
+		@include setBorder(1px, solid, #444, 5px);
+	}
+	cursor: pointer;
+}
+
+#containmentBox {
+	padding: 2%;
+	width: 100%;
+	margin: 0px auto;
+	margin-left: 15%;
+}
+
+#img-2 {
+	display: none;
+}
+
+.scrollContainer {
+	display: inline-block;
+}
+
+.scrollImg {
+	@include setHeightWidth2(400px);
+	border: {
+		@include setBorder(1px, solid, #444, 5px);
+	}
+	cursor: pointer;
+}
+
+.brl {
+	height: 5px;
+}
+
+.br {
+	height: 10px;
+}

@@ -1,0 +1,72 @@
+$Override: !important;
+$fontFamily: "Verdana","Helvetica","Arial";
+$fontMain: "Lucida Sans","Helvetica","sans-serif";
+$formPadding: 6px 12px;
+$lineHeight: 1.42857143;
+$black: #000;
+$white: #fff;
+$gray: #eee;
+$darkGray: #444;
+$m: 1%;
+$margins: $m $m $m $m;
+$fontSizeMain: 13px;
+$padding: 0.65%;
+$x: 5;
+
+@mixin setBorder($width, $style, $color, $radius: 0px){
+	width: $width;
+	style: $style;
+	color: $color;
+	@if $radius > 0px {
+		radius: $radius;
+	}
+}
+
+@mixin setBorderColor($top, $left, $right, $bottom){
+	border: {
+		top-color: $top;
+		left-color: $left;
+		right-color: $right;
+		bottom-color: $bottom;
+	}
+}
+
+@mixin setHeightWidth($height, $width: "none"){
+	height: $height;
+	@if $width == "none" {
+		width: $height;
+	} @else {
+		width: $width;
+	}
+}
+
+@mixin setHW($h,$w: "none"){
+	@include setHeightWidth($h, $w);
+}
+
+@mixin setPos($y, $x: "none"){
+	top: $y;
+	@if $x == "none" {
+		left: $y;
+	} @else {
+		left: $x;
+	}
+}
+
+@mixin grad($primary, $secondary){
+	background: linear-gradient(top, $primary, $secondary)
+}
+
+@mixin rgbaGrad($rgbSolid, $rgbPrimary, $rgbSecondary, $opacityPrimary: 0.8, $opacitySecondary: 0.9){
+	background: {
+		color: rgba($rgbSolid, 0, 0, 0.8);
+		image: gradient(linear, 0% 0%, 0% 90%, from(rgba($rgbPrimary, 0, 0, $opacityPrimary)), to(rgba($rgbSecondary, 0, 0, $opacitySecondary)));
+	}
+}
+
+@while $x < 45 {
+	.br-#{$x} {
+		height: #{$x}px;
+	}
+	$x: $x + 5;
+}

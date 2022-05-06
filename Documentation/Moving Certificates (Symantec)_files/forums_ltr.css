@@ -1,0 +1,1000 @@
+/* InQuira Build Version: 8.5.1 */ 
+/**
+ * Copyright (c) 2002, 2012 Oracle and/or its affiliates. All rights reserved.
+ * Oracle and Java are registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.
+ * 
+ * This software and related documentation are provided under a license agreement containing restrictions 
+ * on use and disclosure and are protected by intellectual property laws. Except as expressly permitted 
+ * in your license agreement or allowed by law, you may not use, copy, reproduce, translate, broadcast, modify, 
+ * license, transmit, distribute, exhibit, perform, publish or display any part, in any form, or by any means. 
+ * Reverse engineering, disassembly, or decompilation of this software, unless required by law for interoperability, is prohibited.
+ * 
+ * The information contained herein is subject to change without notice and is not warranted to be error-free. If you find any errors, please report them to us in writing.
+ * 
+ * If this is software or related documentation that is delivered to the U.S. Government or anyone licensing it on behalf of the U.S. Government, the following notice is applicable:
+ * 
+ * U.S. GOVERNMENT END USERS: Oracle programs, including any operating system, integrated software, 
+ * any programs installed on the hardware, and/or documentation, delivered to U.S. Government end users are "commercial computer software" 
+ * pursuant to the applicable Federal Acquisition Regulation and agency-specific supplemental regulations. As such, use, duplication, 
+ * disclosure, modification, and adaptation of the programs, including any operating system, integrated software, any programs installed 
+ * on the hardware, and/or documentation, shall be subject to license terms and license restrictions applicable to the programs. No other rights are granted to the U.S. Government.
+ * 
+ * This software or hardware is developed for general use in a variety of information management applications. It is 
+ * not developed or intended for use in any inherently dangerous applications, including applications that may create a risk of 
+ * personal injury. If you use this software or hardware in dangerous applications, then you shall be responsible to take all 
+ * appropriate fail- safe, backup, redundancy, and other measures to ensure its safe use. Oracle Corporation and its affiliates 
+ * disclaim any liability for any damages caused by use of this software or hardware in dangerous applications.
+ * 
+ * This software or hardware and documentation may provide access to or information on content, products and services from third parties. 
+ * Oracle Corporation and its affiliates are not responsible for and expressly disclaim all warranties of any kind with respect to 
+ * third-party content, products, and services. Oracle Corporation and its affiliates will not be responsible for any loss, costs, 
+ * or damages incurred due to your access to or use of third-party content, products, or services. 
+ * 
+ */
+
+/* --------------------------------------------- */
+
+/*  General                                      */
+
+/* --------------------------------------------- */
+
+#im-discussions .intro {
+        border: 1px solid #a1a5a9;
+}
+
+.im-buttons {
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+}
+
+.im-rating {
+        padding-top: 6px;
+        padding-right: 6px;
+        padding-bottom: 6px;
+        padding-left: 6px;
+        color: #7f7f7f;
+        text-align: center;
+}
+
+.im-rating .label {
+        color: #7f7f7f;
+        font-size: 90%;
+        text-align: center;
+}
+
+.im-icon-label {
+        padding-right: 15px;
+        padding-left: 5px;
+}
+
+im-icon {
+        padding-right: 3px;
+        padding-left: 0px;
+}
+
+.im-icon img{
+    cursor:pointer;
+}
+
+.im-topic-status img{
+        cursor:pointer;
+}
+
+.im-label {
+        font-weight: bold;
+}
+
+.im-last {
+        border-right: 1px #BEBEBE solid;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+}
+
+.im-first {
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+        border-left: 1px #BEBEBE solid;
+}
+
+.im-first-last {
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+        border-left: 1px #BEBEBE solid;
+        border-right: 1px #BEBEBE solid;
+}
+
+.im-new-user {
+        
+}
+
+/* --------------------------------------------- */
+
+/*  Board lists                                  */
+
+/* --------------------------------------------- */
+
+.im-board-list {
+        margin-bottom: 16px;
+        font-size: 95%;
+}
+
+.im-board-table H3, im-board-table H3 a{
+        font-size: 110%;
+        color: #76797C;
+        padding-bottom: 2px;
+        border-bottom: 1px dotted #a1a5a9;
+        margin-bottom: 0px;
+}
+
+.im-board-list TD.oddleft {
+        padding-top: 7px;
+        padding-right: 0px;
+        padding-bottom: 7px;
+        padding-left: 0px; 
+        background: #FFF;
+}
+
+.im-board-list TD.oddright {
+        background: #FFF
+}
+
+.im-board-list TD.evenleft {
+        padding-top: 7px;
+        padding-right: 0px;
+        padding-bottom: 7px;
+        padding-left: 0px;
+        background: #f5f5f5;
+}
+
+.im-board-list a:link,
+.im-board-list a:visited {
+        text-decoration: none;
+        font-weight: bold;
+        line-height: 14px;
+        padding-top: 4px;
+        padding-right: 5px;
+        padding-bottom: 4px;
+        padding-left: 24px;
+}
+
+.im-board-list a:hover {
+        color: #FF0000;
+        text-decoration: underline;
+        font-weight: bold;
+}
+
+.im-board-list a,
+.im-forum-category-name a {
+        background: url(../forums/folder20x16.gif) left no-repeat;
+}
+
+/* --------------------------------------------- */
+
+/*  Forum Lists                                  */
+
+/* --------------------------------------------- */
+
+.im-table {
+        font-size: 100%;
+        
+}
+
+.o-ask-search {
+        width: 420px;
+    table-layout: fixed;
+}
+
+.im-table th {
+        font-size: 95%;
+        line-height: 13px;
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+        font-weight: bold;
+        text-align: center;
+        color: #000000;
+        background-color: #f1f1f1;
+        border-top: 1px solid #BEBEBE;
+        border-bottom: 1px #BEBEBE solid;
+}
+
+div.graybox {
+        border: 1px solid #BEBEBE;
+        background: #E0E0E0;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+}
+
+.im-table THEAD {
+        background-color: #E0E0E0;
+        font-size: 100%;
+        line-height: 13px;
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+        font-weight: bold;
+        text-align: center;
+        color: #000000;
+        border-bottom: 1px #BEBEBE solid;
+        height: 20px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+}
+
+.im-table TBODY .im-table TFOOT {
+        border-left: 1px #BEBEBE solid;
+        border-right: 1px #BEBEBE solid;
+        border-bottom: 1px #BEBEBE solid;
+}
+
+.im-table TFOOT TD {
+        font-size: 100%;
+        background-color: #E0E0E0;
+        border-top: 1px #BEBEBE solid;
+        text-align: right;
+}
+
+.im-forum-category-name {
+        border-right: 1px #BEBEBE solid;
+        border-left: 1px #BEBEBE solid;        
+        background-color: #f1f1f1;
+        font-size: 100%;
+        line-height: 13px;
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+        font-weight: bold;
+        text-align: left;
+        color: #000000;
+        height: 20px;
+
+}
+
+.im-forum-category-name A {
+        font-weight: bold;
+        text-decoration: none;
+        border-right: none;
+        padding-top: 4px;
+        padding-right: 5px;
+        padding-bottom: 4px;
+        padding-left: 24px;
+        line-height: 14px;
+}
+
+.im-forum-category-name a:link,
+.im-forum-category-name a:visited {
+        text-decoration: none;
+}
+
+.im-forum-category-name a:hover {
+        text-decoration: underline;
+}
+
+/* --------------------------------------------- */
+
+/* Topics                                        */
+
+/* --------------------------------------------- */
+
+.im-topic-status {
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+        border-left: 1px #BEBEBE solid;
+}
+
+.im-topic-rating {
+        border-right: 1px #BEBEBE solid;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        text-align: center;
+}
+
+.im-topic-rating .label {
+        color: #7f7f7f;
+        font-size: 90%;
+        text-align: center;
+}
+
+.im-topic-rating A {
+        font-weight: bold;
+        text-decoration: none;
+        border-right: none;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+}
+
+.im-topic-rating a:link,
+.im-topic-rating a:visited {
+        text-decoration: none;
+}
+
+.im-topic-rating a:hover {
+        text-decoration: underline;
+}
+
+.im-topic-forum {
+        border-right: 1px #BEBEBE solid;
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+}
+
+.im-topic-forum a {
+        font-weight: bold;
+        text-decoration: none;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+}
+
+.im-topic-forum a:link,
+.im-topic-forum a:visited {
+        text-decoration: none;
+}
+
+.im-topic-forum a:hover {
+        text-decoration: underline;
+}
+
+.im-topic-author {
+        border-right: 1px #BEBEBE solid;
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+}
+
+.im-topic-author A {
+        font-weight: normal;
+        text-decoration: none;
+        border-right: none;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+}
+
+.im-topic-author a:link,
+.im-topic-author a:visited {
+        text-decoration: none;
+}
+
+.im-topic-author a:hover {
+        text-decoration: underline;
+}
+
+.im-bottom-border {
+        border-bottom: 1px #BEBEBE solid;
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+}
+
+.im-top-border {
+        border-top: 1px #BEBEBE solid;
+}
+
+.im-forum-name {
+        width: 100%;
+        border-right: 1px #BEBEBE solid;
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+}
+
+.im-forum-name-indent {
+        padding-top: 4px;
+        padding-right: 5px;
+        padding-bottom: 4px;
+        padding-left: 17px;
+}
+
+.im-forum-name A {
+        /*font-weight: bold;*/
+        text-decoration: none;
+        border-right: none;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+}
+
+.im-forum-name a:link,
+.im-forum-name a:visited {
+        text-decoration: none;
+}
+
+.im-forum-name a:hover {
+        text-decoration: underline;
+}
+
+.im-topic-name {
+        width: 100%;
+        border-right: 1px #BEBEBE solid;
+        border-left: 1px #BEBEBE solid;
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+}
+
+.im-topic-name .im-author A {
+        font-weight: normal;
+}
+
+.im-topic-name-indent {
+        padding-top: 4px;
+        padding-right: 5px;
+        padding-bottom: 4px;
+        padding-left: 17px;
+}
+
+.im-topic-name A {
+        /*font-weight: bold;*/
+        text-decoration: none;
+        border-right: none;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+}
+
+.im-topic-name a:link,
+.im-topic-name a:visited {
+        text-decoration: none;
+}
+
+.im-topic-name a:hover {
+        text-decoration: underline;
+}
+
+.im-view-count {
+        border-right: 1px #BEBEBE solid;
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+        text-align: center;
+}
+
+.im-msg-count {
+        border-right: 1px #BEBEBE solid;
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+        text-align: center;
+}
+
+.im-author {
+        font-size: 95%;
+}
+
+.im-author a {
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+}
+
+.im-last-post {
+        border-bottom: 1px #BEBEBE solid;
+}
+
+.im-table .im-odd {
+        background-color: #F8F8F8;
+}
+
+.im-table .im-even {
+        background-color: #FFFFFF;
+}
+
+.im-description-header {
+        font-size: 100%;
+        margin-top: 5px;
+}
+
+.im-description {
+        color: #7f7f7f;
+}
+
+/* --------------------------------------------- */
+
+/* Messages                                      */
+
+/* --------------------------------------------- */
+
+.im-message-list {
+        
+}
+
+.im-message-bottom {
+        margin-top: 5px;
+}
+
+.im-message-subject {
+        font-weight: bold;
+        margin-top: 5px;
+        margin-bottom: 2px;
+}
+
+.im-message-body {
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+}
+
+.im-message-body pre {
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        background-color: #ffeafd;
+        font-family: 'Courier New' , Monospace;
+        border: 1px solid #BEBEBE;
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+}
+
+.im-message-body blockquote {
+        background-color: #eeeeee;
+        border: 1px solid #BEBEBE;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+}
+
+.im-message-solution {
+        border-right: 1px solid #dadada;
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+        background: #95d26a;
+        color: #ffffff;
+        vertical-align: middle;
+}
+.im-message-solution-tab {
+    font-weight:bolder;
+    font-family:"Tahoma";
+    border-right: 1px solid #dadada;
+    border-top: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+        background: #95d26a;
+        color: #ffffff;
+        vertical-align: middle;
+}
+
+.im-message-partial-solution {
+        border-right: 1px solid #dadada;
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+        background: #ffcc33;
+        color: #ffffff;
+        vertical-align: middle;
+}
+
+.im-message-partial-solution-tab {
+    font-weight:bolder;
+    font-family:"Tahoma";
+    border-right: 1px solid #dadada;
+    border-top: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+        background: #ffcc33;
+        color: #ffffff;
+        vertical-align: middle;
+}
+
+.im-message-announcement {
+        border-right: 1px solid #dadada;
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+        background: #2839ff;
+        color: #ffffff;
+        vertical-align: middle;
+}
+
+.im-message-announcement-tab {
+    font-weight:bolder;
+    font-family:"Tahoma";
+    border-right: 1px solid #dadada;
+    border-top: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+        background: #2839ff;
+        color: #ffffff;
+        vertical-align: middle;
+}
+
+.im-user-info {
+        border-right: 1px dotted #dadada;
+}
+
+.im-user-info td {
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+}
+
+.im-user-info A {
+        font-weight: bold;
+        text-decoration: none;
+        border-right: none;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+}
+
+.im-user-info a:link,
+.im-user-info a:visited {
+        text-decoration: none;
+}
+
+.im-user-info a:hover {
+        text-decoration: underline;
+}
+
+.im-messagebox-threaded {
+        border: 1px #BEBEBE solid;
+        margin-top: 5px;
+}
+
+.im-messagebox-flat {
+        border-right: 1px solid #BEBEBE;
+        border-left: 1px solid #BEBEBE;
+        border-bottom: 1px solid #BEBEBE;
+}
+
+.im-message-hide {
+        display: none;
+}
+
+.im-message-show {
+        display: block;
+}
+
+/* --------------------------------------------- */
+
+/*  Infomation b                                 */
+
+/* --------------------------------------------- */
+
+.im-infobox TABLE {
+        background-color: #F0F0F0;
+    border: 1px solid #E0E0E0;
+    color: #000000;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.im-errorbox TABLE {
+        border: 1px solid #b70800;
+        background-color: #fdf9e6;
+        margin-bottom: 5px;
+        color: #856c51;
+        width: 100%;
+}
+
+
+.im-infobox TD, .im-errorbox TD {
+        font-size: 100%;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+
+}
+
+.im-infobox .unsolved, .unsolved {
+        font-weight: bold;
+        color: #ae8e6a;
+}
+
+.im-infobox .solved, .solved {
+        font-weight: bold;
+        color: #ae8e6a;
+}
+
+/* --------------------------------------------- */
+
+/* Pagination                                    */
+
+/* --------------------------------------------- */
+
+.im-paginationtop-messages        td, .im-paginationtop        th {
+        padding-top: 3px;
+        padding-right: 8px;
+        padding-bottom: 3px;
+        padding-left: 8px;
+        font-weight: bold;
+        font-size: 100%;
+        line-height: 13px;
+}
+
+.im-paginationtop td, .im-paginationtop th {
+        font-weight: bold;
+        font-size: 100%;
+        line-height: 13px;
+}
+
+.im-paginationtop th {
+        padding-top: 3px;
+        padding-right: 8px;
+        padding-bottom: 3px;
+        padding-left: 8px;
+}
+
+.im-paginationbottom        td, .im-paginationbottom        td {
+        padding-top: 3px;
+        padding-right: 8px;
+        padding-bottom: 3px;
+        padding-left: 8px;
+        font-weight: bold;
+        font-size: 100%;
+        line-height: 13px;
+}
+
+.im-paginationbottom {
+        margin-bottom: 13px;
+}
+
+.im-paginationtop-messages {
+        border-left: 1px solid #BEBEBE;
+        border-right: 1px solid #BEBEBE;
+        border-bottom: 1px solid #BEBEBE;
+        background: #E0E0E0;
+}
+
+.im-paginationtop {
+        border-left: 1px solid #BEBEBE;
+        border-right: 1px solid #BEBEBE;
+        border-top: 1px solid #BEBEBE;
+        background: #E0E0E0;
+}
+
+.im-paginationbottom {
+        border-left: 1px solid #BEBEBE;
+        border-right: 1px solid #BEBEBE;
+        border-bottom: 1px solid #BEBEBE;
+        background: #E0E0E0;
+}
+
+.im-paginationtop-messages A,
+.im-paginationtop A,
+.im-paginationbottom A {
+        font-weight: bold;
+        text-decoration: none;
+        border-right: none;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+}
+
+.im-paginationtop-messages a:link,
+.im-paginationtop-messages a:visited,
+.im-paginationtop a:link,
+.im-paginationtop a:visited,
+.im-paginationbottom a:link,
+.im-paginationbottom a:visited {
+        text-decoration: none;
+}
+
+.im-paginationtop-messages a:hover,
+.im-paginationtop a:hover,
+.im-paginationbottom a:hover {
+        text-decoration: underline;
+}
+
+.im-pagination-active {
+        text-decoration: underline;
+}
+
+.im-paginationbar {
+        color: #7f7f7f;
+}
+
+.im-paginationtop-messages {
+        background: #E0E0E0 url(../forums/paginationtop.gif) top left repeat-x;
+}
+
+.im-paginationtop {
+        background: #E0E0E0 url(../forums/paginationtop.gif) top left repeat-x;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+}
+
+.im-paginationbottom {
+        background: #f7f7f7 url(../forums/paginationbottom.gif) top left repeat-x;
+}
+
+.im-nobold a {
+        font-weight: normal;
+}
+
+.im-nobold {
+        font-weight: normal;
+}
+
+/* --------------------------------------------- */
+
+/*  User Profiles                                */
+
+/* --------------------------------------------- */
+
+.im-user-profile .im-table THEAD TH {
+        text-align: left;
+        background: #E0E0E0 url(../forums/paginationtop.gif) top left repeat-x;
+}
+
+.im-user-profile TFOOT {
+        
+}
+
+.im-user-profile .im-label {
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+        border-left: 1px #BEBEBE solid;
+        border-right: 1px #E0E0E0 solid;
+}
+
+.im-avatar {
+        margin-top: 1px;
+}
+
+.im-avatar IMG {
+        border: 1px #ccc solid;
+}
+
+.im-avatar IMG:hover {
+        border: 1px #000000 solid;
+}
+
+/* --------------------------------------------- */
+
+/*  User Subscriptions                           */
+
+/* --------------------------------------------- */
+
+.im-subscriptions .im-table THEAD TH {
+        background: #E0E0E0 url(../forums/paginationtop.gif) top left repeat-x;
+        border-bottom: none;
+}
+
+.im-subscriptions .im-subscription-type {
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+        border-left: 1px #BEBEBE solid;
+        border-right: 1px #BEBEBE solid;
+        border-bottom: 1px #BEBEBE solid;
+        border-top: 1px #BEBEBE solid;
+        font-size: 95%;
+        font-weight: bold;
+        color: #000000;
+        background-color: #f1f1f1;
+}
+
+.im-subscriptions TFOOT {
+        background: #f7f7f7 url(../forums/paginationbottom.gif) top left repeat-x;
+}
+
+.im-subscriptions .im-select {
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+        border-left: 1px #BEBEBE solid;
+}
+
+.im-subscriptions .im-title {
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+        border-left: 1px #BEBEBE solid;
+}
+
+.im-nodata {
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+        border-left: 1px #BEBEBE solid;
+        border-right: 1px #BEBEBE solid;
+}
+
+.im-subscriptions .im-title a {
+        font-weight: bold;
+}
+
+.im-subscriptions .im-expiration {
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+        border-left: 1px #BEBEBE solid;
+}
+
+.im-subscriptions .im-renew {
+        padding-top: 4px;
+        padding-right: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+        border-left: 1px #BEBEBE solid;
+        border-right: 1px #BEBEBE solid;
+}
+
+
+.dropdown {
+        font-family: Arial, Helvetica, serif;
+        color: #000000;
+        font-weight: normal;
+        border: 1px solid #7f7f7f;
+}
+
+.editfields, .im-edit-DATETIME {
+        font-family: Arial, Helvetica, serif;
+        color: #000000;
+        font-weight: normal;
+        border: 1px solid #7f7f7f;
+        padding-top: 2px;
+        padding-right: 2px;
+        padding-bottom: 2px;
+        padding-left: 2px;
+}
+
+.im-cca-paginationbottom {
+        margin-bottom: 0px;
+}

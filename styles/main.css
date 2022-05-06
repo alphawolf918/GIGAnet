@@ -1,0 +1,768 @@
+/* line 89, main.scss */
+body {
+  top: 0%;
+  left: 0%;
+  font-family: "Lucida Sans", "Helvetica", "sans-serif";
+  line-height: 1.02857;
+  position: relative;
+  margin: 1% 1% 1% 1%;
+}
+
+/* line 97, main.scss */
+table.adminTable {
+  background: -webkit-linear-gradient(#eee, #fff);
+  background: linear-gradient(#eee, #fff);
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
+  border-radius: 5px;
+}
+/* line 103, main.scss */
+table.adminTable tr th.adminHeaderRow {
+  background: -webkit-linear-gradient(#e00, #b00);
+  background: linear-gradient(#e00, #b00);
+  color: #fff;
+  font-size: 16px !important;
+  font-weight: bold;
+  height: 26px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* line 117, main.scss */
+table.adminTable tr th.adminSubHeaderRow {
+  border-radius: 0px !important;
+  text-align: center !important;
+}
+/* line 122, main.scss */
+table.adminTable tr td.adminCell {
+  border: 1px solid #000;
+  vertical-align: top;
+  padding: 2px;
+}
+
+/* line 131, main.scss */
+.filler {
+  height: 26px;
+  width: 100%;
+  background: -webkit-linear-gradient(#e00, #b00);
+  background: linear-gradient(#e00, #b00);
+  color: #fff;
+  font-weight: bold;
+  vertical-align: middle;
+  border-radius: 5px;
+  line-height: 1.02857;
+  padding-top: 4px;
+  text-align: center;
+}
+
+/* line 143, main.scss */
+.dateSection {
+  margin-top: -1%;
+  margin-left: 85%;
+  color: #eee;
+  font-weight: bold;
+}
+
+/* line 151, main.scss */
+.weatherSection {
+  margin-top: -5.4%;
+  margin-left: 14%;
+  width: 8%;
+  border-radius: 5px !important;
+}
+
+/* line 159, main.scss */
+.welcomeSection {
+  color: #eee;
+  min-width: 17%;
+  max-width: 17%;
+  margin-left: 2%;
+  font-size: 85%;
+}
+
+/* line 167, main.scss */
+.view-event-section {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 4px 16px;
+}
+
+/* line 175, main.scss */
+.absences-events {
+  background: #444 !important;
+  border-radius: 5px;
+}
+
+/* line 180, main.scss */
+.anni-birthday {
+  vertical-align: top;
+  height: 20px;
+  width: 20px;
+}
+
+/* line 186, main.scss */
+.margin-left-1-5 {
+  margin-left: 1.5%;
+}
+
+/* line 190, main.scss */
+.margin-left-2 {
+  margin-left: 2%;
+}
+
+/* line 194, main.scss */
+.margin-left-4 {
+  margin-left: 4%;
+}
+
+/* line 198, main.scss */
+.margin-left-5 {
+  margin-left: 5%;
+}
+
+/* line 202, main.scss */
+.margin-left-20 {
+  margin-left: 20%;
+}
+
+/* line 206, main.scss */
+.width-20 {
+  width: 20%;
+}
+
+/* line 210, main.scss */
+.width-41 {
+  width: 41%;
+}
+
+/* line 214, main.scss */
+.font-size-13px {
+  font-size: 13px;
+}
+
+/* line 218, main.scss */
+.font-weight-normal {
+  font-weight: normal;
+}
+
+/* line 222, main.scss */
+.admin-options-section {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* line 229, main.scss */
+.view-event-about {
+  background: #fff;
+  color: #444;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+  border-radius: 5px;
+  padding: 4px 10px;
+  width: 65%;
+  min-height: 35%;
+  position: absolute;
+}
+
+/* line 241, main.scss */
+.view-absence-section {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 4px 16px;
+}
+
+/* line 249, main.scss */
+.position-absolute {
+  position: absolute;
+}
+
+/* line 253, main.scss */
+.height-4px {
+  height: 4px;
+}
+
+/* line 257, main.scss */
+.img-25 {
+  height: 25px;
+  width: 25px;
+}
+
+/* line 261, main.scss */
+.customBreak {
+  min-width: 1.5%;
+  max-width: 2%;
+  display: inline-block;
+  position: relative;
+}
+
+/* line 268, main.scss */
+.redTitle {
+  border-bottom: none !important;
+  border-radius: 5px;
+  padding: 4px 16px !important;
+  text-align: justify;
+}
+
+/* line 277, main.scss */
+.giganetLogo {
+  min-height: 88%;
+  min-width: 55%;
+  max-height: 90%;
+  max-width: 105%;
+  margin-left: 23%;
+  z-index: 100;
+  position: absolute;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* line 291, main.scss */
+.afterLogo {
+  margin-top: 1%;
+  margin-left: 0%;
+  padding: 1% 2%;
+  cursor: pointer;
+}
+
+/* line 299, main.scss */
+.customBreak2 {
+  width: 2%;
+  display: inline-block;
+}
+
+/* line 304, main.scss */
+.homeLink {
+  font-size: 16px !important;
+  color: #fefefe;
+}
+
+/* line 309, main.scss */
+* {
+  position: relative;
+}
+
+/* line 313, main.scss */
+div#container {
+  margin-top: 0%;
+  margin-left: 3%;
+  min-width: 98%;
+  max-width: 103%;
+  position: relative;
+}
+
+/* line 322, main.scss */
+.nicEdit-main {
+  background: #fff;
+  border-radius: 5px;
+}
+
+/* line 327, main.scss */
+td {
+  font-size: 75%;
+}
+
+/* line 331, main.scss */
+a.nLink {
+  font-size: 115%;
+}
+
+/* line 335, main.scss */
+a.hrLink {
+  font-size: 85%;
+}
+
+/* line 339, main.scss */
+.topHeader {
+  top: 0%;
+  left: 0%;
+  border-top-color: #000;
+  border-left-color: #444;
+  border-right-color: #444;
+  border-bottom-color: #444;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #999;
+  border-radius: 5px;
+  background-color: rgba(0, 75, 236, 0.8);
+  background-image: gradient(linear, 0% 0%, 0% 90%, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9)));
+  text-shadow: rgba(10, 10, 10, 0.5) 1px 2px 2px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+  min-height: 155px;
+  min-width: 60%;
+  max-height: 220px;
+  max-width: 95%;
+  height: 35%;
+  background: #04f;
+  position: relative;
+}
+
+/* line 352, main.scss */
+.fc-state-highlight {
+  color: #000 !important;
+}
+
+/* line 356, main.scss */
+.fc-bg {
+  background: #444;
+  opacity: .9;
+}
+
+/* line 361, main.scss */
+.fc-day-header, .fc-widget-header {
+  background: #000;
+  padding: 4px;
+}
+
+/* line 366, main.scss */
+.title {
+  background: -webkit-linear-gradient(#e00, #b00);
+  background: linear-gradient(#e00, #b00);
+  color: #fff;
+  font-size: 16px !important;
+  font-weight: bold;
+  padding: 2%;
+  min-width: 90%;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+/* line 379, main.scss */
+.titleMain {
+  background: -webkit-linear-gradient(#e00, #b00) !important;
+  background: linear-gradient(#e00, #b00) !important;
+  color: #eee;
+  font-family: "Verdana", "Helvetica", "Arial";
+  font-size: 106%;
+  font-weight: bold;
+  padding: 2%;
+  border-width: 4px;
+  border-style: inset;
+  border-color: #444;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* line 394, main.scss */
+label.formLabel {
+  font-family: "Verdana", "Helvetica", "Arial";
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* line 402, main.scss */
+.whiteLink {
+  font-size: 94%;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* line 410, main.scss */
+.wLink {
+  color: #fff;
+}
+
+/* line 414, main.scss */
+.form-control, button.formButton {
+  display: inline-block;
+  font-family: "Verdana", "Helvetica", "Arial" !important;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 6px 12px;
+  margin-bottom: 0%;
+  line-height: 1.02857;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: none;
+  height: 36px;
+  text-align: left;
+  color: #777;
+  background-color: #fff;
+  background-image: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+/* line 426, main.scss */
+.form-control:focus, button.formButton:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* line 433, main.scss */
+button.formButton {
+  background-color: #09f;
+  background-image: -webkit-linear-gradient(left, #09f, #0af);
+  background-image: linear-gradient(left, #09f, #0af);
+  padding: 6px 12px;
+  font-weight: bold;
+  font-size: 14px !important;
+  color: #fff;
+}
+
+/* line 447, main.scss */
+textarea.form-control {
+  height: auto;
+}
+
+/* line 451, main.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+/* line 455, main.scss */
+.navTitle {
+  font-size: 16px !important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-left: 0.1%;
+  padding: 2%;
+  text-indent: 1em;
+  min-width: 94%;
+  max-width: 96%;
+  background: -webkit-linear-gradient(#e00, #b00) !important;
+  background: linear-gradient(#e00, #b00) !important;
+}
+
+/* line 469, main.scss */
+.top {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* line 476, main.scss */
+.bottom {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* line 483, main.scss */
+nav#navLeft, nav#navRight {
+  min-height: 272%;
+  min-width: 15%;
+  max-height: 340%;
+  max-width: 20%;
+  width: 15%;
+  display: inline-block;
+  background: #ddd;
+  position: absolute;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #777;
+  border-radius: 5px;
+}
+
+/* line 499, main.scss */
+div.navContent {
+  background: #fff;
+  min-height: 90%;
+  min-width: 95.5%;
+  max-height: 160%;
+  max-width: 95.6%;
+  color: #444;
+  position: absolute;
+  margin-left: 2%;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #999;
+  border-radius: 5px;
+}
+
+/* line 516, main.scss */
+footer {
+  position: absolute;
+  margin-top: 42%;
+  margin-left: 31%;
+  min-height: 61%;
+  min-width: 50%;
+  max-height: 72%;
+  max-width: 50%;
+}
+
+/* line 529, main.scss */
+.glare {
+  top: 0%;
+  left: 0%;
+  height: 1px;
+  width: 102%;
+  position: absolute;
+  border-radius: 8px;
+  padding: 6% 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  background-image: gradient(linear, 0% 0% 0% 95%, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)));
+}
+
+/* line 541, main.scss */
+a {
+  color: #00f;
+  text-decoration: none;
+  font-family: "Century Gothic";
+  font-size: 81%;
+}
+
+/* line 550, main.scss */
+a.navLink {
+  color: #000;
+}
+
+/* line 554, main.scss */
+div#contentMain {
+  overflow-y: auto;
+  height: 260%;
+  width: 62%;
+  background: #ddd;
+  display: inline-block;
+  min-height: 100%;
+  position: absolute;
+  margin-left: 14%;
+  padding: 1%;
+  border: 1px solid #777;
+}
+
+/* line 566, main.scss */
+div.greenButton {
+  background: #444;
+  padding: 4px 16px;
+  width: 6%;
+  text-align: center;
+  border-width: 2px;
+  border-style: outset;
+  border-color: #000;
+  border-radius: 5px;
+}
+
+/* line 576, main.scss */
+div.greenButton a {
+  color: #eee;
+  font-weight: bold;
+  font-size: 64%;
+  text-decoration: none;
+}
+
+/* line 585, main.scss */
+.icon {
+  height: 16px;
+  width: 16px;
+}
+
+/* line 589, main.scss */
+.Licon {
+  height: 14px;
+  width: 14px;
+}
+
+/* line 593, main.scss */
+div.blueBlock {
+  overflow-y: auto;
+  border-top-color: #000;
+  border-left-color: #444;
+  border-right-color: #444;
+  border-bottom-color: #444;
+  display: inline-block;
+  background-color: #26e;
+  background-image: gradient(linear, 0% 0%, 0% 90%, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9)));
+  color: #eee;
+  font-weight: bold;
+  font-size: 94%;
+  min-height: 154px;
+  max-height: 200px;
+  width: 36%;
+  margin-left: 8%;
+  border-radius: 5px;
+  padding: 1%;
+  vertical-align: top;
+  text-shadow: rgba(10, 10, 10, 0.5) 1px 2px 2px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+}
+
+/* line 618, main.scss */
+div.blueBlock a {
+  font-size: 94% !important;
+}
+
+/* line 623, main.scss */
+.aquaButton {
+  font-size: 92% !important;
+  font-family: "Lucida Sans", "Helvetica", "sans-serif";
+  font-weight: 800;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #06f;
+  border-radius: 5px;
+  text-shadow: rgba(10, 10, 10, 0.5) 1px 2px 2px;
+  text-align: center;
+  text-overflow: ellipsis !important;
+  padding: 5% 6% 3%;
+  position: relative;
+  color: #fff;
+  min-width: 75%;
+  width: 75%;
+  max-width: 75%;
+  white-space: nowrap;
+  overflow: hidden !important;
+  background-color: rgba(0, 105, 236, 0.8);
+  background-image: gradient(linear, 0% 0%, 0% 90%, from(rgba(0, 50, 50, 0.8)), to(rgba(0, 20, 35, 0.9)));
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+  display: inline-block;
+  cursor: pointer !important;
+}
+
+/* line 655, main.scss */
+.aquaButton a {
+  font-family: "Lucida Sans", "Helvetica", "sans-serif";
+  font-size: 90% !important;
+}
+
+/* line 663, main.scss */
+.blackButton {
+  border-top-color: #000;
+  border-left-color: #444;
+  border-right-color: #444;
+  border-bottom-color: #444;
+  font-size: 92% !important;
+  font-family: "Lucida Sans", "Helvetica", "sans-serif";
+  font-weight: 800;
+  background-color: #444;
+  background-image: gradient(linear, 0% 0%, 0% 90%, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9)));
+  border-width: 5px;
+  border-style: solid;
+  border-color: #444;
+  border-radius: 5px;
+  padding: 6px 12px;
+  width: 6%;
+  position: absolute;
+  text-shadow: rgba(10, 10, 10, 0.5) 1px 2px 2px;
+  text-align: center;
+  text-overflow: ellipsis !important;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* line 692, main.scss */
+.blackButton a {
+  font-family: "Lucida Sans", "Helvetica", "sans-serif";
+  font-size: 90% !important;
+}
+
+/* line 701, main.scss */
+a.sideLink:visited {
+  color: #444;
+  font-size: 80%;
+}
+
+/* line 707, main.scss */
+div.announcementBox {
+  border-top-color: #000;
+  border-left-color: #444;
+  border-right-color: #444;
+  border-bottom-color: #444;
+  background-color: #444;
+  background-image: gradient(linear, 0% 0%, 0% 90%, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9)));
+  border-width: 1px;
+  border-style: solid;
+  border-color: #777;
+  border-radius: 5px;
+  color: #eee;
+  padding: 0.5%;
+  min-height: 220px;
+  width: 94%;
+  margin: 0% auto;
+  font-family: "Lucida Sans", "Helvetica", "sans-serif";
+  text-shadow: rgba(10, 10, 10, 0.5) 1px 2px 2px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+}
+
+/* line 727, main.scss */
+.announcement {
+  font-size: 18px;
+}
+
+/* line 732, main.scss */
+.announcement a {
+  font-size: inherit;
+  color: #eee;
+}
+
+/* line 738, main.scss */
+nav#navRight {
+  margin-left: 75%;
+}
+
+/* line 742, main.scss */
+.titleAnnounce {
+  border-bottom: none !important;
+  border-radius: 5px;
+  padding: 6px 12px;
+  text-align: justify;
+}
+
+/* line 751, main.scss */
+.arrow {
+  display: inline-block !important;
+  vertical-align: 600%;
+  font-size: 22pt;
+  background: #ddd;
+  opacity: .9;
+  padding: 2%;
+  font-weight: bold;
+  color: #999;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #444;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* line 766, main.scss */
+#containmentBox {
+  padding: 2%;
+  width: 100%;
+  margin: 0px auto;
+  margin-left: 15%;
+}
+
+/* line 773, main.scss */
+#img-2 {
+  display: none;
+}
+
+/* line 777, main.scss */
+.scrollContainer {
+  display: inline-block;
+}
+
+/* line 781, main.scss */
+.scrollImg {
+  height: 400px;
+  width: 400px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #444;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* line 789, main.scss */
+.brl {
+  height: 5px;
+}
+
+/* line 793, main.scss */
+.br {
+  height: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

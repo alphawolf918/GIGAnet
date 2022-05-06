@@ -1,0 +1,876 @@
+.ac_results {
+	margin: 3px 0 0;
+	padding: 0;
+	background-color: #fff;
+	overflow: hidden;
+	z-index: 99999;
+	border-left: 1px solid #cbcbcf;
+	border-right: 1px solid #cbcbcf;
+	border-bottom: 1px solid #cbcbcf;
+	color: #666;
+}
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.ac_results li {
+	margin: 0;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	font-family: Arial;
+	font-size: 11px;
+	line-height: 14px;
+	overflow: hidden;
+}
+.ac_odd {
+	background-color: #fff;
+}
+.ac_over {
+	background-color: #ebeff3;
+}
+.flyout {
+	border-right: 1px solid #CACBCE;
+	border-bottom: 1px solid #CACBCE;
+	border-left: 1px solid #CACBCE;
+	padding: 20px 20px 20px 10px;
+	background-color: #FFF;
+	position: absolute;
+	display: none;
+	z-index: 84;
+	font-size: 12px;
+}
+.flyout ul.fly_mainnav {
+	width: 234px;
+	margin: 0;
+	padding: 0;
+	margin-right: 20px;
+	list-style: none;
+	float: left;
+}
+.flyout ul.fly_mainnav li {
+	font-size: 12px;
+	font-weight: 400;
+	width: 234px;
+}
+#global-header .flyout ul.fly_mainnav li a {
+	display: block;
+	width: 224px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #004276;
+	line-height: 16px;
+	vertical-align: middle;
+	text-align: left;
+	text-decoration: none;
+	font-size: 12px;
+}
+#global-header .flyout ul.fly_mainnav li a:hover {
+	color: #004276;
+	background-color: #EBEFF3;
+}
+.flyout .fly_greybox {
+	float: left;
+	background: #f0f0f0;
+	min-width: 440px;
+	min-height: 183px;
+	margin-right: 20px;
+	width: 460px;
+}
+.flyout .fly_greybox .grey-tl {
+	background: url('/apps/infocenter/sites/verisign/images/grybrdr_lft_top.gif') no-repeat left top;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.flyout .fly_greybox .grey-tr {
+	background: url('/apps/infocenter/sites/verisign/images/grybrdr_rt_top.gif') no-repeat right top;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.flyout .fly_greybox .grey-bl {
+	background: url('/apps/infocenter/sites/verisign/images/grybrdr_lft_btm.gif') no-repeat left bottom;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.flyout .fly_greybox .grey-br {
+	background: url('/apps/infocenter/sites/verisign/images/grybrdr_rt_btm.gif') no-repeat right bottom;
+	width: 432px;
+	height: 156px;
+	margin: 0;
+	padding: 14px;
+	border: none;
+}
+.flyout .fly_greybox .greybox-left {
+	float: left;
+	padding-right: 14px;
+	border-right: 1px solid #d6d6d6;
+	width: 195px;
+	height: 156px;
+}
+.flyout .fly_greybox .greybox-right {
+	float: left;
+	width: 195px;
+	margin-left: 24px;
+	padding-right: 0;
+	border: none;
+}
+.flyout .fly_greybox h4 {
+	margin: 0 0 12px;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #000;
+}
+.flyout .fly_greybox p {
+	font-size: 12px;
+}
+.flyout .fly_greybox ul {
+	margin: 0;
+	width: 185px;
+	padding-left: 10px;
+}
+.flyout .fly_greybox ul li {
+	margin-bottom: 7px;
+	font-size: 12px;
+}
+.flyout .fly_greybox ul li a, .flyout .fly_greybox ul li a:visited, #global-header .flyout .fly_greybox ul li a, #global-header .flyout .fly_greybox ul li a:visited {
+	text-decoration: none;
+}
+.flyout .fly_greybox ul li a:hover, #global-header .flyout .fly_greybox ul li a:hover {
+	text-decoration: underline;
+	color: #004276;
+}
+.flyout .promo-link {
+	float: left;
+	display: inline-block;
+}
+.flyout .promo-link img {
+	border: none;
+}
+.flyout input, .flyout select {
+	font-size: 12px;
+	color: #000;
+	border: #cacbce 1px solid;
+	background: #FFF;
+	height: 23px;
+}
+#psNavflyout {
+	top: 97px;
+	left: 0;
+}
+#partnersNavflyout {
+	top: 95px;
+	right: 0;
+	padding-top: 22px;
+}
+#partnersNavflyout .fly_greybox {
+	min-height: 203px;
+}
+#partnersNavflyout .fly_greybox .grey-br {
+	height: 203px;
+}
+#partnersNavflyout .fly_greybox .greybox-left {
+	height: 203px;
+	min-height: 203px;
+}
+#partnersNavflyout .fly_greybox h4 {
+	margin: 0 0 10px;
+	color: #000;
+}
+#partnersNavflyout .fly_greybox p {
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+#partnersNavflyout .partner_form label {
+	font-weight: 700;
+	display: block;
+	margin-bottom: 4px;
+	font-size: 12px;
+}
+#partnersNavflyout .partner_form input {
+	width: 180px;
+	height: 15px;
+	font-family: arial;
+	padding-left: 6px;
+	padding-right: 6px;
+	font-size: 12px;
+	padding: 4px;
+	height: 15px;
+	line-height: 15px;
+}
+#partnersNavflyout .partner_form input.partner_form_submit {
+	margin: 12px auto 6px 28px;
+	width: 136px;
+	height: 27px;
+	background: url('/apps/infocenter/sites/verisign/images/partners_signin_136x27.gif') no-repeat left top;
+	overflow: hidden;
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+	cursor: pointer;
+	display: block;
+	border: 0;
+	text-transform: uppercase;
+}
+#partnersNavflyout a.sign_in {
+	letter-spacing: -9999em;
+	text-indent: -9999em;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-top: 7px;
+	text-decoration: none;
+	display: block;
+	background: url('/apps/infocenter/sites/verisign/images/partners_signin_136x27.gif') no-repeat left top;
+	height: 20px;
+	width: 136px;
+	cursor: pointer;
+	font-size: 0;
+}
+#partnersNavflyout p.small {
+	font-size: 11px;
+}
+#partnersNavflyout p.small a {
+	text-decoration: none;
+}
+#partnersNavflyout p.small a:hover {
+	text-decoration: underline;
+	color: #004276;
+}
+#supportNavflyout {
+	top: 95px;
+	right: 0;
+	padding-top: 22px;
+}
+#supportNavflyout .fly_greybox {
+	min-height: 183px;
+	min-width: 288px;
+	height: 183px;
+	width: 288px;
+	position: relative;
+}
+#supportNavflyout .fly_greybox .grey-br {
+	width: 260px;
+}
+#supportNavflyout form, #supportNavflyout form fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+#supportNavflyout form {
+	margin-top: 8px;
+}
+#supportNavflyout #support_fieldset div {
+	display: block;
+	margin-bottom: 10px;
+}
+#supportNavflyout #support_fieldset div.inputLimiter {
+	width: 237px;
+	height: 23px;
+	border: 1px solid #cacbce;
+	padding-right: 20px;
+	background: #FFF;
+}
+#supportNavflyout #support_fieldset span {
+	font-size: 12px;
+	font-weight: 700;
+	color: #666;
+}
+#supportNavflyout form select#support_dd {
+	font-size: 12px;
+	font-family: arial;
+	color: #666;
+	padding: 4px 4px 4px 0;
+	width: 259px;
+	height: 27px;
+	border: #cacbce 1px solid;
+	margin-bottom: -5px;
+}
+#support-form-info {
+	margin-bottom: 0;
+}
+#supportNavflyout form input#support_input {
+	font-size: 12px;
+	font-family: arial;
+	color: #666;
+	padding: 4px;
+	line-height: 15px;
+	width: 229px;
+	height: auto;
+	overflow: hidden;
+	margin: 0;
+	border: 0;
+}
+.flyout-error {
+	visibility: hidden;
+	color: red;
+	font-family: arial;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+#support-error {
+	position: absolute;
+	left: 18px;
+	bottom: 16px;
+	width: 250px;
+}
+#supportNavflyout form a#support_search_btn {
+	display: block;
+	position: absolute;
+	background-color: #fff;
+	width: 19px;
+	height: 16px;
+	z-index: 6;
+	background: url("/apps/infocenter/sites/verisign/images/search-btn.jpg") no-repeat scroll left top;
+	margin-left: 237px;
+	margin-top: -30px;
+}
+#supportNavflyout p.small {
+	font-size: 11px;
+	color: #666;
+	margin-top: 0;
+	position: relative;
+	left: 5px;
+	top: -5px;
+}
+#myaccountNavflyout {
+	height: 128px;
+	top: 97px;
+	right: 0;
+}
+#myaccountNavflyout div.fly_nav {
+	float: left;
+	height: 128px;
+	border-right: 1px solid #cacbce;
+	margin-right: 6px;
+	padding-right: 6px;
+}
+#myaccountNavflyout div.fly_nav + div.fly_nav {
+	border: none;
+}
+#myaccountNavflyout div.fly_nav h4 {
+	margin: 0 0 1px 10px;
+	font-size: 12px;
+	color: #000;
+}
+#myaccountNavflyout div.fly_nav ul.fly_mainnav, #myaccountNavflyout div.fly_nav ul.fly_mainnav li, #myaccountNavflyout div.fly_nav ul.fly_mainnav li a {
+	float: none;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	width: 224px;
+}
+#myaccountNavflyout div.fly_nav ul.fly_mainnav li {
+	font-size: 12px;
+	font-weight: 400;
+	height: 24px;
+	width: 204px;
+}
+#myaccountNavflyout div.fly_nav ul.fly_mainnav li a {
+	display: block;
+	width: 194px;
+	padding-left: 10px;
+	color: #004276;
+	line-height: 18px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	vertical-align: middle;
+	text-align: left;
+	text-decoration: none;
+}
+#myaccountNavflyout div.fly_nav ul.bottommargin23 {
+	margin-bottom: 23px;
+}
+#myaccountNavflyout div.fly_nav ul.bottommargin40 {
+	margin-bottom: 40px;
+}
+#myaccountNavflyout div.fly_nav ul.bottommargin45 {
+	margin-bottom: 45px;
+}
+#myaccountNavflyout .fly_greybox {
+	width: 288px;
+	height: 128px;
+	min-width: 288px;
+	min-height: 128px;
+	margin-right: 0;
+}
+#myaccountNavflyout .fly_greybox .grey-br {
+	width: 260px;
+	height: 100px;
+}
+#myaccountNavflyout form, #myaccountNavflyout form fieldset, #myaccountNavflyout form fieldset input {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+#myaccountNavflyout #myacc_fieldset div.inputLimiter {
+	width: 237px;
+	height: 23px;
+	border: 0;
+	overflow: hidden;
+	border: #cacbce 1px solid;
+	background: #FFF;
+}
+#myaccountNavflyout form fieldset input#myacc_input {
+	font-size: 12px;
+	font-family: arial;
+	color: #666;
+	border: 0;
+	background: #FFF;
+	padding: 6px;
+	line-height: 11px;
+	width: 208px;
+	height: 11px;
+}
+#myaccountNavflyout form #myacc_search_btn {
+	border: 0;
+	display: block;
+	position: absolute;
+	width: 20px;
+	background-color: #fff;
+	height: 16px;
+	z-index: 10;
+	background: url("/apps/infocenter/sites/verisign/images/search-btn.jpg") no-repeat scroll left top;
+	top: 66px;
+	right: 55px;
+}
+#myaccountNavflyout p.small {
+	font-size: 11px;
+	color: #666;
+	margin-top: 5px;
+}
+#myaccountNavflyout span.small {
+	font-size: 11px;
+	color: #666;
+	position: relative;
+	top: -18px;
+	left: 10px;
+}
+#global-footer {
+	width: 100%;
+}
+#global-footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-top: 13px;
+	border-top: 1px solid #ededed;
+}
+#global-footer ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	padding-right: 12px;
+	margin-right: 12px;
+	border-right: 1px solid #999;
+	font-size: 11px;
+	line-height: 11px;
+}
+#global-footer ul li.last {
+	padding-right: 0;
+	margin-right: 0;
+	border-right: none;
+	font-size: 11px;
+	line-height: 11px;
+	display: block;
+	height: 11px;
+	vertical-align: middle;
+}
+#global-footer ul li.last a img {
+	border: none;
+}
+#global-footer ul li a {
+	color: #004276;
+	text-decoration: none;
+	overflow: visible;
+}
+#global-footer ul li a:hover {
+	text-decoration: underline;
+}
+#footertxt {
+	float: left;
+	width: 100%;
+}
+#footertxt p {
+	margin: 9px 0;
+	font-size: 11px;
+	color: #939598;
+}
+#footertxt a {
+	text-decoration: none;
+	color: #939598;
+}
+#footertxt a:hover {
+	text-decoration: underline;
+}
+.printableLink {
+	display: none;
+}
+#global-header {
+	position: relative;
+	width: 100%;
+	height: 108px;
+	z-index: 100;
+	width: 960px;
+	margin: 3px auto 0 auto;
+}
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	padding: 3px 0 0;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+#mainContainer #bodyContainer {
+	margin-top: 0;
+}
+#global-header a, #global-header a:link {
+	color: #004276;
+	text-decoration: underline;
+	outline: 0;
+}
+#global-header a:hover {
+	color: #9B0033;
+}
+#global-header p#site_logo {
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	top: 16px;
+	width: 344px;
+	height: 39px;
+	left: 10px;
+	position: absolute;
+}
+#global-header #quick_links {
+	position: absolute;
+	right: 0;
+	width: 455px;
+	z-index: 101;
+}
+#global-header #quick_links ul.quick_links_list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	right: 123px;
+	z-index: 102;
+}
+#global-header #quick_links ul.quick_links_list li {
+	float: left;
+	padding: 0 0 0 12px;
+	list-style: none;
+	font-size: 11px;
+	line-height: 15px;
+	height: 15px;
+}
+#global-header #quick_links ul.quick_links_list li.country_selector {
+	font-size: 11px;
+	line-height: 15px;
+	height: 15px;
+	border-right: 1px solid #999;
+	padding-right: 12px;
+	padding-left: 20px;
+	background: url('/apps/infocenter/sites/verisign/images/globe15x15.jpg') no-repeat left top;
+}
+#global-header #quick_links ul.quick_links_list li a {
+	font-size: 11px;
+	text-decoration: none;
+}
+#global-header #quick_links ul.quick_links_list li a:hover {
+	text-decoration: underline;
+}
+#global-header #quick_links div.country_box {
+	background: url('/apps/infocenter/sites/verisign/images/wws-bg.gif') no-repeat left top;
+	width: 360px;
+	height: 130px;
+	padding: 14px 0;
+	position: absolute;
+	right: 0;
+	top: 17px;
+	z-index: 103;
+	display: none;
+}
+#global-header #quick_links div.country_box ul {
+	margin: 0 0 0 10px;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+#global-header #quick_links div.country_box ul li {
+	float: none;
+	display: block;
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: 70px;
+	margin-bottom: 5px;
+	padding-left: 5px;
+}
+#global-header #quick_links div.country_box ul li, #global-header #quick_links div.country_box ul li a {
+	line-height: 14px;
+	font-size: 11px;
+	text-decoration: none;
+}
+#global-header #quick_links div.country_box ul li a:hover {
+	text-decoration: underline;
+}
+#global-header #quick_links div.country_box ul.last li {
+	width: 80px;
+}
+#global-header #quick_links div.country_box a.closeBox {
+	position: absolute;
+	height: 12px;
+	width: 12px;
+	background: url('/apps/infocenter/sites/verisign/images/close.gif') no-repeat left top;
+	letter-spacing: -9999em;
+	text-indent: -9999em;
+	overflow: hidden;
+	top: 10px;
+	right: 10px;
+	z-index: 7;
+	display: block;
+}
+#global-header #quick_links #header_seal {
+	position: absolute;
+	right: 0;
+	margin-left: 23px;
+	height: 72px;
+	width: 100px;
+}
+#global-header #quick_links #gsa {
+	position: absolute;
+	right: 120px;
+	top: 35px;
+}
+#global-header #quick_links #gsa form, #gsa fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+#global-header #quick_links #gsa #gsa_fieldset {
+	position: absolute;
+	right: 0;
+}
+#global-header #quick_links #gsa #gsa_inputbox {
+	border: none;
+	color: #666;
+	font-size: 11px;
+	line-height: 11px;
+	width: 167px;
+	height: 20px;
+	background: url('/apps/infocenter/sites/verisign/images/search-input.jpg') no-repeat left top;
+	padding-left: 10px;
+	padding-bottom: 0;
+	padding-right: 25px;
+	overflow: hidden;
+}
+#global-header #quick_links #gsa #gsa_inputbox #gsa_input {
+	color: #666;
+	font-size: 11px;
+	line-height: 11px;
+	width: 165px;
+	margin-top: 1px;
+	height: 16px;
+	overflow: hidden;
+	border: 0;
+	margin-bottom: 1px;
+}
+#global-header #quick_links #gsa #gsa_search_btn {
+	text-decoration: none;
+	display: block;
+	border: none;
+	width: 17px;
+	height: 18px;
+	background: url('/apps/infocenter/sites/verisign/images/search-btn.jpg') no-repeat left top;
+	position: relative;
+	top: -18px;
+	left: 177px;
+}
+#global-header #header_nav {
+	width: 100%;
+	height: 25px;
+	margin-bottom: 8px;
+	top: 72px;
+	position: absolute;
+	left: 0;
+	line-height: 19px;
+}
+#header_nav {
+	z-index: 85;
+}
+#global-header ul#main {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+}
+#global-header ul#main li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 238px;
+	border-left: 1px solid #DCAC00;
+	border-right: 1px solid #FFDD63;
+}
+#global-header ul#main li.left {
+	width: 239px;
+	border-left: none;
+}
+#global-header ul#main li.right {
+	width: 239px;
+	border-right: none;
+}
+#global-header ul#main li a {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 25px;
+	vertical-align: middle;
+	color: #333;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 25px;
+	background: url('/apps/infocenter/sites/verisign/images/nav_grad.png') repeat-x left top;
+}
+#global-header ul#main li.left a {
+	background: url('/apps/infocenter/sites/verisign/images/nav_left.png') no-repeat left top;
+}
+#global-header ul#main li.right a {
+	background: url('/apps/infocenter/sites/verisign/images/nav_right.png') no-repeat right top;
+}
+#global-header ul#main li.left a.nav_active {
+	background-position: left -25px;
+	color: #9B0033;
+}
+#global-header ul#main li.left a.nav_last_active {
+	background-position: right -25px;
+	color: #9B0033;
+}
+#global-header ul#main li a span.nav-arrow {
+	display: inline-block;
+	width: 7px;
+	height: 12px;
+	margin-left: 10px;
+	background: url('/apps/infocenter/sites/verisign/images/arrow_white.png') no-repeat left 6px;
+}
+.nav_arrow_active {
+	display: inline-block;
+	width: 7px;
+	height: 12px;
+	margin-left: 10px;
+	background: url('/apps/infocenter/sites/verisign/images/arrow_red.png') no-repeat left 6px;
+}
+.gShadow ul li.con p {
+	padding-left: 0;
+}
+input, select, input#gsa_input, input#partner_username, input#partner_password, select#support_dd, input#support_input {
+	outline: none;
+}
+#bubble1, #bubble2, #bubble3, #bubble4 {
+	z-index: 2001;
+}
+
+.arrow-right {
+	text-decoration: none;
+	font-weight: 700;
+	padding-right: 14px;
+	background: url('/apps/infocenter/sites/verisign/images/learnmore-arrow-6x9.gif') no-repeat scroll right center;
+}
+
+div #psNavflyout.flyout {
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: 4px 4px 4px #666;
+	-webkit-box-shadow: 4px 4px 4px #666;
+	box-shadow: 4px 4px 4px #666;
+	margin-top: -4px;
+}
+
+div #partnersNavflyout.flyout,
+div #supportNavflyout.flyout,
+div #myaccountNavflyout.flyout {
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: -4px 4px 4px #666;
+	-webkit-box-shadow: -4px 4px 4px #666;
+	box-shadow: -4px 4px 4px #666;
+	margin-top: -4px;
+}
+#global-footer ul.footerLinks, #global-footer ul.footLinks{
+	padding-top: 0;
+	border-top: 0;
+}
+
+ #global-footer ul.footLinks{
+	clear:both;
+	width: 830px;
+ }
+
+#global-footer ul.footLinks li{
+	border-right: 0;
+	margin-top: 5px;
+	display:inline;
+	margin-right:0;
+	margin-left: 0;
+	padding:0;
+}
+
+#global-footer ul.footLinks li a{
+	color: #555;
+	margin-right:0;
+	margin-left: 0;
+}
+#global-footer ul.footLinks li a:hover{
+	text-decoration:none;
+}
+
+#global-footer ul.footLinks li span{
+	padding: 0 .8em 0 1em;
+	color: #555;
+}
+	
+#global-footer ul li.clicker{
+	border-right: 0;
+	margin-right: 10px;
+	color: #555;
+	list-style-type: none;
+	display:inline;
+}
+#global-footer ul li.footLinks{
+    display:inline;
+	border-right: 0;
+}
+
+	.bottom-spacer{
+		margin-top:45px;
+		clear:both;
+	}
+
+    footLinks{
+        clear: both;
+		display:inline;
+    }
+    .clicker:hover{
+        cursor: pointer;
+    }
+    .hidden{
+        display:none;
+    }
+    .shown{
+        display:block;
+    }    

@@ -1,0 +1,1 @@
+isgeoipapi_continent_code = "NA";isgeoipapi_country_code = "US";isgeoipapi_country_name = "United States";isgeoipapi_region = "GA";isgeoipapi_city = "Macon";isgeoipapi_dma_code = "503";isgeoipapi_area_code = "478";isgeoipapi_latitude = "32.837399";isgeoipapi_longitude = "-83.658600";isgeoipapi_ip_addr = "66.210.74.242";

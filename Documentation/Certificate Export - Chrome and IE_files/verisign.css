@@ -1,0 +1,2260 @@
+/* CSS Document for Inquira Support Mockups */ /*-- CSS fixes --*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+	border: 0px;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #fff;
+}
+
+a {
+	color: #004276;
+	text-decoration: none;	
+}
+a:hover {
+	color: #9B0033;
+	text-decoration: underline;
+}
+
+/*-- Tabbed Content --*/
+#tabs {
+	width: 560px;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+}
+
+#tabs img {
+	display: block;
+}
+
+#tabs #tabsT {
+	z-index: 100;
+}
+
+#tabs #pnlControl {
+	list-style: none;
+	margin: 0px 0px 0px 15px;
+}
+
+#tabs #pnlControl li {
+	width: 175px;
+	display: block;
+	float: left;
+	margin: 0 auto 0 1px;
+	padding: 0;
+	text-align: center;
+	line-height: 24px;
+	background: url('../images/tabOff.gif') top left no-repeat;
+	z-index: 100;
+}
+
+#tabs #pnlControl li a {
+	width: 175px;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Arial;
+	text-decoration: none;
+	color: #000;
+	z-index: 10;
+	outline: none;
+	text-decoration: none;
+}
+
+#tabs #pnlControl li.sel {
+	background: url('../images/tabOn.gif') top left no-repeat;
+	z-index: 10;
+	position: relative;
+	top: 1px;
+}
+
+#tabs .panel {
+	width: 758px;
+	min-height: 180px;
+	height: auto !important;
+	height: 180px;
+	border-left: 1px solid #c1c2bc;
+	border-right: 1px solid #c1c2bc;
+}
+
+#tabs .panel .rss {
+	float: right;
+	display: block;
+	margin: 0px 5px 0px 0px;
+	padding: 0px;
+}
+
+#tabs .panel ul {
+	margin: 0px 0px 0px 35px;
+	color: #000000; /*#9b0033*/
+}
+
+#tabs .panel ul li {
+	padding-top: 5px;
+	padding-right: 10px;
+}
+
+#tabs .panel ul li a:link {
+	color: #004276;
+	font-size: 12px;
+	text-decoration: none;
+	margin: 0px;
+}
+
+#tabs .panel ul li a:visited {
+	color: #004276;
+	font-size: 12px;
+	text-decoration: none;
+	margin: 0px;
+}
+
+#tabs .panel ul li a:hover {
+	color: #9b0033;
+	font-size: 12px;
+	text-decoration: underline;
+	margin: 0px;
+}
+
+#tabs #pl2 {
+	display: none;
+}
+
+#tabs #pl3 {
+	display: none;
+}
+
+#tabs .panelHide {
+	display: none;
+}
+
+/*-- Manage Your Certificates --*/
+#myc {
+	width: 760px;
+	min-height: 108px;
+	height: auto !important;
+	height: 108px;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+	background: #cbcace url('../images/myc-grad.gif') top left repeat-x;
+	font-size: 11px;
+}
+
+#myc .mycL {
+	width: 8px;
+	min-height: 108px;
+	height: auto !important;
+	height: 108px;
+	float: left;
+	background: #cbcace url('../images/mycL.gif') top left repeat-x;
+}
+
+#myc .mycR {
+	width: 8px;
+	min-height: 108px;
+	height: auto !important;
+	height: 108px;
+	float: right;
+	background: #cbcace url('../images/mycR.gif') top left repeat-x;
+}
+
+#myc .sep {
+	width: 5px;
+	min-height: 108px;
+	height: auto !important;
+	height: 108px;
+	float: left;
+	margin: 0px 8px 0px 5px;
+	background: transparent url('../images/vertical-gray-line.gif') 50%
+		no-repeat;
+}
+
+#myc .contentL,#myc .contentR {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	background: transparent;
+}
+
+#myc .contentL a, #myc .contentL a:visited {
+	margin: 0px;
+	padding: 0px;
+	color: #004276;
+	text-decoration:none;
+}
+
+#myc .contentL a:hover {
+	color: #9b0033;
+	text-decoration:underline;
+}
+
+#myc .contentL a img,#myc .contentR a img {
+	padding: 8px 5px 0 5px;
+}
+
+#myc .contentL {
+	width: 420px;
+}
+
+#myc .contentR {
+	width: 295px;
+}
+
+#myc .contentL h4,#myc .contentR h4 {
+	margin: 0px;
+	padding: 10px 0px 3px 0px;
+	font-size: 13px;
+}
+
+#myc .contentL h4 {
+	color: #9b0033;
+}
+
+#myc .contentR h4 {
+	color: #000;
+}
+
+#myc .contentR .rmdr {
+	position: relative;
+	left: 10px;
+	top: -4px;
+}
+
+#myc .contentR .rmdr:link {
+	color: #333366;
+}
+
+#myc .contentR .rmdr:visited {
+	color: #666633;
+}
+
+#myc .contentR .rmdr:hover {
+	color: #9b0033;
+	text-decoration: underline;
+}
+
+#myc .novcc {
+	width: 500px;
+}
+
+#myc .novcc h4 {
+	width: 500px;
+	padding-bottom: 12px;
+}
+
+#myc .novcc img {
+	margin: 0px 0px 0px 10px;
+}
+
+/*-- Additional Resources Styles for Registry --*/
+#myc .contentLAdd,#myc .contentRAdd {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	background: transparent;
+}
+
+#myc .contentLAdd h4 {
+	font-size: 12px;
+	font-weight: bold;
+	margin: 10px 0px;
+	color: #9b0033;
+}
+
+#myc .contentLAdd {
+	width: 275px;
+}
+
+#myc .contentRAdd {
+	margin-top: 20px;
+}
+
+#myc .contentLAdd a:link,#myc .contentRAdd a:link {
+	margin: 0px;
+	padding: 0px;
+	color: #000;
+	text-decoration: none;
+}
+
+#myc .contentLAdd a:visited,#myc .contentRAdd a:visited {
+	margin: 0px;
+	padding: 0px;
+	color: #000;
+	text-decoration: none;
+}
+
+#myc .contentLAdd a:hover,#myc .contentRAdd a:hover {
+	margin: 0px;
+	padding: 0px;
+	color: #9b0033;
+	text-decoration: underline;
+}
+
+/*-- Styles for Header and Footer Includes --*/
+	/*-- Begin header styles --*/
+#header {
+	width: 960px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+#header img#logo {
+	float: left;
+	margin: 10px 0px 8px 10px;
+	padding: 0px;
+	border: 0px;
+}
+
+form fieldset {
+	border: 0px;
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+}
+
+form#search {
+	width: 300px;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	left: 545px;
+	top: 27px;
+}
+
+form#search #searchbutton {
+	position: relative;
+	top: 2px;
+}
+
+form#search #searchtext {
+	width: 150px;
+	font-size: 10px;
+	margin-right: 5px;
+}
+
+#header .headlinks {
+	text-align: right;
+	margin: 1px 0px 0px 0px;
+	padding: 0px;
+	/*position: absolute;*/
+	top: 0px;
+	/*left: 645px;*/
+	width: 350px;
+	min-height: 16px;
+	height: auto !important;
+	height: 16px;
+	font-size: 11px;
+	float: right;
+}
+
+#header .headlinks a,#header .headlinks a:link,#header .headlinks a:visited
+	{
+	font-size: 11px;
+	color: #004276;
+	text-decoration: none;
+	margin: 0px 10px;
+}
+
+#header .headlinks a:hover,#header .headlinks a:active {
+	text-decoration: underline;
+}
+
+#header .headlinks a img {
+	margin: 0px 2px 0px 0px;
+	padding: 0px;
+	border: 0px;
+	vertical-align: middle;
+}
+
+#header #nav {
+	clear: both;
+}
+
+#header #nav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#header #nav ul li {
+	background: url('//www.verisign.com/hp07/i/navBG.gif') repeat-x;
+	float: left;
+	height: 26px;
+	line-height: 26px;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	text-align: center;
+	border-left: 1px solid #CE6A8C;
+	border-right: 1px solid #730027;
+}
+
+#header #nav ul #b1 {
+	width: 240px;
+	border-left: 0px;
+}
+
+#header #nav ul #b2 {
+	width: 180px;
+}
+
+#header #nav ul #b3 {
+	width: 165px;
+}
+
+#header #nav ul #b4 {
+	width: 180px;
+}
+
+#header #nav ul #b5 {
+	width: 175px;
+	border-right: 0px;
+}
+
+#header #nav img#le {
+	float: left;
+	height: 26px;
+}
+
+#header #nav img#re {
+	float: right;
+	height: 26px;
+}
+
+#header #nav ul li.navend {
+	width: 6px;
+	border: 0px;
+}
+
+#header #nav ul li a {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	height: 26px;
+	line-height: 26px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#header #nav ul #b5 a {
+	background: none;
+}
+
+#header #nav ul .rdiv {
+	width: 1px;
+	background: #730027;
+}
+
+#header #nav ul .ldiv {
+	width: 1px;
+	background: #CE6A8C;
+}
+
+/*-- End header styles --*/ /*-- End footer styles --*/
+.footer {
+	margin: 0;
+	padding: 0;
+}
+
+#footer {
+	width: 960px;
+	min-height: 22px;
+	height: auto !important;
+	height: 22px;
+	line-height: 22px;
+	margin: 23px auto 10px auto;
+	padding: 0px;
+	color: #666;
+	font-size: 11px;
+	clear: left;
+}
+
+#footer .footerbar {
+	/*background:url('//www.verisign.com/hp07/i/foot-bg.gif') no-repeat;*/
+	color: #fff;
+	text-align: center;
+	background-color: #9B0033;
+	width: 946px;
+	height: 22px;
+	float: left;
+}
+
+#footer img#fle {
+	float: left;
+	height: 22px;
+}
+
+#footer .footerbar span {
+	font-size: 10px;
+}
+
+#footer .footerbar a {
+	color: #fff;
+	text-decoration: none;
+	display: inline;
+	margin: 0px 8px;
+	font-size: 10px;
+}
+
+#footer .underlinks {
+	margin: 5px 0px;
+	padding: 0px;
+	text-align: center;
+	line-height: normal;
+	font-size: 10px;
+}
+
+#footer .underlinks a:link,#footer .underlinks a:visited {
+	margin: 0px 5px;
+	padding: 0px;
+	color: #666;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+#footer .underlinks a:hover {
+	text-decoration: underline;
+}
+
+#footer .undertext {
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	line-height: normal;
+	font-size: 10px;
+}
+
+#footer .undertext a:link,#footer .undertext a:visited {
+	color: #666;
+	text-decoration: none;
+	font-size: 10px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#footer .undertext a:hover {
+	text-decoration: underline;
+}
+
+#bottomNav {
+	padding: 0;
+	margin: 0;
+}
+
+/*-- End footer styles --*/ /*-- Inquira InfoCenter styles --*/
+	/* Styles to make the liquid layout a fixed size of 760px with the left column being 560px and the right nav area being 180px */
+.centercolumn .node h1,.leftcentercolumn .node h1 {
+	font-weight: bold;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#overall {
+	width: 960px;
+	background: #fff;
+	margin: 0px auto;
+}
+
+#content {
+	width: 760px;
+	margin-left: 0px;
+}
+
+/* Overrides For Login Modue */
+.centercolumn .rightcolumn {
+	float: left;
+	width: 400px;
+}
+
+.centercolumn .rightcolumn .rightcolumncontent {
+	margin: 10px 0;
+}
+
+.loginmodulemsg {
+	border-radius: 5px;
+	border: 5px solid lightgrey;
+	background-color: lightgrey;
+	background-size: 360px 90px;
+	width: 300px;
+	color: #990000;
+	padding-left: 10px;
+}
+
+.loginmoduletop {
+	width: 400px;
+}
+.loginmodulebottom {
+	width: 400px;
+}
+
+/* Page Title and Sub Title Styles */
+.ADVISORY .im-page-subtitle {
+	margin-top: 10px;
+}
+
+.UNSTRUCTURED .im-page-subtitle {
+	margin-top: 20px;
+}
+
+.DESCRIPTION h3 {
+	margin-bottom: 10px;
+}
+
+.SOLUTION h1,.UNSTRUCTURED h1,.ADVISORY h1,.TUTORIAL h1 {
+	display: none;
+}
+
+.SOLUTION .im-page-subtitle {
+	color: #9b0033;
+	font-size: 14px;
+	margin-top: 15px;
+}
+
+.im-page-subtitle {
+	color: #9b0033;
+	font-size: 14px;
+	clear: left;
+}
+
+.im-result-excerpt-block {
+	font-size:12px;
+}
+
+/* Resetting Hyperlink to default style */
+.sbmodulebody a:link,a:link span,.im-buttons a:link,.im-standard-subject:link
+	{
+	color: #004276;
+	font-size: 12px;
+	text-decoration:none;
+}
+
+.sbmodulebody a:visited,a:visited span,.im-buttons a:visited,.im-standard-subject:visited
+	{
+	color: #004276;
+}
+
+.sbmodulebody a:hover,a:hover span,.im-buttons a:hover,.im-standard-subject:hover
+	{
+	color: #9b0033;
+	text-decoration:underline;
+}
+
+.centercolumn .node a, .leftcentercolumn .node a {
+	color: #004276;
+	text-decoration:none;
+}
+
+.centercolumn .node a:link, .leftcentercolumn .node a:visited {
+	color: #004276;
+	text-decoration:none;
+}
+
+.centercolumn .node a:hover, .leftcentercolumn .node a:hover {
+	color: #9b0033;
+	text-decoration:underline;
+}
+
+/* Adjusting fonts and colors for the right column hyperlinks */
+.rightcolumn .node {
+	background: #fff;
+}
+
+.rightcolumn .node li a:link {
+	font-size: 12px;
+	font-weight: normal;
+	color: #004276;
+}
+
+.rightcolumn .node li a:visited {
+	color: #004276;
+	font-weight: normal;
+}
+
+.rightcolumn .node li a:hover {
+	color: #9b0033;
+	font-weight: normal;
+}
+
+.rightcolumn {
+	margin: 0 0 0 20px;
+}
+
+.rightcolumncontent {
+	margin: 23px 0 0 0;
+}
+
+.norecordfound .im-infobox,.norecordfound #im-question-box {
+	border: 0px;
+	background: none;
+}
+
+.norecordfound .im-infobox table {
+	width: 100%;
+	border: 0px;
+}
+
+/* Each box in the right nav uses the sbmodule class */
+.sbmodule {
+	width: 180px;
+	font-size: 12px;
+	margin: 0px 0px -5px 0px;
+}
+
+/* Right nav box title style */
+.sbmodule h1 {
+	color: #9b0033;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 15px;
+	padding-left: 10px;
+}
+
+.sbmodule form {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.sbmodule form input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.sbmodule form nobr {
+	vertical-align: middle;
+}
+
+.sbmodulebody #im-question-box,.sbmodulebody #im-question-box table {
+	background: transparent;
+	border: 0px;
+}
+
+.sbmodulebody form textarea.searchbox-example,.sbmodulebody form textarea.searchbox
+	{
+	margin-left: -2px;
+	height: 14px;
+}
+
+.feedback .stars {
+	white-space: nowrap;
+	float: right;
+	/*vertical-align: text-top;  /* doesn't have any visual effect, but describes what I wanted pretty well */
+	/*padding-bottom: 0px;
+	padding-right: 10px;*/
+}
+
+span.feedback {
+	display: block;
+	padding-bottom: 9px;
+}
+
+.sbmodulebody h3 {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.sbmodulebody a:link {
+	color: #004276;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.sbmodulebody a:visited {
+	color: #004276;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.sbmodulebody a:hover {
+	color: #9b0033;
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+.im-infobox table {
+	/*width: 160px;*/
+	border: 0px;
+	background-color: #FFFFFF;
+	border: 1px solid #9B0033;
+	color: #9b0033;
+}
+
+.im-lightblue {
+	color: #000000;
+}
+
+/* ASK A QUESTION BOX - Styles to override default inquira styles */
+.im-question-box-home {
+	width: 760px;
+	min-height: 72px;
+	height: auto !important;
+	height: 72px;
+	margin-bottom: 10px;
+	background: url('../images/ask-bg.gif') top left no-repeat;
+}
+
+.im-question-box-home .im-table {
+	width: 760px;
+	font-size: 11px;
+}
+
+.im-question-box-home table tr td {
+	font-size: 12px;
+}
+
+/* Removing background colors for the rounded gradient */
+.im-question-box-home .im-table,.im-question-box-home .im-lightblue {
+	background: transparent;
+}
+
+/* Removing border from Ask a Question Box */
+.im-question-box-home,.im-question-box-home .im-first,.im-question-box-home .im-bottom-border,.im-question-box-home .im-last
+	{
+	border: 0px;
+}
+
+td .im-question-box-ask {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.im-table table {
+	font-size: 11px;
+}
+
+.im-last {
+	padding: 0px 0px 5px 0px;
+}
+
+.im-question-box-ask {
+	background: none;
+}
+
+.im-top-border {
+	border: 0px;
+}
+
+/* Ask a Question Box */
+.searchbox-example {
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+.xmleditfield {
+	width: 650px;
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+.xmledittextfield {
+	width: 240px;
+	margin-left: 0px;
+	font-size: 11px;
+	color: #333333;
+	border: 1px solid #7f7f7f;
+    	font-size: 90%;
+    	padding: 2px;
+}
+
+span#ask-title {
+	padding: 0px 0px 0px 10px;
+	display: block;
+	font-weight: bold;
+	color: #000;
+	font-size: 14px;
+}
+
+/* Solution View Page Style Adjustments*/
+span.Title {
+	color: #9b0033;
+}
+
+/* Critical Advisories box styles  */
+#im-question-box {
+	width: 760px;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+	background: transparent url('../images/cas-bg.gif') repeat-y;
+}
+
+#im-question-box h1 {
+	color: #9b0033;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0px 0px 5px 10px;
+	padding: 0px;
+	width: 200px;
+	background: transparent;
+}
+
+#im-question-box img.rss {
+	position: relative;
+	right: 0px;
+	top: -18px;
+	float: right;
+	display: block;
+	margin: 0px 5px 0px 0px;
+	padding: 0px;
+}
+
+#im-question-box ul {
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+	list-style: none;
+	background: transparent;
+}
+
+#im-question-box ul li {
+	margin: 0px;
+	padding: 2px 0px;
+	font-weight: bold;
+}
+
+#im-question-box ul a {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#im-question-box ul a:link {
+	color: #333366;
+}
+
+#im-question-box ul a:visited {
+	color: #666633;
+}
+
+#im-question-box ul a:hover {
+	color: #9b0033;
+}
+
+#im-question-box #casT {
+	width: 760px;
+	height: 6px;
+	margin: 0px;
+	padding: 0px;
+	_margin-bottom: -10px;
+	background: url('../images/casT.gif') top left no-repeat;
+}
+
+#im-question-box #casB {
+	width: 760px;
+	height: 6px;
+	margin: 0px;
+	padding: 0px;
+	_margin-top: -5px;
+	background: url('../images/casB.gif') bottom left no-repeat;
+}
+
+#im-question-box table.advisories {
+	margin: 3px 0px 0px 10px;
+	padding: 0px;
+	background-color: #fff;
+	border: 0px;
+	color: #000;
+	width: 749px;
+}
+
+#im-question-box table.advisories TD {
+	font-weight: bold;
+	padding: 0px 8px 4px 0px;;
+	vertical-align: top;
+}
+
+#im-question-box table.advisories TD.date {
+	padding: 0px 13px 0px 0px;
+	color: #333333;
+	width: 60px;
+}
+
+#im-question-box table.advisories a {
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#im-question-box table.advisories a:link {
+	color: #004276;
+}
+
+#im-question-box table.advisories a:visited {
+	color: #004276;
+}
+
+#im-question-box table.advisories a:hover {
+	color: #9b0033;
+	text-decoration: underline;
+}
+
+#im-question-box table.advisoriesTitle {
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+	background-color: #fff;
+	border: 0px;
+	color: #000;
+	width: 748px;
+}
+
+#im-question-box table.advisoriesTitle TD {
+	padding: 0px 0px 0px 0px;;
+	vertical-align: top;
+}
+
+#im-question-box table.advisoriesTitle TD.title {
+	border-bottom: 0px dotted #A1A5A9;
+	color: #9b0033;
+	font-size: 14px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 5px 0px;
+	display: block;
+	font-weight: bold;
+	width: 692px;
+}
+
+#im-question-box table.advisoriesTitle TD.rss {
+	margin: 0px;
+	padding: 2px 8px 0px 0px;
+	width: 49px;
+}
+
+/* Answer Search Results Page Styles */
+.im-paginationtop {
+	width: 160px;
+	background: #e6e6e6;
+	border: 0px;
+	color: #000;
+}
+
+.im-paginationtop td {
+	color: #000;
+	padding: 3px 5px;
+}
+
+.im-paginationbottom td {
+	text-align: center;
+}
+
+.snippetClass0,.snippetClass1 {
+	color: #000;
+}
+
+.snippetClass3 {
+	color: #333366;
+}
+
+.im-standard-subject {
+	font-size: 12px;
+}
+
+.im-root-facet {
+	color: #000000;
+	font-size: 12px;
+}
+
+.im-child-facet {
+	font-size: 12px;	
+}
+	
+.im-top-facet,.im-facet {
+	background-color: #e6e6e6;
+}
+
+.im-first,.im-last {
+	border: 0px;
+}
+
+.im-active-facet a {
+	display: block;
+	line-height: 16px;
+	background: url('../images/filter-arrow.gif') 98% no-repeat;
+	border: 0px;
+	background-color: #e6e6e6;
+	background-image: url('../images/filter-arrow.gif');
+}
+
+.im-even-answer {
+	color: #000;
+}
+
+.im-even-answer a {
+	font-size: 12px;
+}
+
+a:link span,.im-even-answer a:link,.im-standard-subject:link,.facet:link,.im-last a:link
+	{
+	color: #004276;
+}
+
+a:visited span,.im-even-answer a:visited,.im-standard-subject:visited,.facet:visited,.im-last a:visited
+	{
+	color: #666633;
+}
+
+a:hover span,.im-even-answer a:hover,.im-standard-subject:hover,.facet:hover,.im-last a:hover
+	{
+	color: #9b0033;
+}
+
+.im-answers-heading {
+	font-weight: bold;
+	color: #000;
+}
+
+/* Contact Escalation Styles */
+.contentbody table {
+	
+}
+
+.contentbody table tr td #content div {
+	
+}
+
+.contentbody table tr td #content div h1 {
+	font-weight: normal;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 0;
+	padding-top: 0;
+	clear: left;
+}
+
+.contentbody table tr td #content div div ol {
+	margin-left: 27px;
+}
+
+.contentbody table tr td #content div div ol li {
+	padding: 0px 0px;
+}
+
+/* Inquira Default Button Styles - Replaced the background image to use a default button style */
+button {
+	background: transparent url('../images/button-bg.gif');
+	border-style: none;
+	color: #9b0033;
+	cursor: pointer;
+	height: 17px;
+	margin: 5px 10px 5px 1px;
+	min-width: 64px;
+	text-align: center;
+	vertical-align: middle;
+	width: 64px;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+button.type-feature,button.button-feature {
+	background: transparent url('../images/button-bg.gif');
+	border-style: none;
+	color: #9b0033;
+	font-weight: bold;
+	font-size: 11px;
+	padding-bottom: 2px;
+}
+
+/* Right Nav Module visited link adjustments */
+a.login:visited,a.logout:visited,a.bookmarks:visited,a.help:visited,a.myposts:visited,a.prefs:visited,a.questions:visited,a.watches:visited,a.profile:visited,a.finduser:visited,a.recommend:visited,a.recommend_change:visited,a.recommendations:visited,a.document_add:visited,a.feedback:visited,a.support:visited,a.documents:visited
+	{
+	display: block;
+	padding: 0px 0px 0px 26px;
+	line-height: 15px;
+}
+
+.sbmodule a {
+	font-size: 12px;
+}
+
+.sbmodule a:link {
+	color: #004276;
+	text-decoration:none;
+}
+
+.sbmodule a:visited {
+	color: #004276;
+}
+
+.sbmodule a:hover {
+	color: #9b0033;
+	text-decoration:underline;
+}
+
+.sbmodule textarea.searchbox {
+	color: #333333;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0px 0px 0px -2px;
+	padding: 2px;
+	width: 95%;
+}
+
+/* Offsetting a problem with visited links moving over after they are clicked */
+a:visited {
+	margin: 0px;
+}
+
+/* ASK A QUESTION BOX - Styles to override default inquira styles */
+.im-question-box {
+	width: 760px;
+	min-height: 72px;
+	height: auto !important;
+	height: 72px;
+	margin-bottom: 10px;
+	background: url('../images/ask-bg.gif') top left no-repeat;
+}
+
+.im-question-box .im-table {
+	width: 560px;
+	font-size: 11px;
+}
+
+.im-question-box table tr td {
+	font-size: 12px;
+}
+
+/* Removing background colors for the rounded gradient */
+.im-question-box .im-table,.im-question-box .im-lightblue {
+	background: transparent;
+}
+
+/* Removing border from Ask a Question Box */
+.im-question-box,.im-question-box .im-first,.im-question-box .im-bottom-border,.im-question-box .im-last
+	{
+	border: 0px;
+}
+
+.im-table table {
+	font-size: 12px;
+}
+
+.im-last {
+	padding: 0px 0px 5px 0px;
+}
+
+.im-question-box-ask {
+	background: none;
+}
+
+/* the default rating is placed as a background image in the ul */
+	/* use the background position according to the table above to display the required images*/
+#ratingsBox {
+	border: 1px solid #9A9A9A;
+	float: left;
+	margin: 0px 0px 10px;
+	padding: 10px;
+	vertical-align: middle;
+	width: 735px;
+}
+
+#radioRates {
+	display: none;
+}
+
+#ratingMsgTop,#ratingMsgBottom {
+	width: 120px;
+	text-align: center;
+}
+
+#ratingMsgTop {
+	margin-bottom: 5px;
+}
+
+#ratingMsgBottom {
+	margin-top: 5px;
+}
+
+.ratingConfMessage {
+	width: 220px;
+	text-align: center;
+	color: #9b0033;
+}
+
+#ratingsBox .xmleditfield {
+	font-size: 11px;
+}
+
+#content div #ratingMsgBottom,#content div #ratingMsgTop {
+	font-size: 11px;
+}
+
+.ratingContainer {
+	margin: 0px;
+	padding: 0px;
+}
+
+.centercolumn .node ul,.leftcentercolumn .node ul.rating {
+	margin: 0px;
+	padding: 0px;
+}
+
+.rating {
+	width: 65px;
+	height: 14px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	position: relative;
+	left: 25px;
+	background: url('../images/verisign-stars.gif') no-repeat 0px 0px;
+}
+
+ul.rating li {
+	cursor: pointer;
+	/*ie5 mac doesn't like it if the list is floated\*/
+	float: left;
+	/* end hide*/
+	text-indent: -999em;
+}
+
+ul.rating li a {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 16px;
+	height: 16px;
+	text-decoration: none;
+	z-index: 200;
+	outline: none;
+}
+
+ul.rating li.one a {
+	left: 0px
+}
+
+.content ul,ol {
+	margin: 0 3.7em 1.5em !important;
+}
+
+ul.rating li.two a {
+	left: 13px;
+}
+
+ul.rating li.three a {
+	left: 26px;
+}
+
+ul.rating li.four a {
+	left: 39px;
+}
+
+ul.rating li.five a {
+	left: 53px;
+}
+
+ul.rating li a:hover {
+	z-index: 2;
+	width: 80px;
+	height: 14px;
+	overflow: hidden;
+	left: 0px;
+	background: url('../images/verisign-stars.gif') no-repeat 0px 0px;
+}
+
+ul.rating li.one a:hover {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -13px;
+}
+
+ul.rating li.two a:hover {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -26px;
+}
+
+ul.rating li.three a:hover {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -39px
+}
+
+ul.rating li.four a:hover {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -52px
+}
+
+ul.rating li.five a:hover {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -65px
+}
+
+/* Classes to setup the hover */
+.nostar {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px 0px
+}
+
+.onestar {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -13px
+}
+
+.twostar {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -26px
+}
+
+.threestar {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -39px
+}
+
+.fourstar {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -52px
+}
+
+.fivestar {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -65px
+}
+
+/* Classes to setup the server returned value of the average rating */
+.halfstar {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -143px
+}
+
+.onehalfstar {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -156px
+}
+
+.twohalfstar {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -169px
+}
+
+.threehalfstar {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -182px
+}
+
+.fourhalfstar {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -195px
+}
+
+.fivehalfstar {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -218px
+}
+
+/* Classes to setup the click action of the rating system */
+.onestar-selected {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -13px
+}
+
+.twostar-selected {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -26px
+}
+
+.threestar-selected {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -39px
+}
+
+.fourstar-selected {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -52px
+}
+
+.fivestar-selected {
+	background-image: url('../images/verisign-stars.gif');
+	background-position: 0px -65px
+}
+
+/* Class to remove hover after the soluton has been rated */
+ul.rating li.rated a:hover {
+	background-position: -999px -999px
+}
+
+/* Floated Left Styles for Ratings Box */
+.floatLeft {
+	float: left;
+	margin: 0px 5px 0px 0px;
+	_margin: 0px 5px 0px 0px;
+	padding: 0px;
+}
+
+.floatLeft textarea.xmleditfield {
+	height: 50px;
+	margin: 0px;
+	width: 240px;
+}
+
+.floatLeft button {
+	margin: 10px 0 0 0px;
+}
+
+table.floatLeft tr td {
+	text-align: left;
+}
+
+.DESCRIPTION h4,h4 span,h5 span span {
+	font-weight: bold;
+	font-size: 11px;
+}
+
+/* Login Module Styles */
+.centercolumn .node .loginmodule {
+	margin: 20px 0px;
+}
+
+.centercolumn .node .loginmodule h1 {
+	font-size: 14px !important;
+	font-weight: bold !important;
+	line-height: 23px !important;
+	color: #9b0033 !important;
+	margin-top: 0 !important;
+}
+
+.loginmodulebody,.loginmodulebody a,.loginmoduletop,.loginmodulebottom,.loginmoduletop a,.loginmodulebottom a
+	{
+	font-size: 12px;
+}
+
+.loginmodulebody table tr td table {
+	width: 90%;
+}
+
+.loginmodulebody .editfields {
+	width: 160px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+.loginmodulebody .button-feature {
+	float: right;
+}
+
+span.nobreak a,.loginmodulebody a:link {
+	color: #333366;
+	text-decoration: underline;
+}
+
+span.nobreak a:visited,.loginmodulebody a:visited {
+	color: #666633;
+	text-decoration: none;
+}
+
+span.nobreak a:hover,.loginmodulebody a:hover {
+	color: #9b0033;
+	text-decoration: underline;
+}
+
+.loginmodulebottom .im-infobox table {
+	width: 300px;
+	border: 0px;
+	background-color: transparent;
+	color: #9b0033;
+}
+
+.loginmodulebottom #im-question-box {
+	background-image: none;
+}
+
+/* Styles to override Primus Imported Styles */
+TABLE.bc1 {
+	margin: 5px 10px 5px 0px;
+	width: 540px;
+	padding-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.CGO_TITLE {
+	font-weight: bold;
+	font-size: 16px;
+	color: #9B0033;
+	word-spacing: normal;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.CGO_ID {
+	font-weight: bold;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	border: none;
+	color: #000000;
+	word-spacing: normal;
+}
+
+.CGO_SOL_TEXT {
+	font-weight: normal;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+P.contentTableXHeader {
+	color: #FFFFFF;
+	font: bold 11px Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 5px;
+	text-align: left
+}
+
+.DISCLAIMER {
+	margin: 20px 0px 0px 0px;
+}
+
+/* Primus Hyperlink Styles */
+.Heading-00204 a:link,.RESOLUTION a:link {
+	color: #333366;
+}
+
+.Heading-00204 a:visited,.RESOLUTION a:visited {
+	color: #666633;
+}
+
+.Heading-00204 a:hover,.RESOLUTION a:hover {
+	color: #9b0033;
+}
+
+.editfield {
+	height: 35px;
+	width: 160px;
+}
+
+.rightcolumn .node ul.stdListing li,.sbmodulebody ul.stdListing li {
+	font-size: 11px;
+	list-style-type: disc;
+	color: #000000; /*#9B0033*/
+}
+
+.sbmodulebody ul li p a:link,.rightcolumn .node ul.stdListing li a,.rightcolumn .node ul.stdListing li a:link
+	{
+	font-size: 12px;
+	color: #004276;
+	text-decoration: none;
+	position: relative;
+	left: -5px;
+}
+
+.rightcolumn .node ul.stdListing li a:visited {
+	font-size: 12px;
+	color: #004276;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.rightcolumn .node ul.stdListing li a:hover {
+	font-size: 12px;
+	color: #9b0033;
+	text-decoration: underline;
+}
+
+/* Wizard Styles */
+form .radiofields {
+	margin-right: 5px;
+}
+
+#content .node form {
+	font-size: 12px;
+}
+
+#content .node form h2 {
+	font-size: 14px;
+}
+
+.im-wizard-excerpt-block {
+	font-size: 12px;
+}
+
+.im-wizard-result-text {
+	background-color: #e6e6e6;
+	border: 1px solid #8C99af;
+	margin: 0px 5px 5px;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.im-wizard-result-text table {
+	width: 92%;
+}
+
+.im-wizard-result-text .im-wizard-subject {
+	color: #333366;
+}
+
+a.im-wizard-subject:visited {
+	color: #666633;
+}
+
+a.im-wizard-subject:hover {
+	color: #9b0033;
+}
+
+.im-wizard-history-step a:link,.im-wizard-excerpt-block a:link {
+	color: #333366;
+}
+
+.im-wizard-history-step a:visited,.im-wizard-excerpt-block a:visited {
+	color: #666633;
+}
+
+.im-wizard-history-step a:hover,.im-wizard-excerpt-block a:hover {
+	color: #9b0033;
+}
+
+/* VIP styles */
+#vipheader {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 60%;
+	font-style: normal;
+	font-weight: normal;
+	display: block;
+}
+
+#vipheader #headerlinks {
+	display: block;
+	text-align: right;
+}
+
+#vipheader table {
+	border-collapse: collapse;
+}
+
+#vipfooter {
+	width: 700px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 10px;
+}
+
+td.footbanner {
+	font-size: 10px;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	color: white;
+	background-color: #9B0033;
+	height: 16px;
+	text-align: center;
+	vertical-align: middle;
+	width: 760px;
+}
+
+td.footbanner a:link,td.footbanner a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+td.footbanner a:hover {
+	color: #FFFFFF;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+td.sealbanner {
+	font-size: 10px;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	color: #85898A;
+	line-height: 14px;
+}
+
+td.sealbanner a:link {
+	font-size: 10px;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	color: #85898A;
+	text-decoration: none;
+}
+
+td.sealbanner a:visited {
+	font-size: 10px;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	color: #85898A;
+	text-decoration: none;
+}
+
+td.sealbanner a:hover {
+	font-size: 10px;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	color: #85898A;
+	text-decoration: underline;
+}
+
+#vipheader .bannerredline {
+	background-color: #9B0033;
+	height: 16px;
+}
+
+#vipheader a.banner:link,#vipheader a.banner:visited {
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 11px;
+}
+
+#vipheader a.banner:hover {
+	color: #000000;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+#vipheader #spacer {
+	height: 5px;
+}
+
+#vipheader #bannervip {
+	margin-bottom: 4px;
+}
+
+.advisorytitle {
+	border-bottom: 0px dotted #A1A5A9;
+	color: #9b0033;
+	font-size: 12px;
+	margin: 0px 0px 0px 10px;
+	padding: 0px 0px 5px 0px;
+	display: block;
+	font-weight: bold;
+}
+
+a.facet {
+	display: block;
+	line-height: normal;
+	padding: 0px 0px 0px 0px;
+}
+
+/* Contact Escalation Pages */
+.contact-leftbox {
+	float: left;
+	width: 355px;
+	margin: 0px 40px 0px 0px;
+	text-align: left;
+	border: solid 0px red;
+}
+
+.contact-leftbox table tr td {
+	vertical-align: top;
+}
+
+.contact-leftbox table tr td img {
+	margin: 0px 5px 0px 0px;
+}
+
+.contact-leftbox table.contact-instructions {
+	margin-top: 15px;
+}
+
+.contact-leftbox table.contact-instructions tr td {
+	padding-bottom: 14px;
+}
+
+.contact-rightbox {
+	float: left;
+	width: 355px;
+	border: solid 0px red;
+	margin: 0px 10px 0px 0px;
+}
+
+.contact-step {
+	padding-bottom: 15px;
+	vertical-align: top;
+}
+
+.contact-form {
+	padding: 0px;
+}
+
+.contact-form TD {
+	font-size: 11px;
+}
+
+.contact-form TD.reqd {
+	width: 10px;
+	vertical-align: top;
+	padding-top: 5px;
+}
+
+.contact-form TD.contact-label {
+	font-size: 12px;
+	font-weight: bold;
+	width: 155px;
+}
+
+.contact-form TD.contact-field {
+	width: 190px;
+}
+
+.contact-form TD.contact-field INPUT {
+	width: 160px;
+	font-size: 11px;
+}
+
+.contact-form TD {
+	padding-bottom: 8px;
+}
+
+.contact-form SELECT {
+	width: 164px;
+	font-size: 11px;
+}
+
+.contact-form TEXTAREA {
+	width: 315px;
+	font-size: 11px;
+}
+
+* HTML .contact-form TEXTAREA {
+	width: 280px;
+	font-size: 11px;
+}
+
+.contact-header {
+	font-size: 13px;
+	font-weight: bold;
+	padding: 0px 5px;
+	vertical-align: top;
+	text-align: left;
+}
+
+.contact-subhead {
+	font-weight: bold;
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+
+.support-request {
+	margin: 8px 0px;
+}
+
+.support-request .btn {
+	margin: 8px 0px;
+}
+
+.contact-content {
+	margin-bottom: 150px;
+}
+
+a {
+	outline: none;
+	color: #004276;
+}
+
+.vrsnh2 {
+	font: bold 14px Helvetica, Verdana, Arial, sans-serif;
+	border: 0px none;
+	color: #9B0033;
+	line-height: normal;
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+}
+
+.vrsnh3 {
+	font: bold 13px/ 16px Helvetica, Verdana, Arial, sans-serif;
+	background: #8C99AF none repeat scroll 0%;
+	color: #FFFFFF;
+	display: block;
+	margin: 0px 0px 10px 0px;
+	padding: 2px 0px 2px 5px;
+	width: 100%;
+}
+
+.vrsnh4 {
+	font: bold 13px Helvetica, Verdana, Arial, sans-serif;
+	color: #9B0033;
+	line-height: normal;
+	margin: 0px;
+	padding: 0px;
+}
+
+.vrsnBody {
+	color: #000000;
+	font: 11px/ 16px Helvetica, Verdana, Arial, sans-serif;
+	margin: 0px 0px 0px 10px;
+	padding: 0px 10px 10px 0px
+}
+
+.vrsnTableHeader {
+	font: bold 11px Helvetica, Verdana, Arial, sans-serif;
+	color: #FFFFFF;
+	line-height: normal;
+	margin: 0px;
+	padding: 2px;
+	text-align: center;
+	display: block;
+}
+
+.contact-escalation-results {
+	padding: 0px;
+	margin: 0px;
+	vertical-align: top;
+}
+
+.contact-escalation-results .contact-leftbox {
+	min-width: 355px;
+	width: auto;
+}
+
+#overall .contentbody {
+	color: #000;
+}
+
+.content {
+	font-size: 12px;	
+}
+
+.attr .content {
+	margin-left: 0px;
+}
+
+.attr a,.attr a:link,.attr a.Hyperlink--Char:link,.attr a:link .Hyperlink--Char
+	{
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 12px;
+	color: #004276;
+	text-decoration: none;
+}
+
+.attr a:visited,.attr a.Hyperlink--Char:visited,.attr a:visited .Hyperlink--Char
+	{
+	color: #004276;
+}
+
+.attr a:hover,.attr a.Hyperlink--Char:hover,.attr a:hover .Hyperlink--Char
+	{
+	color: #9B0033;
+	text-decoration: underline;
+}
+
+.attr a:active,.attr a.Hyperlink--Char:active,.attr a:active .Hyperlink--Char
+	{
+	color: #004276;
+}
+
+.attr DIV.subNavLink A,.attr DIV.subNavLink A:link,.attr DIV.subNavLink A:active,.attr DIV.subNavLink A:visited
+	{
+	color: #004276;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 12px; 
+	text-decoration: none;
+}
+
+.attr DIV.subNavLink A:hover {
+	color: #9B0033;
+	text-decoration: underline;
+}
+
+.attr table.subNav {
+	background: #E7E6E6 none repeat scroll 0%;
+	border: 0px none;
+	margin: 0px;
+	padding: 0px 0px 5px;
+	width: 180px;
+	font-size: 12px;
+}
+
+.attr div.subNavLink {
+	padding: 2px 5px;
+}
+
+.attr div.subNavLink .vrsnh4 {
+	color: #9B0033;
+	display: block;
+	font-weight: bold;
+	height: 20px;
+	margin: 3px 0px;
+	padding: 0px;
+}
+
+.vrsnContentTable TD {
+	padding: 2px 3px;
+}
+
+.contentTableXHeader,.contenttablexheader {
+	color: #FFFFFF;
+	font: bold 11px Helvetica, Verdana, Arial, sans-serif;
+	margin: 0px;
+	padding: 2px;
+	text-align: left;
+}
+
+.question-box-generic-link {
+	padding-right: 22px;
+	text-align: right;
+}
+
+* HTML DIV.contentbody TABLE TABLE DIV.leftcentercolumn .im-table .im-question-box-home .im-table .im-question-box-ask INPUT.xmleditfield
+	{
+	width: 456px;
+	height: 21px;
+}
+
+#breadCrumb {
+	clear: both;
+	color: #666666;
+	display: block;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-size-adjust: none;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: normal;
+	margin: 20px 0 20px 0;
+	padding: 0;
+}
+
+.bc {
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-size-adjust: none;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: normal;
+}
+
+.leftcentercolumn .node a.bc:link, .leftcentercolumn .node a.bc:active, .leftcentercolumn .node a.bc:visited {
+	color: #666666;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 11px;
+	font-size-adjust: none;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 13px;
+	margin: 0;
+	text-decoration: none;
+}
+
+.leftcentercolumn .node a.bc:hover {
+	color: #666666;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 11px;
+	font-size-adjust: none;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 13px;
+	margin: 0;
+	text-decoration: underline;
+}
+
+.external-url-button-center {
+	width: 180px;
+	margin: 0 auto;
+}
+
+.external-url-button {
+	background-image: url(../images/cran_button_180x24.gif);
+	line-height: 24px;
+	height: 24px;
+	color: #ffffff;
+	font-weight: bold;
+	width: 180px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	float: left;
+	margin: 5px 10px 0 0;
+}
+
+.external-url-popup-center {
+	width: 400px;
+	margin: 0 auto;
+}
+
+div.external-url-popup {
+	font-size: 12px;
+	color: #000000;
+	display: none;
+	margin: 0 auto;
+	width: 400px;
+	height: 300px;
+	background-color: #ffffff;
+	z-index: 500;
+	position: absolute;
+	background-color: #ffffff;
+	display: none;
+	padding: 10px;
+	border: 2px solid #C1C2BC;
+}
+
+div.external-url-popup h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	padding-bottom: 10px;
+}
+
+.external-url-list {
+	width: 400px;
+	height: 235px;
+	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.external-url-list a {
+	word-wrap: break-word;
+}
+
+.action-response {
+	float: right;
+	margin-top: 20px;
+}
+
+.im-infobox .error {
+	color: #990000;
+	font-size: 11px;
+	font-weight: bold;	
+}
+
+.im-infobox table {
+	margin-bottom: 0;
+}
+
+
+.im-news a:link {
+    color: #004276;
+    font-size: 12px;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* Added in 8.5 for Document Feedback section */ 
+
+.im-feedback-radio-question {
+    width: 400px;
+    text-align: left;
+}
+
+.im-feedback-radio-answer{
+    width: 50px;
+    text-align: right;
+}
+
+.im-feedback-textarea-question{
+    width: 300px;
+    vertical-align: text-top;
+}
+
+.im-feedback-textarea-answer{
+    width: 200px;
+}
+
+.im-feedback-textbox-question{
+    width: 300px;
+    vertical-align: text-top;
+}
+
+.im-feedback-rate-firstcol{
+    height: 10px;
+    width: 470px;
+}
